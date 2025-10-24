@@ -3,14 +3,14 @@
 import Image from "next/image"
 
 const partners = [
-  { name: "USP", logo: "images/partners/usp.png" },
-  { name: "USP", logo: "images/partners/usp.png" },
-  { name: "USP", logo: "images/partners/usp.png" },
-  { name: "USP", logo: "images/partners/usp.png" },
-  { name: "USP", logo: "images/partners/usp.png" },
-  { name: "USP", logo: "images/partners/usp.png" },
-  { name: "USP", logo: "images/partners/usp.png" },
-  { name: "USP", logo: "images/partners/usp.png" },
+  { name: "USP", logo: "images/partners/unibanco.webp" },
+  { name: "USP", logo: "images/partners/b3.png" },
+  { name: "USP", logo: "images/partners/datagro.png" },
+  { name: "USP", logo: "images/partners/mufg.png" },
+  { name: "USP", logo: "images/partners/honda.png" },
+  { name: "USP", logo: "images/partners/toyota.png" },
+  { name: "USP", logo: "images/partners/kumon.png" },
+  { name: "Asics", logo: "images/partners/asics.png" },
 ]
 
 export default function Partners() {
@@ -19,8 +19,8 @@ export default function Partners() {
       <div className="max-w-7xl mx-auto text-center">
         {/* Título */}
         <div className="mb-16">
-             <div className="inline-block mb-6 px-4 py-2 bg-[#040C8C]/10 rounded-full">
-              <span  style={{ fontFamily: "var(--font-urbanist)" }} className="text-lg text-[#040C8C] font-medium">
+             <div className="inline-block mb-6 px-4 py-2 bg-primary/10 rounded-full">
+              <span  style={{ fontFamily: "var(--font-urbanist)" }} className="text-lg text-primary font-medium">
                 Parceiros
               </span>
             </div>

@@ -9,6 +9,7 @@ import About from "@/components/about"
 import Stats from "@/components/stats"
 import Partners from "@/components/partners"
 import CtaProspect from "@/components/cta-prospect"
+import Academic from "@/components/academic"
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <About/>
       <Services />
       <CtaProspect/>
+      <Academic/>
       <Stats/>
       <Differentials />
       <Partners/>

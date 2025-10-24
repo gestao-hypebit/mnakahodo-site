@@ -13,8 +13,8 @@ export default function Hero() {
             <Image src={"/images/perfil/_W1A0280.jpg"} width={400} height={400} alt="" className="w-full h-full bg-cover object-cover bg-top object-top" />
           </div>
           <div>
-            <div className="inline-block mb-6 px-4 py-2 bg-[#040C8C]/10 rounded-full">
-              <span  style={{ fontFamily: "var(--font-urbanist)" }} className="text-lg text-[#040C8C] font-medium">Sobre mim</span>
+            <div className="inline-block mb-6 px-4 py-2 bg-primary/10 rounded-full">
+              <span  style={{ fontFamily: "var(--font-urbanist)" }} className="text-lg text-primary font-medium">Sobre mim</span>
             </div>
             <h1
               className="text-5xl md:text-6xl font-bold text-[#09080D] mb-6 leading-tight text-balance"

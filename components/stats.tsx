@@ -38,8 +38,8 @@ export default function Stats() {
                   </div>
       <div className="max-w-7xl mx-auto text-center">
         <div className="mb-16">
-           <div className="inline-block mb-6 px-4 py-2 bg-[#040C8C]/10 rounded-full">
-              <span  style={{ fontFamily: "var(--font-urbanist)" }} className="text-lg text-[#040C8C] font-medium">
+           <div className="inline-block mb-6 px-4 py-2 bg-primary/10 rounded-full">
+              <span  style={{ fontFamily: "var(--font-urbanist)" }} className="text-lg text-primary font-medium">
                 Nossos números
               </span>
             </div>
