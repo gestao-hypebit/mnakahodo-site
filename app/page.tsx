@@ -10,6 +10,7 @@ import Stats from "@/components/stats"
 import Partners from "@/components/partners"
 import CtaProspect from "@/components/cta-prospect"
 import Academic from "@/components/academic"
+import Experience from "@/components/experience"
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
       <CtaProspect/>
       <Academic/>
       <Stats/>
+      {/* <Experience/> */}
       <Differentials />
       <Partners/>
       {/* <Portfolio /> */}
