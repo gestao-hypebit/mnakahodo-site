@@ -27,11 +27,11 @@ const differentials = [
 
 export default function Differentials() {
   return (
-    <section className="py-20 px-4 sm:px-6 lg:px-8 bg-background">
+    <section className="py-20 px-4 sm:px-6 lg:px-8 bg-[#fefffa]">
       <div className="max-w-7xl mx-auto">
         <div className=" mb-16">
-             <div className="inline-block mb-6 px-4 py-2 bg-[#E86A0C]/10 rounded-full">
-              <span  style={{ fontFamily: "var(--font-urbanist)" }} className="text-lg text-[#E86A0C] font-medium">
+             <div className="inline-block mb-6 px-4 py-2 bg-[#040C8C]/10 rounded-full">
+              <span  style={{ fontFamily: "var(--font-urbanist)" }} className="text-lg text-[#040C8C] font-medium">
                 Nossos diferenciais
               </span>
             </div>

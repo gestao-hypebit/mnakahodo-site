@@ -3,18 +3,18 @@ import Image from "next/image"
 
 export default function Hero() {
   return (
-    <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-background via-background to-[#DAD1C8]/5">
+    <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 bg-[#fefffa]">
       <div className="max-w-7xl mx-auto">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
-            <div className="inline-block mb-6 px-4 py-2 bg-[#E86A0C]/10 rounded-full">
-              <span  style={{ fontFamily: "var(--font-urbanist)" }} className="text-lg text-[#E86A0C] font-medium">Consultoria em Economia e Finanças</span>
+            <div className="inline-block mb-6 px-4 py-2 bg-[#040C8C]/10 rounded-full">
+              <span  style={{ fontFamily: "var(--font-urbanist)" }} className="text-lg text-[#040C8C] font-medium">Consultoria em Economia e Finanças</span>
             </div>
             <h1
               className="text-5xl md:text-6xl font-bold text-[#09080D] mb-6 leading-tight text-balance"
               style={{ fontFamily: "var(--font-campora)" }}
             >
-              Transforme decisões financeiras em resultados
+              Transforme <span className="">decisões financeiras</span> em resultados
             </h1>
             <p
               className="text-lg text-[#111143]/70 mb-8 leading-relaxed text-balance"
@@ -24,7 +24,7 @@ export default function Hero() {
               Mais de 20 anos de experiência transformando conceitos complexos em aprendizados claros e aplicáveis.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <button className="bg-[#E86A0C] text-white cursor-pointer px-8 py-3 rounded-full font-medium hover:bg-[#E86A0C]/90 transition-colors flex items-center justify-center gap-2">
+              <button className="bg-[#040C8C] text-white cursor-pointer px-8 py-3 rounded-full font-medium hover:bg-[#E86A0C]/90 transition-colors flex items-center justify-center gap-2">
                 Agende uma conversa <ArrowRight size={18} />
               </button>
               <button className="border cursor-pointer  border-[#111143] text-[#111143] px-8 py-3 rounded-full font-medium hover:bg-[#111143]/5 transition-colors">

@@ -34,17 +34,17 @@ export default function Stats() {
   return (
     <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-[#040C8C]/5 to-[#111143]/5 relative">
           <div className="absolute left-32 top-20">
-                    <Image src={"/images/logos/logo_icon.png"} className="opacity-50" alt="" width={150} height={150} />
+                    <Image src={"/images/logos/logo_icon_blue.png"} className="" alt="" width={150} height={150} />
                   </div>
       <div className="max-w-7xl mx-auto text-center">
         <div className="mb-16">
-           <div className="inline-block mb-6 px-4 py-2 bg-[#E86A0C]/10 rounded-full">
-              <span  style={{ fontFamily: "var(--font-urbanist)" }} className="text-lg text-[#E86A0C] font-medium">
+           <div className="inline-block mb-6 px-4 py-2 bg-[#040C8C]/10 rounded-full">
+              <span  style={{ fontFamily: "var(--font-urbanist)" }} className="text-lg text-[#040C8C] font-medium">
                 Nossos números
               </span>
             </div>
           <h2 className="text-4xl md:text-5xl font-bold text-[#09080D] mb-4 text-balance">
-            Resultados que falam por si
+            Resultados que <span className="">falam por si</span>
           </h2>
           <p className="text-lg text-[#111143]/60 max-w-2xl mx-auto text-balance">
             Uma trajetória marcada por impacto, relevância e transformação real

@@ -31,14 +31,14 @@ const services = [
 
 export default function Services() {
   return (
-    <section className="py-20 px-4 sm:px-6 lg:px-8 bg-background relative">
+    <section className="py-20 px-4 sm:px-6 lg:px-8 bg-[#fefffa] relative">
       {/* <div className="absolute right-32 top-20">
         <Image src={"/images/logos/logo_icon.png"} className="opacity-50" alt="" width={150} height={150} />
       </div> */}
       <div className="max-w-7xl mx-auto">
         <div className=" mb-12">
-          <div className="inline-block mb-6 px-4 py-2 bg-[#E86A0C]/10 rounded-full">
-              <span  style={{ fontFamily: "var(--font-urbanist)" }} className="text-lg text-[#E86A0C] font-medium">Nossos serviços</span>
+          <div className="inline-block mb-6 px-4 py-2 bg-[#040C8C]/10 rounded-full">
+              <span  style={{ fontFamily: "var(--font-urbanist)" }} className="text-lg text-[#040C8C] font-medium">Nossos serviços</span>
             </div>
           <h2
             className="text-4xl md:text-5xl font-bold text-[#09080D] mb-4 text-balance"
@@ -60,10 +60,10 @@ export default function Services() {
             return (
               <div
                 key={index}
-                className="p-8 rounded-xl border border-[#DAD1C8] bg-white hover:border-[#E86A0C]/50 transition-all duration-300 hover:shadow-lg"
+                className="p-8 rounded-xl border border-[#DAD1C8] bg-white hover:border-[#040C8C]/50 transition-all duration-300 hover:shadow-lg"
               >
-                <div className="mb-4 inline-block p-3 bg-[#E86A0C]/10 rounded-lg">
-                  <Icon className="text-[#E86A0C]" size={24} />
+                <div className="mb-4 inline-block p-3 bg-[#040C8C]/10 rounded-lg">
+                  <Icon className="text-[#040C8C]" size={24} />
                 </div>
                 <h3 className="text-xl font-bold text-[#09080D] mb-3" style={{ fontFamily: "var(--font-campora)" }}>
                   {service.title}
@@ -78,7 +78,7 @@ export default function Services() {
                       className="text-sm text-[#111143]/60 flex items-center gap-2"
                       style={{ fontFamily: "var(--font-montserrat)" }}
                     >
-                      <span className="w-1.5 h-1.5 bg-[#E86A0C] rounded-full"></span>
+                      <span className="w-1.5 h-1.5 bg-[#040C8C] rounded-full"></span>
                       {feature}
                     </li>
                   ))}
@@ -88,7 +88,7 @@ export default function Services() {
           })}
         </div>
         <div className="flex justify-center mt-16">
-           <button className="bg-[#E86A0C] text-white cursor-pointer px-8 py-3 rounded-full font-medium hover:bg-[#E86A0C]/90 transition-colors flex items-center justify-center gap-2">
+           <button className="bg-[#040C8C] text-white cursor-pointer px-8 py-3 rounded-full font-medium hover:bg-[#040C8C]/90 transition-colors flex items-center justify-center gap-2">
                 Entre em contato <ArrowRight size={18} />
               </button>
         </div>
