@@ -2,6 +2,7 @@
 
 import { ArrowRight } from "lucide-react"
 import Image from "next/image"
+import { motion } from "framer-motion"
 
 export default function About() {
   return (
@@ -20,7 +21,13 @@ export default function About() {
         <div className="grid md:grid-cols-2 gap-20 items-center">
           
           {/* Imagem com overlay leve */}
-          <div className="relative h-[500px] rounded-2xl overflow-hidden border border-[#E5E7EB] shadow-sm">
+          <motion.div
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 1, ease: "easeOut" }}
+            className="relative h-[500px] rounded-2xl overflow-hidden border border-[#E5E7EB] shadow-sm"
+          >
             <Image
               src="/images/perfil/_W1A0280.jpg"
               width={500}
@@ -30,10 +37,15 @@ export default function About() {
               priority
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/15 via-transparent to-transparent" />
-          </div>
+          </motion.div>
 
           {/* Conteúdo textual */}
-          <div>
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+          >
             <div className="inline-block mb-6 px-4 py-2 bg-[#040C8C]/10 rounded-full">
               <span
                 style={{ fontFamily: "var(--font-urbanist)" }}
@@ -63,12 +75,16 @@ export default function About() {
               educação financeira.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4">
-              <button className="bg-gradient-to-r from-[#040C8C] to-[#0A1EE0] text-white cursor-pointer px-8 py-3 rounded-full font-medium hover:opacity-90 transition-all flex items-center justify-center gap-2 shadow-md">
+            <motion.div
+              whileHover={{ scale: 1.05 }}
+              className="flex flex-col sm:flex-row gap-4"
+            >
+              <button className="bg-gradient-to-r from-[#040C8C] to-[#0A1EE0] text-white cursor-pointer px-8 py-3 rounded-full font-medium transition-all flex items-center justify-center gap-2 shadow-md">
                 Saiba mais <ArrowRight size={18} />
               </button>
-            </div>
-          </div>
+            </motion.div>
+          </motion.div>
+
         </div>
       </div>
     </section>

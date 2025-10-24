@@ -1,13 +1,14 @@
 "use client"
 
 import { ArrowRight } from "lucide-react"
+import { motion } from "framer-motion"
 
 export default function CtaProspect() {
   return (
     <section
       className="relative bg-fixed bg-center bg-cover py-28 px-6 md:px-12 text-white overflow-hidden"
       style={{
-        backgroundImage: "url('/images/cta-prospect.jpg')", // Imagem da caneca + café
+        backgroundImage: "url('/images/cta-prospect.jpg')",
       }}
     >
       {/* Overlay escuro para contraste */}
@@ -15,35 +16,60 @@ export default function CtaProspect() {
 
       {/* Conteúdo principal */}
       <div className="relative z-10 container mx-auto max-w-3xl text-center">
-        <div className="inline-block mb-6 px-4 py-2 bg-white/10 rounded-full backdrop-blur-sm">
+
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          className="inline-block mb-6 px-4 py-2 bg-white/10 rounded-full backdrop-blur-sm"
+        >
           <span
             className="text-lg font-medium text-white"
             style={{ fontFamily: "var(--font-urbanist)" }}
           >
             Conecte-se comigo
           </span>
-        </div>
+        </motion.div>
 
-        <h2
+        <motion.h2
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ delay: 0.2, duration: 0.8, ease: "easeOut" }}
           className="text-4xl md:text-5xl font-bold mb-6 text-balance"
           style={{ fontFamily: "var(--font-campora)" }}
         >
           Vamos conversar?
-        </h2>
+        </motion.h2>
 
-        <p
+        <motion.p
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ delay: 0.4, duration: 0.8, ease: "easeOut" }}
           className="text-lg md:text-xl mb-10 text-gray-200 leading-relaxed text-balance"
           style={{ fontFamily: "var(--font-montserrat)" }}
         >
           Uma boa conversa pode render grandes ideias e resultados.  
           Vamos tomar um café e falar sobre novas oportunidades?
-        </p>
+        </motion.p>
 
-        <div className="flex justify-center">
-          <button className="bg-gradient-to-r from-[#040C8C] to-[#0A1EE0] text-white cursor-pointer px-8 py-3 rounded-full font-medium hover:opacity-90 transition-all flex items-center justify-center gap-2 shadow-md">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ delay: 0.6, duration: 0.8, ease: "easeOut" }}
+          className="flex justify-center"
+        >
+          <motion.button
+            whileHover={{ scale: 1.05 }}
+            className="bg-gradient-to-r from-[#040C8C] to-[#0A1EE0] text-white cursor-pointer px-8 py-3 rounded-full font-medium transition-all flex items-center justify-center gap-2 shadow-md"
+          >
             Agende uma reunião <ArrowRight size={18} />
-          </button>
-        </div>
+          </motion.button>
+        </motion.div>
+
       </div>
     </section>
   )

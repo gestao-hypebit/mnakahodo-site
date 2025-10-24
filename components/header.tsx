@@ -37,7 +37,7 @@ export default function Header() {
               {item.label}
             </Link>
           ))}
-          <button className="bg-[#040C8C] text-white px-6 py-2 cursor-pointer rounded-full text-sm font-medium hover:bg-[#040C8C]/90 transition-colors">
+         <button className="bg-gradient-to-r from-[#040C8C] to-[#0A1EE0] text-white cursor-pointer px-8 py-3 rounded-full font-medium hover:opacity-90 transition-all flex items-center justify-center gap-2 shadow-md">
             Entre em contato
           </button>
         </div>

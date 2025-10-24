@@ -2,6 +2,7 @@
 
 import { Users, Briefcase, Mic, Award } from "lucide-react"
 import Image from "next/image"
+import { motion } from "framer-motion"
 
 const stats = [
   {
@@ -40,7 +41,13 @@ export default function Stats() {
 
       <div className="max-w-7xl mx-auto relative z-10 text-center">
         {/* Título e subtítulo */}
-        <div className="mb-16">
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          className="mb-16"
+        >
           <div className="inline-block mb-6 px-4 py-2 bg-[#040C8C]/10 rounded-full">
             <span
               style={{ fontFamily: "var(--font-urbanist)" }}
@@ -63,15 +70,19 @@ export default function Stats() {
           >
             Uma trajetória marcada por impacto, relevância e transformação real.
           </p>
-        </div>
+        </motion.div>
 
         {/* Cards de estatísticas */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {stats.map((stat, index) => {
             const Icon = stat.icon
             return (
-              <div
+              <motion.div
                 key={index}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, amount: 0.3 }}
+                transition={{ delay: 0.2 * index, duration: 0.8, ease: "easeOut" }}
                 className="flex flex-col items-center text-center p-8 rounded-2xl bg-white border border-[#DAD1C8]/70 hover:border-[#040C8C]/20 shadow-sm hover:shadow-md transition-all"
               >
                 <div className="flex items-center justify-center h-14 w-14 rounded-lg bg-[#040C8C]/10 mb-5">
@@ -95,7 +106,7 @@ export default function Stats() {
                 >
                   {stat.description}
                 </p>
-              </div>
+              </motion.div>
             )
           })}
         </div>

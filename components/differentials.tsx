@@ -1,4 +1,7 @@
+"use client"
+
 import { Award, Brain, Lightbulb, Zap } from "lucide-react"
+import { motion } from "framer-motion"
 
 const differentials = [
   {
@@ -34,7 +37,13 @@ export default function Differentials() {
     <section className="py-20 px-4 sm:px-6 lg:px-8 bg-[#fefffa]">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
-        <div className="mb-16">
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          className="mb-16"
+        >
           <div className="inline-block mb-6 px-4 py-2 bg-[#040C8C]/10 rounded-full">
             <span
               style={{ fontFamily: "var(--font-urbanist)" }}
@@ -55,15 +64,19 @@ export default function Differentials() {
           >
             Diferenciais que fazem a diferença no seu aprendizado e <strong className="text-[#040C8C]">resultados</strong>
           </p>
-        </div>
+        </motion.div>
 
         {/* Grid de diferenciais */}
         <div className="grid md:grid-cols-2 gap-10">
           {differentials.map((diff, index) => {
             const Icon = diff.icon
             return (
-              <div
+              <motion.div
                 key={index}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, amount: 0.3 }}
+                transition={{ delay: 0.2 * index, duration: 0.8, ease: "easeOut" }}
                 className="flex gap-6 p-6 rounded-xl bg-white border border-[#DAD1C8] hover:border-[#111143]/20 transition-colors shadow-sm hover:shadow-md"
               >
                 {/* Ícone */}
@@ -88,7 +101,7 @@ export default function Differentials() {
                     {diff.description}
                   </p>
                 </div>
-              </div>
+              </motion.div>
             )
           })}
         </div>

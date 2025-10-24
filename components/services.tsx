@@ -2,6 +2,7 @@
 
 import { TrendingUp, Users, BookOpen, Zap, ArrowRight } from "lucide-react"
 import Image from "next/image"
+import { motion } from "framer-motion"
 
 const services = [
   {
@@ -49,7 +50,13 @@ export default function Services() {
 
       <div className="max-w-7xl mx-auto relative z-10">
         {/* Cabeçalho */}
-        <div className="text-center mb-16 max-w-3xl mx-auto">
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          className="text-center mb-16 max-w-3xl mx-auto"
+        >
           <div className="inline-block mb-5 px-4 py-2 bg-[#040C8C]/10 rounded-full">
             <span
               style={{ fontFamily: "var(--font-urbanist)" }}
@@ -72,15 +79,19 @@ export default function Services() {
             Consultoria, palestras e programas de educação financeira
             desenvolvidos para transformar conhecimento econômico em resultados reais.
           </p>
-        </div>
+        </motion.div>
 
         {/* Cards de serviços */}
         <div className="grid md:grid-cols-2 gap-10">
           {services.map((service, index) => {
             const Icon = service.icon
             return (
-              <div
+              <motion.div
                 key={index}
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, amount: 0.3 }}
+                transition={{ delay: index * 0.2, duration: 0.8, ease: "easeOut" }}
                 className="group p-8 rounded-2xl border border-[#E5E7EB] bg-white hover:shadow-xl hover:scale-[1.02] transition-all duration-300"
               >
                 <div className="mb-4 inline-block p-3 bg-[#040C8C]/10 rounded-xl group-hover:bg-[#040C8C]/20 transition-colors">
@@ -110,16 +121,19 @@ export default function Services() {
                     </li>
                   ))}
                 </ul>
-              </div>
+              </motion.div>
             )
           })}
         </div>
 
         {/* Botão CTA */}
         <div className="flex justify-center mt-20">
-          <button className="bg-gradient-to-r from-[#040C8C] to-[#0A1EE0] text-white cursor-pointer px-10 py-4 rounded-full font-medium hover:opacity-90 transition-all flex items-center justify-center gap-2 shadow-md">
+          <motion.button
+            whileHover={{ scale: 1.05 }}
+            className="bg-gradient-to-r from-[#040C8C] to-[#0A1EE0] text-white cursor-pointer px-10 py-4 rounded-full font-medium transition-all flex items-center justify-center gap-2 shadow-md"
+          >
             Entre em contato <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
-          </button>
+          </motion.button>
         </div>
       </div>
     </section>

@@ -1,6 +1,7 @@
 "use client"
 
 import Image from "next/image"
+import { motion } from "framer-motion"
 
 const partners = [
   { name: "USP", logo: "images/partners/unibanco.webp" },
@@ -18,7 +19,13 @@ export default function Partners() {
     <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-[#040C8C]/5 to-[#111143]/5">
       <div className="max-w-7xl mx-auto text-center">
         {/* Header */}
-        <div className="mb-16">
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          className="mb-16"
+        >
           <div className="inline-block mb-6 px-4 py-2 bg-[#040C8C]/10 rounded-full">
             <span
               style={{ fontFamily: "var(--font-urbanist)" }}
@@ -39,13 +46,17 @@ export default function Partners() {
           >
             Empresas, universidades e instituições que confiaram em nosso <strong className="text-[#040C8C]">trabalho</strong>
           </p>
-        </div>
+        </motion.div>
 
         {/* Logo Wall */}
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-10 items-center justify-items-center">
           {partners.map((partner, index) => (
-            <div
+            <motion.div
               key={index}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.3 }}
+              transition={{ delay: 0.1 * index, duration: 0.6, ease: "easeOut" }}
               className="flex items-center justify-center grayscale hover:grayscale-0 opacity-80 hover:opacity-100 transition-all duration-300"
             >
               <Image
@@ -55,7 +66,7 @@ export default function Partners() {
                 height={80}
                 className="object-contain"
               />
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>

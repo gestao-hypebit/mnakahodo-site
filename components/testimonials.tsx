@@ -1,4 +1,7 @@
+"use client"
+
 import { Star } from "lucide-react"
+import { motion } from "framer-motion"
 
 const testimonials = [
   {
@@ -29,7 +32,13 @@ export default function Testimonials() {
     <section className="py-20 px-4 sm:px-6 lg:px-8 bg-[#fefffa]">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
-        <div className="mb-16 text-center">
+        <motion.div
+          className="mb-16 text-center"
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+        >
           <div className="inline-block mb-6 px-4 py-2 bg-[#040C8C]/10 rounded-full">
             <span
               style={{ fontFamily: "var(--font-urbanist)" }}
@@ -50,14 +59,18 @@ export default function Testimonials() {
           >
             Depoimentos de clientes <strong className="text-[#040C8C]">satisfeitos</strong>
           </p>
-        </div>
+        </motion.div>
 
         {/* Cards */}
         <div className="grid md:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => (
-            <div
+            <motion.div
               key={index}
               className="p-8 rounded-xl border border-[#DAD1C8] bg-white hover:border-[#040C8C]/40 shadow-sm hover:shadow-md transition-all duration-300"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.3 }}
+              transition={{ delay: 0.1 * index, duration: 0.6, ease: "easeOut" }}
             >
               {/* Rating */}
               <div className="flex gap-1 mb-4">
@@ -65,6 +78,7 @@ export default function Testimonials() {
                   <Star key={i} size={16} className="fill-[#040C8C] text-[#040C8C]" />
                 ))}
               </div>
+
               {/* Testimonial Text */}
               <p
                 className="text-[#111143]/80 mb-6 leading-relaxed italic"
@@ -72,6 +86,7 @@ export default function Testimonials() {
               >
                 "{testimonial.text}"
               </p>
+
               {/* Author */}
               <div>
                 <p
@@ -83,7 +98,7 @@ export default function Testimonials() {
                 <p className="text-sm text-[#111143]/60">{testimonial.role}</p>
                 <p className="text-sm text-[#111143]/50">{testimonial.company}</p>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
