@@ -28,7 +28,7 @@ export default function Header() {
             <Link
               key={item.href}
               href={item.href}
-              className="text-sm hover:text-[#040C8C] transition-colors uppercase text-[#dad1c8]"
+              className="text-sm hover:text-primary transition-colors uppercase text-[#dad1c8]"
             >
               {item.label}
             </Link>
