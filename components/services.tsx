@@ -60,7 +60,7 @@ export default function Services() {
           </div>
           <h2
             className="text-4xl md:text-5xl font-bold text-[#111143] mb-4"
-            style={{ fontFamily: "var(--font-ur)" }}
+            style={{ fontFamily: "var(--font-campora)" }}
           >
             Soluções personalizadas em{" "}
             <span className="text-primary">Economia e Finanças</span>
