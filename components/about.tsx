@@ -6,7 +6,7 @@ import { motion } from "framer-motion"
 
 export default function About() {
   return (
-    <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-44 bg-[#111143] relative overflow-hidden">
+    <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-44 bg-[#dad1c7] relative overflow-hidden">
       {/* Ícone decorativo no canto */}
       {/* <div className="absolute right-24 top-16 ">
         <Image
@@ -45,24 +45,24 @@ export default function About() {
             viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
-            <div className="inline-block mb-6 px-4 py-2 bg-[#dad1c8] rounded-full">
+            <div className="inline-block mb-6 px-4 py-2 bg-[#111143] rounded-full">
               <span
                 style={{ fontFamily: "var(--font-urbanist)" }}
-                className="text-lg text-[#111143] font-medium tracking-wide"
+                className="text-lg text-[#dad1c7] font-medium tracking-wide"
               >
                 Sobre mim
               </span>
             </div>
 
             <h1
-              className="text-5xl md:text-6xl font-bold text-[#dad1c8] mb-6 leading-tight text-balance"
+              className="text-5xl md:text-6xl font-bold text-[#111143] mb-6 leading-tight text-balance"
               style={{ fontFamily: "var(--font-campora)" }}
             >
               Mauricio <span className="text-primary">Nakahodo</span>
             </h1>
 
             <p
-              className="text-lg text-[#dad1c8] mb-8 leading-relaxed text-justify"
+              className="text-lg text-[#111143] mb-8 leading-relaxed text-justify"
               style={{ fontFamily: "var(--font-montserrat)" }}
             >
               Economista com{" "}
@@ -79,16 +79,16 @@ export default function About() {
               whileHover={{ scale: 1.05 }}
               className="flex flex-col sm:flex-row gap-4"
             >
-              <button className="border  border-[#dad1c8] text-[#dad1c8] cursor-pointer px-8 py-3 rounded-full font-medium transition-all flex items-center justify-center gap-2 shadow-md">
+              <button className="border  border-[#111143] text-[#111143] cursor-pointer px-8 py-3 rounded-full font-medium transition-all flex items-center justify-center gap-2 ">
                 Saiba mais 
-                     <div className="rounded-full p-[0.1rem] border border-[#dad1c8]">
+                     <div className="rounded-full p-[0.1rem] border border-[#111143]">
                   <ArrowRight className="text-primary" size={20} />
                 </div>
               </button>
             </motion.div>
             <div>
                        <Image
-              src="/images/logos/logo-icon-white.png"
+              src="/images/logos/logo-icon-blue.png"
               width={110}
               height={110}
               alt="Logo icone"
