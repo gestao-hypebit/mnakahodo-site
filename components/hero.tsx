@@ -58,7 +58,7 @@ export default function Hero() {
             <div className="flex flex-col sm:flex-row gap-4">
               <motion.button
                 whileHover={{ scale: 1.05 }}
-                className="bg-[#dad1c8] text-[#111143] cursor-pointer px-8 py-3 rounded-full font-medium hover:opacity-90 transition-all flex items-center justify-center gap-2 shadow-md"
+                className="bg-[#dad1c8] text-[#111143] text-lg cursor-pointer px-8 py-3 rounded-full font-bold hover:opacity-90 transition-all flex items-center justify-center gap-2 shadow-md"
               >
                 Agende uma conversa 
                 <div className="rounded-full p-[0.1rem] border border-[#111143]">
@@ -67,7 +67,7 @@ export default function Hero() {
               </motion.button>
               <motion.button
                 whileHover={{ scale: 1.05 }}
-                className="border cursor-pointer border-[#dad1c8] text-[#dad1c8] px-8 py-3 rounded-full font-medium hover:bg-[#111143]/5 transition-colors"
+                className="border cursor-pointer text-lg border-[#dad1c8] text-[#dad1c8] px-8 py-3 rounded-full font-bold hover:bg-[#111143]/5 transition-colors"
               >
                 Conhecer Serviços
               </motion.button>

@@ -33,7 +33,7 @@ export default function Header() {
               {item.label}
             </Link>
           ))}
-          <button className="bg-[#dad1c8] text-[#111143] cursor-pointer px-8 py-3 rounded-full font-medium hover:opacity-90 transition-all flex items-center justify-center gap-2 shadow-md">
+          <button className="bg-[#dad1c8] text-[#111143] text-lg cursor-pointer px-8 py-3 rounded-full font-bold hover:opacity-90 transition-all flex items-center justify-center gap-2 shadow-md">
             Entre em contato
           </button>
         </div>

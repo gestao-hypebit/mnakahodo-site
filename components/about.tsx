@@ -79,7 +79,7 @@ export default function About() {
               whileHover={{ scale: 1.05 }}
               className="flex flex-col sm:flex-row gap-4"
             >
-              <button className="border  border-[#111143] text-[#111143] cursor-pointer px-8 py-3 rounded-full font-medium transition-all flex items-center justify-center gap-2 ">
+              <button className="border  border-[#111143] text-lg font-bold text-[#111143] cursor-pointer px-8 py-3 rounded-full  transition-all flex items-center justify-center gap-2 ">
                 Saiba mais 
                      <div className="rounded-full p-[0.1rem] border border-[#111143]">
                   <ArrowRight className="text-primary" size={20} />

@@ -12,7 +12,7 @@ const campora = Campora({
 })
 
 const urbanist = Urbanist({
-  weight: "600",
+  weight: "400",
   subsets: ["latin"],
   variable: "--font-urbanist",
 })

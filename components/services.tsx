@@ -9,7 +9,7 @@ const services = [
     icon: TrendingUp,
     title: "Análise Econômica Empresarial",
     description:
-      "Estudos e projeções sobre crescimento, inflação, juros e câmbio — com foco prático em planejamento estratégico e impacto setorial.",
+      "Estudos e projeções sobre crescimento, inflação, juros e câmbio, com foco prático em planejamento estratégico e impacto setorial.",
     features: ["Cenários econômicos", "Impacto setorial", "Planejamento estratégico"],
   },
   {
@@ -37,47 +37,40 @@ const services = [
 
 export default function Services() {
   return (
-    <section className="py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-[#FFFFFF] to-[#F9FAFB] relative">
+    <section className="py-24 px-4 sm:px-6 lg:px-8 bg-[#dad1c7] relative">
       {/* Marca decorativa */}
-      <div className="absolute right-20 top-16 ">
-        <Image
-          src="/images/logos/logo_icon_blue.png"
-          alt="Ícone decorativo"
-          width={140}
-          height={140}
-        />
-      </div>
+ 
 
-      <div className="max-w-7xl mx-auto relative z-10">
+      <div className="px-12 mx-auto relative z-10">
         {/* Cabeçalho */}
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="text-center mb-16 max-w-3xl mx-auto"
+          className="text-center mb-16  mx-auto  flex justify-center flex-col items-center"
         >
-          <div className="inline-block mb-5 px-4 py-2 bg-[#040C8C]/10 rounded-full">
+          <div className="inline-block mb-5 px-4 py-2 bg-[#111143] rounded-full">
             <span
               style={{ fontFamily: "var(--font-urbanist)" }}
-              className="text-lg text-[#040C8C] font-medium"
+              className="text-lg text-[#dad1c7] font-medium"
             >
               Nossos serviços
             </span>
           </div>
           <h2
-            className="text-4xl md:text-5xl font-bold text-[#09080D] mb-4"
+            className="text-4xl md:text-5xl font-bold text-[#111143] mb-4"
             style={{ fontFamily: "var(--font-campora)" }}
           >
             Soluções Personalizadas em{" "}
-            <span className="text-[#040C8C]">Economia e Finanças</span>
+            <span className="text-primary">Economia e Finanças</span>
           </h2>
           <p
-            className="text-lg text-[#111143]/80 leading-relaxed"
-            style={{ fontFamily: "var(--font-montserrat)" }}
+            className="text-xl text-[#111143] leading-relaxed  text-center  max-w-4xl"
+            style={{ fontFamily: "var(--font-urbanist)" }}
           >
             Consultoria, palestras e programas de educação financeira
-            desenvolvidos para transformar conhecimento econômico em resultados reais.
+            desenvolvidos <span className="font-bold">para transformar conhecimento econômico em resultados reais.</span>
           </p>
         </motion.div>
 
@@ -92,19 +85,26 @@ export default function Services() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0.3 }}
                 transition={{ delay: index * 0.2, duration: 0.8, ease: "easeOut" }}
-                className="group p-8 rounded-2xl border border-[#E5E7EB] bg-white hover:shadow-xl hover:scale-[1.02] transition-all duration-300"
+                className="group p-8 rounded-4xl border border-[#E5E7EB] bg-[#111143] hover:shadow-xl hover:scale-[1.02] transition-all duration-300"
               >
-                <div className="mb-4 inline-block p-3 bg-[#040C8C]/10 rounded-xl group-hover:bg-[#040C8C]/20 transition-colors">
+                {/* <div className="mb-4 inline-block p-3 bg-[#040C8C]/10 rounded-xl group-hover:bg-[#040C8C]/20 transition-colors">
                   <Icon className="text-[#040C8C]" size={26} />
-                </div>
-                <h3
-                  className="text-2xl font-bold text-[#09080D] mb-3"
+                </div> */}
+              <div className="flex   gap-x-4">
+                  <div>
+                      <h3
+                  className="text-3xl font-bold text-primary mb-3"
                   style={{ fontFamily: "var(--font-campora)" }}
                 >
                   {service.title}
                 </h3>
+                  </div>
+                  <div>
+                     <Icon className="text-[#dad1c7]" size={44} />
+                  </div>
+              </div>
                 <p
-                  className="text-[#111143]/80 mb-4 leading-relaxed"
+                  className="text-[#dad1c7] text-lg mb-4 leading-relaxed"
                   style={{ fontFamily: "var(--font-montserrat)" }}
                 >
                   {service.description}
@@ -113,10 +113,10 @@ export default function Services() {
                   {service.features.map((feature, i) => (
                     <li
                       key={i}
-                      className="text-sm text-[#111143]/70 flex items-center gap-2"
+                      className="text-lg text-[#dad1c7] flex items-center gap-2 font-bold"
                       style={{ fontFamily: "var(--font-montserrat)" }}
                     >
-                      <span className="w-1.5 h-1.5 bg-[#040C8C] rounded-full" />
+                      <span className="w-1.5 h-1.5 bg-[#dad1c7] rounded-full" />
                       {feature}
                     </li>
                   ))}
@@ -125,16 +125,26 @@ export default function Services() {
             )
           })}
         </div>
-
+     <motion.div
+              whileHover={{ scale: 1.05 }}
+              className="flex justify-center mt-20"
+            >
+              <button className="border  border-[#111143] text-[#111143] text-lg cursor-pointer px-8 py-3 rounded-full font-bold transition-all flex items-center justify-center gap-2 ">
+                Entre em contato 
+                     <div className="rounded-full p-[0.1rem] border border-[#111143]">
+                  <ArrowRight className="text-primary" size={20} />
+                </div>
+              </button>
+            </motion.div>
         {/* Botão CTA */}
-        <div className="flex justify-center mt-20">
+        {/* <div className="flex justify-center mt-20">
           <motion.button
             whileHover={{ scale: 1.05 }}
             className="bg-gradient-to-r from-[#040C8C] to-[#0A1EE0] text-white cursor-pointer px-10 py-4 rounded-full font-medium transition-all flex items-center justify-center gap-2 shadow-md"
           >
             Entre em contato <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
           </motion.button>
-        </div>
+        </div> */}
       </div>
     </section>
   )

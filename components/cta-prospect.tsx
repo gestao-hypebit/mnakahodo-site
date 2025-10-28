@@ -62,12 +62,15 @@ export default function CtaProspect() {
           transition={{ delay: 0.6, duration: 0.8, ease: "easeOut" }}
           className="flex justify-center"
         >
-          <motion.button
-            whileHover={{ scale: 1.05 }}
-            className="bg-gradient-to-r from-[#040C8C] to-[#0A1EE0] text-white cursor-pointer px-8 py-3 rounded-full font-medium transition-all flex items-center justify-center gap-2 shadow-md"
-          >
-            Agende uma reunião <ArrowRight size={18} />
-          </motion.button>
+              <motion.button
+                whileHover={{ scale: 1.05 }}
+                className="bg-[#dad1c8] text-[#111143] text-lg cursor-pointer px-8 py-3 rounded-full font-bold hover:opacity-90 transition-all flex items-center justify-center gap-2 shadow-md"
+              >
+                Agende uma reunião 
+                <div className="rounded-full p-[0.1rem] border border-[#111143]">
+                  <ArrowRight className="text-primary" size={20} />
+                </div>
+              </motion.button>
         </motion.div>
 
       </div>

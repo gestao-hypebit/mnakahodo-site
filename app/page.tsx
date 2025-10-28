@@ -18,8 +18,9 @@ export default function Home() {
       <Hero />
       {/* <Scrolling/> */}
       <About/>
-      <Services />
       <CtaProspect/>
+
+      <Services />
       <Academic/>
       <Stats/>
       {/* <Experience/> */}
