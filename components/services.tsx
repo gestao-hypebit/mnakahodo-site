@@ -1,6 +1,6 @@
 "use client"
 
-import { TrendingUp, Users, BookOpen, Zap, ArrowRight } from "lucide-react"
+import { TrendingUp, Users, BookOpen, Zap, ArrowRight, Handshake } from "lucide-react"
 import Image from "next/image"
 import { motion } from "framer-motion"
 
@@ -27,7 +27,7 @@ const services = [
     features: ["Metodologia adaptada", "Gamificação", "Simulações personalizadas"],
   },
   {
-    icon: Zap,
+    icon: Handshake,
     title: "Consultoria Especializada",
     description:
       "Projetos sob demanda para empresas e profissionais, com relatórios exclusivos e acompanhamento estratégico.",
@@ -60,9 +60,9 @@ export default function Services() {
           </div>
           <h2
             className="text-4xl md:text-5xl font-bold text-[#111143] mb-4"
-            style={{ fontFamily: "var(--font-campora)" }}
+            style={{ fontFamily: "var(--font-ur)" }}
           >
-            Soluções Personalizadas em{" "}
+            Soluções personalizadas em{" "}
             <span className="text-primary">Economia e Finanças</span>
           </h2>
           <p
