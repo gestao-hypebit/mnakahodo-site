@@ -1,6 +1,6 @@
 "use client"
 
-import { Star } from "lucide-react"
+import { Star, StarIcon } from "lucide-react"
 import { motion } from "framer-motion"
 
 const testimonials = [
@@ -29,7 +29,7 @@ const testimonials = [
 
 export default function Testimonials() {
   return (
-    <section className="py-20 px-4 sm:px-6 lg:px-8 bg-[#fefffa]">
+    <section className="py-20 px-4 sm:px-6 lg:px-8 bg-[#111143]">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <motion.div
@@ -39,25 +39,25 @@ export default function Testimonials() {
           viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
-          <div className="inline-block mb-6 px-4 py-2 bg-[#040C8C]/10 rounded-full">
+          <div className="inline-block mb-6 px-4 py-2 bg-[#dad1c7] rounded-full">
             <span
               style={{ fontFamily: "var(--font-urbanist)" }}
-              className="text-lg text-[#040C8C] font-medium"
+              className="text-lg text-[#111143] font-medium"
             >
               Depoimentos
             </span>
           </div>
           <h2
-            className="text-4xl md:text-5xl font-bold text-[#09080D] mb-4 text-balance"
+            className="text-4xl md:text-5xl font-bold text-[#dad1c7] mb-4 text-balance"
             style={{ fontFamily: "var(--font-campora)" }}
           >
-            O que dizem sobre <span className="text-[#040C8C]">nosso trabalho</span>
+            O que dizem sobre <span className="text-primary">nosso trabalho.</span>
           </h2>
           <p
-            className="text-lg text-[#111143]/80 max-w-2xl mx-auto text-balance leading-relaxed"
+            className="text-lg text-[#dad1c7] max-w-2xl mx-auto text-balance leading-relaxed"
             style={{ fontFamily: "var(--font-montserrat)" }}
           >
-            Depoimentos de clientes <strong className="text-[#040C8C]">satisfeitos</strong>
+            Depoimentos de <strong>clientes satisfeitos</strong>
           </p>
         </motion.div>
 
@@ -66,22 +66,22 @@ export default function Testimonials() {
           {testimonials.map((testimonial, index) => (
             <motion.div
               key={index}
-              className="p-8 rounded-xl border border-[#DAD1C8] bg-white hover:border-[#040C8C]/40 shadow-sm hover:shadow-md transition-all duration-300"
+              className="p-8 rounded-xl   bg-[#dad1c7] transition-all duration-300"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.3 }}
               transition={{ delay: 0.1 * index, duration: 0.6, ease: "easeOut" }}
             >
               {/* Rating */}
-              <div className="flex gap-1 mb-4">
+              <div className="flex justify-center gap-1 mb-4">
                 {[...Array(testimonial.rating)].map((_, i) => (
-                  <Star key={i} size={16} className="fill-[#040C8C] text-[#040C8C]" />
+                  <StarIcon key={i} size={32} className="fill-[#111143] text-[#111143]" />
                 ))}
               </div>
 
               {/* Testimonial Text */}
               <p
-                className="text-[#111143]/80 mb-6 leading-relaxed italic"
+                className="text-[#111143] mb-6 leading-relaxed italic text-center"
                 style={{ fontFamily: "var(--font-montserrat)" }}
               >
                 "{testimonial.text}"
@@ -90,13 +90,12 @@ export default function Testimonials() {
               {/* Author */}
               <div>
                 <p
-                  className="font-bold text-[#09080D]"
+                  className=" text-[#111143] text-center"
                   style={{ fontFamily: "var(--font-campora)" }}
                 >
-                  {testimonial.name}
+                  <span className="font-bold">{testimonial.name}</span> {testimonial.role}
                 </p>
-                <p className="text-sm text-[#111143]/60">{testimonial.role}</p>
-                <p className="text-sm text-[#111143]/50">{testimonial.company}</p>
+                <p className="text-sm font-bold text-[#111143] text-center">{testimonial.company}</p>
               </div>
             </motion.div>
           ))}

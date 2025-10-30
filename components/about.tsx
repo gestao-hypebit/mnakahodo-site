@@ -58,7 +58,7 @@ export default function About() {
               className="text-5xl md:text-6xl font-bold text-[#111143] mb-6 leading-tight text-balance"
               style={{ fontFamily: "var(--font-campora)" }}
             >
-              Mauricio <span className="text-primary">Nakahodo</span>
+              Mauricio Nakahodo
             </h1>
 
             <p

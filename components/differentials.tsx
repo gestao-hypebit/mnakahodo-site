@@ -34,7 +34,7 @@ const differentials = [
 
 export default function Differentials() {
   return (
-    <section className="py-20 px-4 sm:px-6 lg:px-8 bg-[#fefffa]">
+    <section className="py-20 px-4 sm:px-6 lg:px-8 bg-[#111143]">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <motion.div
@@ -44,25 +44,25 @@ export default function Differentials() {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="mb-16"
         >
-          <div className="inline-block mb-6 px-4 py-2 bg-[#040C8C]/10 rounded-full">
+          <div className="inline-block mb-6 px-4 py-2 bg-primary rounded-full">
             <span
               style={{ fontFamily: "var(--font-urbanist)" }}
-              className="text-lg text-[#040C8C] font-medium"
+              className="text-lg text-[#dad1c7] font-medium"
             >
               Nossos diferenciais
             </span>
           </div>
           <h2
-            className="text-4xl md:text-5xl font-bold text-[#09080D] mb-4 text-balance"
+            className="text-4xl md:text-5xl font-bold text-[#dad1c7] mb-4 text-balance"
             style={{ fontFamily: "var(--font-campora)" }}
           >
-            Por que escolher <span className="text-[#040C8C]">MNAKAHODO</span>?
+            Por que escolher <span className="text-primary">MNAKAHODO?</span>
           </h2>
           <p
-            className="text-lg text-[#111143]/80 max-w-2xl text-balance leading-relaxed"
+            className="text-lg text-[#dad1c7] max-w-2xl text-balance leading-relaxed"
             style={{ fontFamily: "var(--font-montserrat)" }}
           >
-            Diferenciais que fazem a diferença no seu aprendizado e <strong className="text-[#040C8C]">resultados</strong>
+            Diferenciais que fazem a diferença no seu <strong>aprendizado e resultados</strong>
           </p>
         </motion.div>
 
@@ -77,29 +77,34 @@ export default function Differentials() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0.3 }}
                 transition={{ delay: 0.2 * index, duration: 0.8, ease: "easeOut" }}
-                className="flex gap-6 p-6 rounded-xl bg-white border border-[#DAD1C8] hover:border-[#111143]/20 transition-colors shadow-sm hover:shadow-md"
+                className="flex gap-6 p-6 rounded-xl bg-primary  transition-colors "
               >
                 {/* Ícone */}
-                <div className="flex-shrink-0">
+                {/* <div className="flex-shrink-0">
                   <div className="flex items-center justify-center h-12 w-12 rounded-lg bg-[#040C8C]/20 transition-shadow group-hover:shadow-md">
                     <Icon className="text-[#040C8C]" size={24} />
                   </div>
-                </div>
+                </div> */}
                 {/* Texto */}
                 <div>
                   <h3
-                    className="text-lg font-bold text-[#09080D] mb-2"
+                    className="text-lg font-bold text-[#dad1c7] mb-2"
                     style={{ fontFamily: "var(--font-campora)" }}
                   >
                     {diff.title}{" "}
-                    <span className="text-[#040C8C]">{diff.highlight}</span>
+                    <span className="text-[#111143]">{diff.highlight}</span>
                   </h3>
                   <p
-                    className="text-[#111143]/80 leading-relaxed"
+                    className="text-[#dad1c7] leading-relaxed"
                     style={{ fontFamily: "var(--font-montserrat)" }}
                   >
                     {diff.description}
                   </p>
+                </div>
+                      <div className="flex-shrink-0">
+                  <div className="flex items-center justify-center h-12 w-12 rounded-lg  transition-shadow group-hover:shadow-md">
+                    <Icon className="text-[#dad1c7]" size={30} />
+                  </div>
                 </div>
               </motion.div>
             )
