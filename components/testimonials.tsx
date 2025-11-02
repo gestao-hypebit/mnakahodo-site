@@ -29,7 +29,7 @@ const testimonials = [
 
 export default function Testimonials() {
   return (
-    <section className="lg:py-20 py-4 px-4 sm:px-6 lg:px-8 bg-[#111143]">
+    <section className="lg:py-20 py-6 px-4 sm:px-6 lg:px-8 bg-[#111143]">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <motion.div
@@ -48,13 +48,13 @@ export default function Testimonials() {
             </span>
           </div>
           <h2
-            className="text-4xl md:text-5xl font-bold text-[#dad1c7] mb-4 text-balance"
+            className="text-3xl lg:text-5xl font-bold text-[#dad1c7] mb-4 text-balance"
             style={{ fontFamily: "var(--font-campora)" }}
           >
             O que dizem sobre <span className="text-primary">nosso trabalho.</span>
           </h2>
           <p
-            className="text-lg text-[#dad1c7] max-w-2xl mx-auto text-balance leading-relaxed"
+            className="text-base lg:text-lg text-[#dad1c7] max-w-2xl mx-auto text-balance leading-relaxed"
             style={{ fontFamily: "var(--font-montserrat)" }}
           >
             Depoimentos de <strong>clientes satisfeitos</strong>
@@ -65,7 +65,7 @@ export default function Testimonials() {
           {testimonials.map((testimonial, index) => (
             <motion.div
               key={index}
-              className="p-8 rounded-xl   bg-[#dad1c7] transition-all duration-300"
+              className="p-8 rounded-2xl   bg-[#dad1c7] transition-all duration-300"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.3 }}

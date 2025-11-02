@@ -34,7 +34,7 @@ const differentials = [
 
 export default function Differentials() {
   return (
-    <section className="py-4 lg:py-20 px-4 sm:px-6 lg:px-8 bg-[#111143]">
+    <section className="py-6 lg:py-20 px-4 sm:px-6 lg:px-8 bg-[#111143]">
       <div className="max-w-7xl mx-auto lg:text-start text-center">
         {/* Header */}
         <motion.div
@@ -53,20 +53,19 @@ export default function Differentials() {
             </span>
           </div>
           <h2
-            className="text-4xl md:text-5xl font-bold text-[#dad1c7] mb-4 text-balance"
+            className="text-3xl lg:text-5xl font-bold text-[#dad1c7] mb-4 text-balance"
             style={{ fontFamily: "var(--font-campora)" }}
           >
             Por que escolher <span className="text-primary">MNAKAHODO?</span>
           </h2>
           <p
-            className="text-lg text-[#dad1c7] max-w-2xl text-balance leading-relaxed"
+            className="text-base lg:text-lg text-[#dad1c7] max-w-2xl text-balance leading-relaxed"
             style={{ fontFamily: "var(--font-montserrat)" }}
           >
             Diferenciais que fazem a diferença no seu <strong>aprendizado e resultados</strong>
           </p>
         </motion.div>
 
-        {/* Grid de diferenciais */}
         <div className="grid md:grid-cols-2 gap-4 lg:gap-10 mt-4 lg:mt-0">
           {differentials.map((diff, index) => {
             const Icon = diff.icon
@@ -77,7 +76,7 @@ export default function Differentials() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0.3 }}
                 transition={{ delay: 0.2 * index, duration: 0.8, ease: "easeOut" }}
-                className="flex gap-6 p-6 rounded-xl bg-primary  transition-colors "
+                className="flex gap-6 p-4 lg:p-6 rounded-2xl bg-primary  transition-colors "
               >
                 {/* Ícone */}
                 {/* <div className="flex-shrink-0">
@@ -85,7 +84,6 @@ export default function Differentials() {
                     <Icon className="text-[#040C8C]" size={24} />
                   </div>
                 </div> */}
-                {/* Texto */}
                 <div>
                   <h3
                     className="text-lg font-bold text-[#dad1c7] mb-2"
@@ -101,7 +99,7 @@ export default function Differentials() {
                     {diff.description}
                   </p>
                 </div>
-                      <div className="flex-shrink-0">
+                      <div className="lg:flex-shrink-0 hidden">
                   <div className="flex items-center justify-center h-12 w-12 rounded-lg  transition-shadow group-hover:shadow-md">
                     <Icon className="text-[#dad1c7]" size={30} />
                   </div>

@@ -33,7 +33,7 @@ const stats = [
 
 export default function Stats() {
   return (
-    <section className="relative lg:py-24 py-4 px-6 sm:px-8 bg-[#dad1c7] overflow-hidden">
+    <section className="relative lg:py-24 py-6 px-6 sm:px-8 bg-[#dad1c7] overflow-hidden">
       {/* Marca d’água sutil */}
       {/* <div className="absolute left-32 top-24">
         <Image src={"/images/logos/logo_icon_blue.png"} alt="Logo" width={140} height={140} />
@@ -58,14 +58,14 @@ export default function Stats() {
           </div>
 
           <h2
-            className="text-4xl md:text-5xl font-bold text-[#111143] mb-4 leading-tight text-center lg:text-center text-balance"
+            className="text-3xl lg:text-5xl font-bold text-[#111143] mb-4 leading-tight text-center lg:text-center text-balance"
             style={{ fontFamily: "var(--font-campora)" }}
           >
             Resultados que <span className="text-primary font-bold">falam por si.</span>
           </h2>
 
           <p
-            className="text-lg text-[#111143] max-w-2xl mx-auto text-center lg:text-center leading-relaxed"
+            className="text-base lg:text-lg text-[#111143] max-w-2xl mx-auto text-center lg:text-center leading-relaxed"
             style={{ fontFamily: "var(--font-montserrat)" }}
           >
             Uma trajetória marcada por <span className="font-bold">impacto, relevância e transformação real.</span>
@@ -82,13 +82,13 @@ export default function Stats() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0.3 }}
                 transition={{ delay: 0.2 * index, duration: 0.8, ease: "easeOut" }}
-                className="flex flex-col items-center text-center p-8 rounded-2xl bg-[#111143]   transition-all"
+                className="flex flex-col items-center text-center p-4 lg:p-8 rounded-2xl bg-[#111143]   transition-all"
               >
                 <div className="flex items-center justify-center h-14 w-14 rounded-lg bg-[#040C8C]/10 mb-5">
                   <Icon className="text-[#dad1c7]" size={44} />
                 </div>
                 <h3
-                  className="text-3xl md:text-4xl font-extrabold text-primary mb-2"
+                  className="text-5xl lg:text-4xl font-extrabold text-primary mb-2"
                   style={{ fontFamily: "var(--font-campora)" }}
                 >
                   {stat.number}

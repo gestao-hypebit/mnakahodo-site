@@ -6,7 +6,7 @@ import { motion } from "framer-motion"
 
 export default function Academic() {
   return (
-    <section className="pt-4 pb-4 lg:pt-32 lg:pb-20 px-4 sm:px-6 lg:px-8 bg-[#111143]">
+    <section className="pt-6 pb-6 lg:pt-32 lg:pb-20 px-4 sm:px-6 lg:px-8 bg-[#111143]">
       <div className="max-w-7xl mx-auto">
         <div className="grid md:grid-cols-7 gap-16 items-center">
           <motion.div
@@ -43,7 +43,7 @@ export default function Academic() {
               whileInView={{ opacity: 1 }}
               viewport={{ once: true, amount: 0.3 }}
               transition={{ delay: 0.4, duration: 0.8, ease: "easeOut" }}
-              className="text-lg text-[#dad1c7] mb-8 leading-relaxed space-y-3 list-disc ml-5"
+              className="text-base lg:text-lg text-[#dad1c7] mb-8 text-start  leading-relaxed space-y-3 list-disc ml-5"
               style={{ fontFamily: "var(--font-montserrat)" }}
             >
               <li className=" gap-2 font-bold">
@@ -76,7 +76,7 @@ export default function Academic() {
               whileHover={{ scale: 1.05 }}
               className=""
             >
-              <button className="border  border-primary text-[#dad1c7] text-lg cursor-pointer px-8 py-3 rounded-full font-bold transition-all flex items-center justify-center gap-2 ">
+              <button className="border  border-primary text-[#dad1c7] text-base lg:text-lg cursor-pointer px-8 py-3 rounded-full font-bold transition-all flex items-center justify-center gap-2 ">
                Conheça minha trajetória completa
                      <div className="rounded-full p-[0.1rem] border border-[#dad1c7]">
                   <ArrowRight className="text-primary" size={20} />

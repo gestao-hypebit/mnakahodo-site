@@ -37,7 +37,7 @@ const services = [
 
 export default function Services() {
   return (
-    <section className="lg:py-24 py-4 px-4 sm:px-6 lg:px-8 bg-[#dad1c7] relative">
+    <section className="lg:py-24 py-6 px-4 lg:px-8 bg-[#dad1c7] relative">
  
 
       <div className="px-0 lg:px-12 mx-auto relative z-10">
@@ -58,14 +58,14 @@ export default function Services() {
             </span>
           </div>
           <h2
-            className="text-4xl md:text-5xl font-bold text-[#111143] mb-4"
+            className="text-3xl lg:text-5xl font-bold text-[#111143] mb-4"
             style={{ fontFamily: "var(--font-campora)" }}
           >
             Soluções personalizadas em{" "}
             <span className="text-primary">Economia e Finanças</span>
           </h2>
           <p
-            className="text-xl text-[#111143] leading-relaxed  text-center  max-w-4xl"
+            className="text-base lg:text-lg text-[#111143] leading-relaxed  text-center  max-w-4xl"
             style={{ fontFamily: "var(--font-urbanist)" }}
           >
             Consultoria, palestras e programas de educação financeira
@@ -83,12 +83,12 @@ export default function Services() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0.3 }}
                 transition={{ delay: index * 0.2, duration: 0.8, ease: "easeOut" }}
-                className="group p-5 lg:p-8 rounded-4xl border border-[#E5E7EB] bg-[#111143] hover:shadow-xl hover:scale-[1.02] transition-all duration-300"
+                className="group p-5 lg:p-8 rounded-2xl border border-[#E5E7EB] bg-[#111143] hover:shadow-xl hover:scale-[1.02] transition-all duration-300"
               >
               <div className="flex lg:gap-x-4">
                   <div>
                       <h3
-                  className="text-3xl font-bold text-primary mb-3"
+                  className="text-3xl lg:text-3xl font-bold text-primary mb-3"
                   style={{ fontFamily: "var(--font-campora)" }}
                 >
                   {service.title}
@@ -99,7 +99,7 @@ export default function Services() {
                   </div>
               </div>
                 <p
-                  className="text-[#dad1c7] text-lg mb-4 leading-relaxed"
+                  className="text-[#dad1c7] text-base lg:text-lg mb-4 leading-relaxed"
                   style={{ fontFamily: "var(--font-montserrat)" }}
                 >
                   {service.description}
@@ -108,7 +108,7 @@ export default function Services() {
                   {service.features.map((feature, i) => (
                     <li
                       key={i}
-                      className="text-lg text-[#dad1c7] flex items-center gap-2 font-bold"
+                      className="text-base lg:text-lg text-[#dad1c7] flex items-center gap-2 font-bold"
                       style={{ fontFamily: "var(--font-montserrat)" }}
                     >
                       <span className="w-1.5 h-1.5 bg-[#dad1c7] rounded-full" />
@@ -124,7 +124,7 @@ export default function Services() {
               whileHover={{ scale: 1.05 }}
               className="flex justify-center mt-6 lg:mt-20"
             >
-              <button className="border  border-[#111143] text-[#111143] text-lg cursor-pointer px-8 py-3 rounded-full font-bold transition-all flex items-center justify-center gap-2 ">
+              <button className="border  border-[#111143] text-[#111143] text-base lg:text-lg cursor-pointer px-8 py-3 rounded-full font-bold transition-all flex items-center justify-center gap-2 ">
                 Entre em contato 
                      <div className="rounded-full p-[0.1rem] border border-[#111143]">
                   <ArrowRight className="text-primary" size={20} />

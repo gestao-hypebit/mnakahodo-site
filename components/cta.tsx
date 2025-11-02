@@ -7,7 +7,6 @@ export default function CTA() {
   return (
     <section className="py-6 lg:py-20 px-4  lg:px-8 bg-[#dad1c7]">
       <div className="lg:max-w-4xl mx-auto text-center">
-        {/* Título */}
         <motion.h2
           className="text-3xl lg:text-5xl font-bold text-primary mb-6 text-balance"
           style={{ fontFamily: "var(--font-campora)" }}
@@ -19,10 +18,9 @@ export default function CTA() {
           Pronto para transformar sua empresa?
         </motion.h2>
 
-        {/* Parágrafo */}
         <motion.p
           style={{ fontFamily: "var(--font-montserrat)" }}
-          className="text-lg text-[#111143] mb-8 leading-relaxed text-balance"
+          className="text-base lg:text-lg text-[#111143] mb-8 leading-relaxed text-balance"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.3 }}
@@ -31,7 +29,6 @@ export default function CTA() {
           Entre em contato conosco para solicitar uma palestra, workshop ou consultoria especializada.
         </motion.p>
 
-        {/* Botões */}
         <motion.div
           className="flex flex-col sm:flex-row gap-4 justify-center mb-12"
           initial={{ opacity: 0, y: 20 }}
@@ -43,7 +40,7 @@ export default function CTA() {
               whileHover={{ scale: 1.05 }}
               className="flex flex-col sm:flex-row gap-4"
             >
-              <button className="bg-[#111143] text-lg font-bold text-[#dad1c7] cursor-pointer px-8 py-3 rounded-full  transition-all flex items-center justify-center gap-2 ">
+              <button className="bg-[#111143] text-base lg:text-lg font-bold text-[#dad1c7] cursor-pointer px-8 py-3 rounded-full  transition-all flex items-center justify-center gap-2 ">
                Me chame para palestrar
                      <div className="rounded-full p-[0.1rem] border border-[#dad1c7]">
                   <ArrowRight className="text-primary" size={20} />

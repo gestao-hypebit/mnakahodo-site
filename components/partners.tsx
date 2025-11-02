@@ -16,7 +16,7 @@ const partners = [
 
 export default function Partners() {
   return (
-    <section className="py-4 lg:py-20 px-4 sm:px-6 lg:px-8 bg-[#dad1c7]">
+    <section className="py-6 lg:py-20 px-4  lg:px-8 bg-[#dad1c7]">
       <div className="max-w-7xl mx-auto text-center">
         {/* Header */}
         <motion.div
@@ -35,13 +35,13 @@ export default function Partners() {
             </span>
           </div>
           <h2
-            className="text-4xl md:text-5xl font-bold text-[#111143] mb-4 text-balance"
+            className="text-3xl lg:text-5xl font-bold text-[#111143] mb-4 text-balance"
             style={{ fontFamily: "var(--font-campora)" }}
           >
-            Clientes e <span className="text-primary">Parceiros.</span>
+            Clientes e <span className="text-primary">Parceiros</span>
           </h2>
           <p
-            className="text-lg text-[#111143] max-w-2xl mx-auto text-balance leading-relaxed"
+            className="text-base lg:text-lg text-[#111143] max-w-2xl mx-auto text-balance leading-relaxed"
             style={{ fontFamily: "var(--font-montserrat)" }}
           >
             Empresas, universidades e instituições que <strong>confiaram em nosso trabalho.</strong>

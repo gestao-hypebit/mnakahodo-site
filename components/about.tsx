@@ -54,14 +54,14 @@ export default function About() {
             </div>
 
             <h1
-              className="text-5xl md:text-6xl font-bold text-[#111143] mb-6 leading-tight text-center lg:text-start text-balance"
+              className="text-3xl lg:text-5xl font-bold text-[#111143] mb-3 lg:mb-6 leading-tight text-center lg:text-start text-balance"
               style={{ fontFamily: "var(--font-campora)" }}
             >
               Mauricio Nakahodo
             </h1>
 
             <p
-              className="text-lg text-[#111143] mb-8 leading-relaxed text-center lg:text-justify"
+              className="text-base lg:text-lg text-[#111143] mb-8 leading-relaxed text-center lg:text-justify"
               style={{ fontFamily: "var(--font-montserrat)" }}
             >
               Economista com{" "}
@@ -78,7 +78,7 @@ export default function About() {
               whileHover={{ scale: 1.05 }}
               className="flex flex-col sm:flex-row gap-4"
             >
-              <button className="border  border-[#111143] text-lg font-bold text-[#111143] cursor-pointer px-8 py-3 rounded-full  transition-all flex items-center justify-center gap-2 ">
+              <button className="border  border-[#111143] text-base lg:text-lg font-bold text-[#111143] cursor-pointer px-8 py-3 rounded-full  transition-all flex items-center justify-center gap-2 ">
                 Saiba mais 
                      <div className="rounded-full p-[0.1rem] border border-[#111143]">
                   <ArrowRight className="text-primary" size={20} />
