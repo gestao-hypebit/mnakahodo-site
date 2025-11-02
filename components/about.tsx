@@ -6,7 +6,7 @@ import { motion } from "framer-motion"
 
 export default function About() {
   return (
-    <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-44 bg-[#dad1c7] relative overflow-hidden">
+    <section className="lg:pt-32 lg:pb-20 pt-4 pb-4 px-4 sm:px-6 lg:px-44 bg-[#dad1c7] relative overflow-hidden">
       {/* Ícone decorativo no canto */}
       {/* <div className="absolute right-24 top-16 ">
         <Image
@@ -20,13 +20,12 @@ export default function About() {
       <div className="max-w-7xl mx-auto relative z-10">
         <div className="grid md:grid-cols-2 gap-20 items-center">
           
-          {/* Imagem com overlay leve */}
           <motion.div
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 1, ease: "easeOut" }}
-            className=""
+            className="hidden lg:block"
           >
             <Image
               src="/images/img_about.png"
@@ -38,12 +37,12 @@ export default function About() {
             />
           </motion.div>
 
-          {/* Conteúdo textual */}
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
+            className=" flex flex-col items-center lg:block"
           >
             <div className="inline-block mb-6 px-4 py-2 bg-[#111143] rounded-full">
               <span
@@ -55,14 +54,14 @@ export default function About() {
             </div>
 
             <h1
-              className="text-5xl md:text-6xl font-bold text-[#111143] mb-6 leading-tight text-balance"
+              className="text-5xl md:text-6xl font-bold text-[#111143] mb-6 leading-tight text-center lg:text-start text-balance"
               style={{ fontFamily: "var(--font-campora)" }}
             >
               Mauricio Nakahodo
             </h1>
 
             <p
-              className="text-lg text-[#111143] mb-8 leading-relaxed text-justify"
+              className="text-lg text-[#111143] mb-8 leading-relaxed text-center lg:text-justify"
               style={{ fontFamily: "var(--font-montserrat)" }}
             >
               Economista com{" "}
@@ -74,7 +73,7 @@ export default function About() {
               educação financeira.</span>
             </p>
 
-           <div className="flex justify-between items-center">
+           <div className="flex flex-col lg:flex-row justify-between items-center">
            <motion.div
               whileHover={{ scale: 1.05 }}
               className="flex flex-col sm:flex-row gap-4"

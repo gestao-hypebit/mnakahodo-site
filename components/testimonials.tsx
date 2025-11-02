@@ -29,11 +29,11 @@ const testimonials = [
 
 export default function Testimonials() {
   return (
-    <section className="py-20 px-4 sm:px-6 lg:px-8 bg-[#111143]">
+    <section className="lg:py-20 py-4 px-4 sm:px-6 lg:px-8 bg-[#111143]">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <motion.div
-          className="mb-16 text-center"
+          className="lg:mb-16 mb-6 text-center"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.3 }}
@@ -61,7 +61,6 @@ export default function Testimonials() {
           </p>
         </motion.div>
 
-        {/* Cards */}
         <div className="grid md:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => (
             <motion.div

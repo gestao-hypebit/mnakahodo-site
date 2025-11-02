@@ -6,17 +6,16 @@ import { motion } from "framer-motion"
 
 export default function Hero() {
   return (
-    <section className="pt-32 px-4 sm:px-6 lg:px-8 bg-[#111143] min-h-screen flex ">
+    <section className="pt-32 px-4 sm:px-6 lg:px-8 bg-[#111143] min-h-screen flex">
       <div className="max-w-7xl mx-auto w-full">
         <div className="grid md:grid-cols-2 gap-12 items-center h-full">
           
-          {/* Coluna de texto */}
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
-            className="flex flex-col justify-center h-full"
+            className="flex flex-col justify-center items-center lg:items-start h-full"
           >
             <div className="inline-block mb-6 px-4 py-2 rounded-full border border-primary w-fit">
               <span
@@ -32,7 +31,7 @@ export default function Hero() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.3 }}
               transition={{ delay: 0.2, duration: 0.8, ease: "easeOut" }}
-              className="text-5xl font-bold text-[#dad1c8] mb-6 leading-tight text-balance"
+              className="text-5xl font-bold text-[#dad1c8] mb-6 leading-tight text-center lg:text-start text-balance"
               style={{ fontFamily: "var(--font-campora)" }}
             >
               Transforme <span>decisões financeiras</span> em{" "}
@@ -44,7 +43,7 @@ export default function Hero() {
               whileInView={{ opacity: 1 }}
               viewport={{ once: true, amount: 0.3 }}
               transition={{ delay: 0.4, duration: 0.8, ease: "easeOut" }}
-              className="text-lg text-[#dad1c8] mb-8 leading-relaxed text-balance"
+              className="text-lg text-[#dad1c8] mb-8 leading-relaxed text-center lg:text-start text-balance"
               style={{ fontFamily: "var(--font-montserrat)" }}
             >
               Palestras, workshops e consultoria especializada em{" "}
@@ -87,7 +86,7 @@ export default function Hero() {
               width={400}
               height={500}
               alt="Foto de perfil do economista"
-              className="w-[500px] h-[600px] object-cover"
+              className="w-[400px] h-[450px] lg:w-[500px] lg:h-[600px] object-cover"
               priority
             />
           </motion.div>

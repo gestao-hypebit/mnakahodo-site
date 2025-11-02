@@ -6,18 +6,16 @@ import { motion } from "framer-motion"
 
 export default function Academic() {
   return (
-    <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 bg-[#111143]">
+    <section className="pt-4 pb-4 lg:pt-32 lg:pb-20 px-4 sm:px-6 lg:px-8 bg-[#111143]">
       <div className="max-w-7xl mx-auto">
         <div className="grid md:grid-cols-7 gap-16 items-center">
-          {/* Coluna de texto */}
           <motion.div
-            className="col-span-4"
+            className="col-span-4 text-center lg:text-start"
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
-            {/* Badge */}
             <div className="inline-block mb-6 px-4 py-2 bg-[#dad1c7] rounded-full">
               <span
                 style={{ fontFamily: "var(--font-urbanist)" }}
@@ -33,7 +31,7 @@ export default function Academic() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.3 }}
               transition={{ delay: 0.2, duration: 0.8, ease: "easeOut" }}
-              className="text-5xl md:text-5xl font-bold text-[#dad1c7] mb-6 leading-tight text-balance"
+              className="text-3xl lg:text-5xl font-bold text-[#dad1c7] mb-6 leading-tight text-balance"
               style={{ fontFamily: "var(--font-campora)" }}
             >
               Sólida formação em <span className="text-primary">Economia</span> com experiência internacional e professores renomados.
@@ -88,9 +86,8 @@ export default function Academic() {
             </motion.div>
           </motion.div>
 
-          {/* Coluna da imagem */}
           <motion.div
-            className="relative  rounded-2xl overflow-hidden  col-span-3"
+            className="relative  rounded-2xl overflow-hidden  col-span-3 hidden lg:block"
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, amount: 0.3 }}

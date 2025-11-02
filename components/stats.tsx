@@ -33,20 +33,20 @@ const stats = [
 
 export default function Stats() {
   return (
-    <section className="relative py-24 px-6 sm:px-8 bg-[#dad1c7] overflow-hidden">
+    <section className="relative lg:py-24 py-4 px-6 sm:px-8 bg-[#dad1c7] overflow-hidden">
       {/* Marca d’água sutil */}
       {/* <div className="absolute left-32 top-24">
         <Image src={"/images/logos/logo_icon_blue.png"} alt="Logo" width={140} height={140} />
       </div> */}
 
-      <div className="max-w-7xl mx-auto relative z-10 text-center">
+      <div className="max-w-7xl mx-auto relative z-10  text-center lg:text-center">
         {/* Título e subtítulo */}
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="mb-16"
+          className="mb-6 lg:mb-16"
         >
           <div className="inline-block mb-6 px-4 py-2 bg-[#111143] rounded-full">
             <span
@@ -58,22 +58,21 @@ export default function Stats() {
           </div>
 
           <h2
-            className="text-4xl md:text-5xl font-bold text-[#111143] mb-4 leading-tight text-balance"
+            className="text-4xl md:text-5xl font-bold text-[#111143] mb-4 leading-tight text-center lg:text-center text-balance"
             style={{ fontFamily: "var(--font-campora)" }}
           >
             Resultados que <span className="text-primary font-bold">falam por si.</span>
           </h2>
 
           <p
-            className="text-lg text-[#111143] max-w-2xl mx-auto leading-relaxed"
+            className="text-lg text-[#111143] max-w-2xl mx-auto text-center lg:text-center leading-relaxed"
             style={{ fontFamily: "var(--font-montserrat)" }}
           >
             Uma trajetória marcada por <span className="font-bold">impacto, relevância e transformação real.</span>
           </p>
         </motion.div>
 
-        {/* Cards de estatísticas */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-8">
           {stats.map((stat, index) => {
             const Icon = stat.icon
             return (

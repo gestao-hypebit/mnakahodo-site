@@ -34,15 +34,15 @@ const differentials = [
 
 export default function Differentials() {
   return (
-    <section className="py-20 px-4 sm:px-6 lg:px-8 bg-[#111143]">
-      <div className="max-w-7xl mx-auto">
+    <section className="py-4 lg:py-20 px-4 sm:px-6 lg:px-8 bg-[#111143]">
+      <div className="max-w-7xl mx-auto lg:text-start text-center">
         {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="mb-16"
+          className="lg:mb-16"
         >
           <div className="inline-block mb-6 px-4 py-2 bg-primary rounded-full">
             <span
@@ -67,7 +67,7 @@ export default function Differentials() {
         </motion.div>
 
         {/* Grid de diferenciais */}
-        <div className="grid md:grid-cols-2 gap-10">
+        <div className="grid md:grid-cols-2 gap-4 lg:gap-10 mt-4 lg:mt-0">
           {differentials.map((diff, index) => {
             const Icon = diff.icon
             return (

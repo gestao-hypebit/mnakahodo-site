@@ -5,11 +5,11 @@ import { motion } from "framer-motion"
 
 export default function CTA() {
   return (
-    <section className="py-20 px-4 sm:px-6 lg:px-8 bg-[#dad1c7]">
-      <div className="max-w-4xl mx-auto text-center">
+    <section className="py-6 lg:py-20 px-4  lg:px-8 bg-[#dad1c7]">
+      <div className="lg:max-w-4xl mx-auto text-center">
         {/* Título */}
         <motion.h2
-          className="text-4xl md:text-5xl font-bold text-primary mb-6 text-balance"
+          className="text-3xl lg:text-5xl font-bold text-primary mb-6 text-balance"
           style={{ fontFamily: "var(--font-campora)" }}
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -60,20 +60,20 @@ export default function CTA() {
 
         {/* Contato */}
         <motion.div
-          className="grid sm:grid-cols-2 gap-8 pt-8 border-t border-[#111143]"
+          className="grid sm:grid-cols-2 gap-8 pt-8 border-t border-[#111143] "
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true, amount: 0.3 }}
           transition={{ delay: 0.6, duration: 0.8, ease: "easeOut" }}
         >
-          <div className="flex items-center justify-center gap-3">
+          <div className="flex items-center lg:justify-center gap-3">
             <Mail className="text-primary" size={32} />
             <div className="text-left">
               <p className="text-sm text-[#111143]">Email</p>
               <p className="text-[#111143] font-bold">mauricio.nakahodo@gmail.com</p>
             </div>
           </div>
-          <div className="flex items-center justify-center gap-3">
+          <div className="flex items-center lg:justify-center gap-3">
             <Phone className="text-primary" size={32} />
             <div className="text-left">
               <p className="text-sm text-[#111143]">Telefone</p>

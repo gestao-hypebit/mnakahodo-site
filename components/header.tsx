@@ -18,17 +18,26 @@ export default function Header() {
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
 
-  const navItems = [{ label: "Início", href: "/sobre" }]
+  const navItems = [{ label: "Início", href: "/sobre" }, { label: "Serviços", href: "/servicos" }]
 
   return (
     <header className="fixed top-0 w-full z-50 bg-[#111143] transition-all duration-300">
-      <nav className="max-w-7xl mx-auto py-6 flex items-center justify-between relative">
-        <Link href="/" className="text-2xl font-bold text-[#040C8C]">
+      <nav className="max-w-7xl mx-auto px-4 lg:px-0 py-6 flex items-center justify-between relative">
+        <Link href="/" className="text-2xl font-bold text-[#040C8C] hidden lg:block">
           <Image
             src={"/images/logos/logo_full_white.png"}
             alt=""
             width={300}
             height={300}
+          />
+        </Link>
+
+         <Link href="/" className="text-2xl font-bold text-[#040C8C] block lg:hidden">
+          <Image
+            src={"/images/logos/logo_full_white.png"}
+            alt=""
+            width={200}
+            height={200}
           />
         </Link>
 
@@ -53,10 +62,9 @@ export default function Header() {
           className="md:hidden text-[#dad1c8]"
           onClick={() => setIsOpen(!isOpen)}
         >
-          {isOpen ? <X size={24} /> : <Menu size={24} />}
+          {isOpen ? <X size={32} /> : <Menu size={32} />}
         </button>
 
-        {/* Linha inferior (aparece só na primeira dobra) */}
         {isAtTop && (
           <div className="absolute bottom-0 left-0 right-0 h-px bg-[#dad1c8] transition-opacity duration-300" />
         )}

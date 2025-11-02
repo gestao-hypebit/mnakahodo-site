@@ -37,18 +37,17 @@ const services = [
 
 export default function Services() {
   return (
-    <section className="py-24 px-4 sm:px-6 lg:px-8 bg-[#dad1c7] relative">
-      {/* Marca decorativa */}
+    <section className="lg:py-24 py-4 px-4 sm:px-6 lg:px-8 bg-[#dad1c7] relative">
  
 
-      <div className="px-12 mx-auto relative z-10">
+      <div className="px-0 lg:px-12 mx-auto relative z-10">
         {/* Cabeçalho */}
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="text-center mb-16  mx-auto  flex justify-center flex-col items-center"
+          className="text-center mb-6 lg:mb-16  mx-auto  flex justify-center flex-col items-center"
         >
           <div className="inline-block mb-5 px-4 py-2 bg-[#111143] rounded-full">
             <span
@@ -74,8 +73,7 @@ export default function Services() {
           </p>
         </motion.div>
 
-        {/* Cards de serviços */}
-        <div className="grid md:grid-cols-2 gap-10">
+        <div className="grid md:grid-cols-2 gap-4 lg:gap-10">
           {services.map((service, index) => {
             const Icon = service.icon
             return (
@@ -85,12 +83,9 @@ export default function Services() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0.3 }}
                 transition={{ delay: index * 0.2, duration: 0.8, ease: "easeOut" }}
-                className="group p-8 rounded-4xl border border-[#E5E7EB] bg-[#111143] hover:shadow-xl hover:scale-[1.02] transition-all duration-300"
+                className="group p-5 lg:p-8 rounded-4xl border border-[#E5E7EB] bg-[#111143] hover:shadow-xl hover:scale-[1.02] transition-all duration-300"
               >
-                {/* <div className="mb-4 inline-block p-3 bg-[#040C8C]/10 rounded-xl group-hover:bg-[#040C8C]/20 transition-colors">
-                  <Icon className="text-[#040C8C]" size={26} />
-                </div> */}
-              <div className="flex   gap-x-4">
+              <div className="flex lg:gap-x-4">
                   <div>
                       <h3
                   className="text-3xl font-bold text-primary mb-3"
@@ -127,7 +122,7 @@ export default function Services() {
         </div>
      <motion.div
               whileHover={{ scale: 1.05 }}
-              className="flex justify-center mt-20"
+              className="flex justify-center mt-6 lg:mt-20"
             >
               <button className="border  border-[#111143] text-[#111143] text-lg cursor-pointer px-8 py-3 rounded-full font-bold transition-all flex items-center justify-center gap-2 ">
                 Entre em contato 
