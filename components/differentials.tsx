@@ -37,11 +37,8 @@ export default function Differentials() {
     <section className="py-6 lg:py-20 px-4 sm:px-6 lg:px-8 bg-[#111143]">
       <div className="max-w-7xl mx-auto lg:text-start text-center">
         {/* Header */}
-        <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.3 }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
+        <div
+          
           className="lg:mb-16"
         >
           <div className="inline-block mb-6 px-4 py-2 bg-primary rounded-full">
@@ -64,18 +61,15 @@ export default function Differentials() {
           >
             Diferenciais que fazem a diferença no seu <strong>aprendizado e resultados</strong>
           </p>
-        </motion.div>
+        </div>
 
         <div className="grid md:grid-cols-2 gap-4 lg:gap-10 mt-4 lg:mt-0">
           {differentials.map((diff, index) => {
             const Icon = diff.icon
             return (
-              <motion.div
+              <div
                 key={index}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, amount: 0.3 }}
-                transition={{ delay: 0.2 * index, duration: 0.8, ease: "easeOut" }}
+            
                 className="flex gap-6 p-4 lg:p-6 rounded-2xl bg-primary  transition-colors "
               >
                 {/* Ícone */}
@@ -104,7 +98,7 @@ export default function Differentials() {
                     <Icon className="text-[#dad1c7]" size={30} />
                   </div>
                 </div>
-              </motion.div>
+              </div>
             )
           })}
         </div>

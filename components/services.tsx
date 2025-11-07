@@ -41,12 +41,8 @@ export default function Services() {
  
 
       <div className="px-0 lg:px-12 mx-auto relative z-10">
-        {/* Cabeçalho */}
-        <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.3 }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
+        <div
+     
           className="text-center mb-6 lg:mb-16  mx-auto  flex justify-center flex-col items-center"
         >
           <div className="inline-block mb-5 px-4 py-2 bg-[#111143] rounded-full">
@@ -71,18 +67,14 @@ export default function Services() {
             Consultoria, palestras e programas de educação financeira
             desenvolvidos <span className="font-bold">para transformar conhecimento econômico em resultados reais.</span>
           </p>
-        </motion.div>
+        </div>
 
         <div className="grid md:grid-cols-2 gap-4 lg:gap-10">
           {services.map((service, index) => {
             const Icon = service.icon
             return (
-              <motion.div
+              <div
                 key={index}
-                initial={{ opacity: 0, y: 50 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, amount: 0.3 }}
-                transition={{ delay: index * 0.2, duration: 0.8, ease: "easeOut" }}
                 className="group p-5 lg:p-8 rounded-2xl border border-[#E5E7EB] bg-[#111143] hover:shadow-xl hover:scale-[1.02] transition-all duration-300"
               >
               <div className="flex lg:gap-x-4">
@@ -116,12 +108,11 @@ export default function Services() {
                     </li>
                   ))}
                 </ul>
-              </motion.div>
+              </div>
             )
           })}
         </div>
-     <motion.div
-              whileHover={{ scale: 1.05 }}
+     <div
               className="flex justify-center mt-6 lg:mt-20"
             >
               <button className="border  border-[#111143] text-[#111143] text-base lg:text-lg cursor-pointer px-8 py-3 rounded-full font-bold transition-all flex items-center justify-center gap-2 ">
@@ -130,7 +121,7 @@ export default function Services() {
                   <ArrowRight className="text-primary" size={20} />
                 </div>
               </button>
-            </motion.div>
+            </div>
         {/* Botão CTA */}
         {/* <div className="flex justify-center mt-20">
           <motion.button

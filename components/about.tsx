@@ -20,11 +20,8 @@ export default function About() {
       <div className="max-w-7xl mx-auto relative z-10">
         <div className="grid md:grid-cols-2 gap-20 items-center">
           
-          <motion.div
-            initial={{ opacity: 0, x: 50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true, amount: 0.3 }}
-            transition={{ duration: 1, ease: "easeOut" }}
+          <div
+           
             className="hidden lg:block"
           >
             <Image
@@ -35,13 +32,10 @@ export default function About() {
               className="w-full h-full object-cover object-top"
               priority
             />
-          </motion.div>
+          </div>
 
-          <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.3 }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
+          <div
+            
             className=" flex flex-col items-center lg:block"
           >
             <div className="inline-block mb-6 px-4 py-2 bg-[#111143] rounded-full">
@@ -74,8 +68,7 @@ export default function About() {
             </p>
 
            <div className="flex flex-col lg:flex-row justify-between items-center">
-           <motion.div
-              whileHover={{ scale: 1.05 }}
+           <div
               className="flex flex-col sm:flex-row gap-4"
             >
               <button className="border  border-[#111143] text-base lg:text-lg font-bold text-[#111143] cursor-pointer px-8 py-3 rounded-full  transition-all flex items-center justify-center gap-2 ">
@@ -84,7 +77,7 @@ export default function About() {
                   <ArrowRight className="text-primary" size={20} />
                 </div>
               </button>
-            </motion.div>
+            </div>
             <div>
                        <Image
               src="/images/logos/logo-icon-blue.png"
@@ -96,7 +89,7 @@ export default function About() {
             />
             </div>
            </div>
-          </motion.div>
+          </div>
 
         </div>
       </div>

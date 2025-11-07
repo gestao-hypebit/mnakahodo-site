@@ -32,12 +32,9 @@ export default function Testimonials() {
     <section className="lg:py-20 py-6 px-4 sm:px-6 lg:px-8 bg-[#111143]">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
-        <motion.div
+        <div
           className="lg:mb-16 mb-6 text-center"
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.3 }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
+         
         >
           <div className="inline-block mb-6 px-4 py-2 bg-[#dad1c7] rounded-full">
             <span
@@ -59,17 +56,14 @@ export default function Testimonials() {
           >
             Depoimentos de <strong>clientes satisfeitos</strong>
           </p>
-        </motion.div>
+        </div>
 
         <div className="grid md:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => (
-            <motion.div
+            <div
               key={index}
               className="p-8 rounded-2xl   bg-[#dad1c7] transition-all duration-300"
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.3 }}
-              transition={{ delay: 0.1 * index, duration: 0.6, ease: "easeOut" }}
+        
             >
               {/* Rating */}
               <div className="flex justify-center gap-1 mb-4">
@@ -96,7 +90,7 @@ export default function Testimonials() {
                 </p>
                 <p className="text-sm font-bold text-[#111143] text-center">{testimonial.company}</p>
               </div>
-            </motion.div>
+            </div>
           ))}
         </div>
       </div>

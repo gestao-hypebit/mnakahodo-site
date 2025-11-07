@@ -34,18 +34,12 @@ const stats = [
 export default function Stats() {
   return (
     <section className="relative lg:py-24 py-6 px-6 sm:px-8 bg-[#dad1c7] overflow-hidden">
-      {/* Marca d’água sutil */}
-      {/* <div className="absolute left-32 top-24">
-        <Image src={"/images/logos/logo_icon_blue.png"} alt="Logo" width={140} height={140} />
-      </div> */}
+  
 
       <div className="max-w-7xl mx-auto relative z-10  text-center lg:text-center">
         {/* Título e subtítulo */}
-        <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.3 }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
+        <div
+        
           className="mb-6 lg:mb-16"
         >
           <div className="inline-block mb-6 px-4 py-2 bg-[#111143] rounded-full">
@@ -70,18 +64,15 @@ export default function Stats() {
           >
             Uma trajetória marcada por <span className="font-bold">impacto, relevância e transformação real.</span>
           </p>
-        </motion.div>
+        </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-8">
           {stats.map((stat, index) => {
             const Icon = stat.icon
             return (
-              <motion.div
+              <div
                 key={index}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, amount: 0.3 }}
-                transition={{ delay: 0.2 * index, duration: 0.8, ease: "easeOut" }}
+              
                 className="flex flex-col items-center text-center p-4 lg:p-8 rounded-2xl bg-[#111143]   transition-all"
               >
                 <div className="flex items-center justify-center h-14 w-14 rounded-lg bg-[#040C8C]/10 mb-5">
@@ -105,7 +96,7 @@ export default function Stats() {
                 >
                   {stat.description}
                 </p>
-              </motion.div>
+              </div>
             )
           })}
         </div>

@@ -7,37 +7,28 @@ export default function CTA() {
   return (
     <section className="py-6 lg:py-20 px-4  lg:px-8 bg-[#dad1c7]">
       <div className="lg:max-w-4xl mx-auto text-center">
-        <motion.h2
+        <h2
           className="text-3xl lg:text-5xl font-bold text-primary mb-6 text-balance"
           style={{ fontFamily: "var(--font-campora)" }}
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.3 }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
+ 
         >
           Pronto para transformar sua empresa?
-        </motion.h2>
+        </h2>
 
-        <motion.p
+        <p
           style={{ fontFamily: "var(--font-montserrat)" }}
           className="text-base lg:text-lg text-[#111143] mb-8 leading-relaxed text-balance"
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.3 }}
-          transition={{ delay: 0.2, duration: 0.8, ease: "easeOut" }}
+ 
+      
         >
           Entre em contato conosco para solicitar uma palestra, workshop ou consultoria especializada.
-        </motion.p>
+        </p>
 
-        <motion.div
+        <div
           className="flex flex-col sm:flex-row gap-4 justify-center mb-12"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.3 }}
-          transition={{ delay: 0.4, duration: 0.8, ease: "easeOut" }}
+          
         >
-         <motion.div
-              whileHover={{ scale: 1.05 }}
+         <div
               className="flex flex-col sm:flex-row gap-4"
             >
               <button className="bg-[#111143] text-base lg:text-lg font-bold text-[#dad1c7] cursor-pointer px-8 py-3 rounded-full  transition-all flex items-center justify-center gap-2 ">
@@ -46,22 +37,18 @@ export default function CTA() {
                   <ArrowRight className="text-primary" size={20} />
                 </div>
               </button>
-            </motion.div>
-          <motion.button
-            whileHover={{ scale: 1.05 }}
+            </div>
+          <button
             className="border-2 border-[#111143] cursor-pointer text-[#111143] px-8 py-3 rounded-full font-medium  transition-colors"
           >
             Solicitar Consultoria
-          </motion.button>
-        </motion.div>
+          </button>
+        </div>
 
         {/* Contato */}
-        <motion.div
+        <div
           className="grid sm:grid-cols-2 gap-8 pt-8 border-t border-[#111143] "
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true, amount: 0.3 }}
-          transition={{ delay: 0.6, duration: 0.8, ease: "easeOut" }}
+         
         >
           <div className="flex items-center lg:justify-center gap-3">
             <Mail className="text-primary" size={32} />
@@ -77,7 +64,7 @@ export default function CTA() {
               <p className="text-[#111143] font-bold">(11) 99902-4090</p>
             </div>
           </div>
-        </motion.div>
+        </div>
       </div>
     </section>
   )

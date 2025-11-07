@@ -86,14 +86,14 @@ export default function Footer() {
 
         <div className="border-t border-background/20 pt-8 flex flex-col sm:flex-row justify-between items-center text-sm text-background/60">
           <p>&copy; 2025 MNAKAHODO. Todos os direitos reservados.</p>
-          <div className="flex gap-6 mt-4 sm:mt-0">
+          {/* <div className="flex gap-6 mt-4 sm:mt-0">
             <Link href="/privacidade" className="hover:text-background transition-colors">
               Política de Privacidade
             </Link>
             <Link href="/termos" className="hover:text-background transition-colors">
               Termos de Uso
             </Link>
-          </div>
+          </div> */}
         </div>
       </div>
     </footer>
