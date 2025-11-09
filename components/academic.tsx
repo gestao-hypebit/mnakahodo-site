@@ -3,6 +3,7 @@
 import { ArrowRight } from "lucide-react"
 import Image from "next/image"
 import { motion } from "framer-motion"
+import Link from "next/link"
 
 export default function Academic() {
   return (
@@ -62,12 +63,14 @@ export default function Academic() {
                  <div
               className=""
             >
+        <Link href={"/sobre"}>
               <button className="border  border-primary text-[#dad1c7] text-base lg:text-lg cursor-pointer px-8 py-3 rounded-full font-bold transition-all flex items-center justify-center gap-2 ">
                Conheça minha trajetória completa
                      <div className="rounded-full p-[0.1rem] border border-[#dad1c7]">
                   <ArrowRight className="text-primary" size={20} />
                 </div>
               </button>
+        </Link>
             </div>
             </div>
           </div>

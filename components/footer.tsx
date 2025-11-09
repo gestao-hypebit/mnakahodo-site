@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <footer className="bg-foreground text-background py-6 lg:py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
-        <div className="grid md:grid-cols-4 gap-8 mb-12">
+        <div className="grid md:grid-cols-3 gap-8 mb-12">
           <div>
             <h3 className="text-xl font-bold mb-4">MNAKAHODO</h3>
             <p className="text-background/70 text-sm leading-relaxed">
@@ -14,11 +14,16 @@ export default function Footer() {
           </div>
 
           <div>
-            <h4 className="font-bold mb-4">Navegação</h4>
+            <h1 className="font-bold mb-4">Navegação</h1>
             <ul className="space-y-2 text-sm">
+                      <li>
+                <Link href="/" className="text-background/70 hover:text-background transition-colors">
+                  Home
+                </Link>
+              </li>
               <li>
                 <Link href="/sobre" className="text-background/70 hover:text-background transition-colors">
-                  Sobre
+                  Sobre Mim
                 </Link>
               </li>
               <li>
@@ -26,7 +31,7 @@ export default function Footer() {
                   Serviços
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link href="/portfolio" className="text-background/70 hover:text-background transition-colors">
                   Portfólio
                 </Link>
@@ -35,11 +40,11 @@ export default function Footer() {
                 <Link href="/midia" className="text-background/70 hover:text-background transition-colors">
                   Mídia
                 </Link>
-              </li>
+              </li> */}
             </ul>
           </div>
 
-          <div>
+          {/* <div>
             <h4 className="font-bold mb-4">Recursos</h4>
             <ul className="space-y-2 text-sm">
               <li>
@@ -63,14 +68,16 @@ export default function Footer() {
                 </Link>
               </li>
             </ul>
-          </div>
+          </div> */}
 
           <div>
-            <h4 className="font-bold mb-4">Conecte-se</h4>
+            <h1 className="font-bold mb-4">Conecte-se</h1>
             <div className="flex gap-4">
-              <a href="#" className="text-background/70 hover:text-background transition-colors">
+            <Link href={"https://br.linkedin.com/in/mauricio-nakahodo"} target="_blank">
+              <button  className="text-background/70 hover:text-background transition-colors cursor-pointer">
                 <Linkedin size={20} />
-              </a>
+              </button>
+            </Link>
               <a href="#" className="text-background/70 hover:text-background transition-colors">
                 <Instagram size={20} />
               </a>

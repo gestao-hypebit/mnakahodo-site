@@ -2,6 +2,7 @@
 
 import { ArrowRight, Mail, Phone } from "lucide-react"
 import { motion } from "framer-motion"
+import Link from "next/link"
 
 export default function CTA() {
   return (
@@ -31,18 +32,22 @@ export default function CTA() {
          <div
               className="flex flex-col sm:flex-row gap-4"
             >
+              <Link href={"https://wa.me/5511999024090"} target="_blank">
               <button className="bg-[#111143] text-base lg:text-lg font-bold text-[#dad1c7] cursor-pointer px-8 py-3 rounded-full  transition-all flex items-center justify-center gap-2 ">
                Me chame para palestrar
                      <div className="rounded-full p-[0.1rem] border border-[#dad1c7]">
                   <ArrowRight className="text-primary" size={20} />
                 </div>
               </button>
+             </Link>
             </div>
-          <button
+<Link href={"https://wa.me/5511999024090"} target="_blank">
+             <button
             className="border-2 border-[#111143] cursor-pointer text-[#111143] px-8 py-3 rounded-full font-medium  transition-colors"
           >
             Solicitar Consultoria
           </button>
+    </Link>
         </div>
 
         {/* Contato */}

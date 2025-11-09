@@ -24,6 +24,7 @@ export default function Header() {
     { label: "Início", href: "/" },
     { label: "Sobre Mim", href: "/sobre" },
     { label: "Serviços", href: "/servicos" },
+    // { label: "Parcerias", href: "/parcerias" },
   ];
 
   return (
@@ -55,9 +56,11 @@ export default function Header() {
               </Link>
             );
           })}
+        <Link href={"https://wa.me/5511999024090"} target="_blank">
           <button className="bg-[#dad1c8] text-[#111143] text-lg cursor-pointer px-8 py-3 rounded-full font-bold hover:opacity-90 transition-all flex items-center justify-center gap-2 shadow-md">
             Entre em contato
           </button>
+         </Link>
         </div>
 
         {/* Mobile Menu Button */}

@@ -1,19 +1,16 @@
-"use client"
+"use client";
 
-import { ArrowRight } from "lucide-react"
-import Image from "next/image"
-import { motion } from "framer-motion"
+import { ArrowRight } from "lucide-react";
+import Image from "next/image";
+import { motion } from "framer-motion";
+import Link from "next/link";
 
 export default function Hero() {
   return (
     <section className="pt-32 px-4 sm:px-6 lg:px-8 bg-[#111143] min-h-screen flex">
       <div className="max-w-7xl mx-auto w-full">
         <div className="grid md:grid-cols-2 gap-12 items-center h-full">
-          
-          <div
-           
-            className="flex flex-col justify-center items-center lg:items-start h-full"
-          >
+          <div className="flex flex-col justify-center items-center lg:items-start h-full">
             <div className="inline-block mb-6 px-4 py-2 rounded-full border border-primary w-fit">
               <span
                 style={{ fontFamily: "var(--font-urbanist)" }}
@@ -24,7 +21,6 @@ export default function Hero() {
             </div>
 
             <h1
-        
               className="text-3xl lg:text-5xl font-bold text-[#dad1c8] mb-6 leading-tight text-center lg:text-start text-balance"
               style={{ fontFamily: "var(--font-campora)" }}
             >
@@ -36,36 +32,33 @@ export default function Hero() {
               className="text-base lg:text-lg text-[#dad1c8] mb-8 leading-relaxed text-center lg:text-start text-balance"
               style={{ fontFamily: "var(--font-montserrat)" }}
             >
-              Palestras, workshops e consultoria especializada em{" "}
-              economia empresarial e{" "}
-              educação financeira pessoal. <br />
+              Palestras, workshops e consultoria especializada em economia
+              empresarial e educação financeira pessoal. <br />
               <span className="font-bold">
-                +20 anos de experiência traduzindo conceitos complexos em aprendizados práticos e aplicáveis.
+                +20 anos de experiência traduzindo conceitos complexos em
+                aprendizados práticos e aplicáveis.
               </span>
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <button
-                className="bg-[#dad1c8] text-[#111143] text-base lg:text-lg cursor-pointer px-8 py-3 rounded-full font-bold hover:opacity-90 transition-all flex items-center justify-center gap-2 shadow-md"
-              >
-                Agende uma conversa 
+             <Link href={"https://wa.me/5511999024090"} target="_blank">
+              <button className="bg-[#dad1c8] text-[#111143] text-base lg:text-lg cursor-pointer px-8 py-3 rounded-full font-bold hover:opacity-90 transition-all flex items-center justify-center gap-2 shadow-md">
+                Agende uma conversa
                 <div className="rounded-full p-[0.1rem] border border-[#111143]">
                   <ArrowRight className="text-primary" size={20} />
                 </div>
               </button>
-              <button
-                className="border cursor-pointer text-base lg:text-lg border-[#dad1c8] text-[#dad1c8] px-8 py-3 rounded-full font-bold hover:bg-[#111143]/5 transition-colors"
-              >
-                Conhecer Serviços
-              </button>
+             </Link>
+              <Link href={"/servicos"}>
+                <button className="border cursor-pointer text-base lg:text-lg border-[#dad1c8] text-[#dad1c8] px-8 py-3 rounded-full font-bold hover:bg-[#111143]/5 transition-colors">
+                  Conhecer Serviços
+                </button>
+              </Link>
             </div>
           </div>
 
           {/* Imagem */}
-          <div
-          
-            className="flex items-end justify-center h-full"
-          >
+          <div className="flex items-end justify-center h-full">
             <Image
               src="/images/img_hero.png"
               width={400}
@@ -75,9 +68,8 @@ export default function Hero() {
               priority
             />
           </div>
-
         </div>
       </div>
     </section>
-  )
+  );
 }

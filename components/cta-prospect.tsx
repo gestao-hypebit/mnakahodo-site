@@ -2,6 +2,7 @@
 
 import { ArrowRight } from "lucide-react"
 import { motion } from "framer-motion"
+import Link from "next/link"
 
 export default function CtaProspect() {
   return (
@@ -50,6 +51,7 @@ export default function CtaProspect() {
        
           className="flex justify-center"
         >
+          <Link href={"https://wa.me/5511999024090"} target="_blank">
               <button
                 className="bg-[#dad1c8] text-[#111143]  text-base lg:text-lg cursor-pointer px-8 py-3 rounded-full font-bold hover:opacity-90 transition-all flex items-center justify-center gap-2 shadow-md"
               >
@@ -58,6 +60,7 @@ export default function CtaProspect() {
                   <ArrowRight className="text-primary" size={20} />
                 </div>
               </button>
+           </Link>
         </div>
 
       </div>
