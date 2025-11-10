@@ -23,14 +23,14 @@ export default function About() {
           
           <div
            
-            className="hidden lg:block"
+            className="hidden lg:block "
           >
             <Image
-              src="/images/img_about.png"
-              width={500}
-              height={500}
+              src="/images/img_sobreatt.jpg"
+              width={400}
+              height={400}
               alt="Foto de Mauricio Nakahodo"
-              className="w-full h-full object-cover object-top"
+              className="w-full h-full object-cover object-top rounded-4xl"
               priority
             />
           </div>

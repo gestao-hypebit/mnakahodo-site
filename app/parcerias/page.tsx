@@ -85,11 +85,7 @@ export default function ParceriasPage() {
     <div className="grid gap-12 sm:grid-cols-2 lg:grid-cols-3">
       {/* Parceiro 1 */}
       <div className="bg-white/50 rounded-2xl p-6 shadow-sm hover:shadow-md transition">
-        <img
-          src="/marcelo-carvalho.png"
-          alt="Marcelo Carvalho"
-          className="w-24 h-24 mx-auto rounded-full object-cover mb-4"
-        />
+  
         <h3
           className="text-xl font-semibold text-[#111143] mb-2"
           style={{ fontFamily: "var(--font-campora)" }}
