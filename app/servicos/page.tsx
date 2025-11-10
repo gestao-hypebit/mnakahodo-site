@@ -205,7 +205,7 @@ export default function ServicosPage() {
     <section className="relative lg:py-24 py-12 px-6 sm:px-8 bg-[#111143] overflow-hidden">
   <div className="max-w-7xl mx-auto relative z-10 text-center">
     {/* Título principal */}
-    <div className="inline-block mb-20 px-10 py-2 rounded-full border border-[#e86a0c]">
+    <div className="inline-block mb-10 lg:mb-20 px-10 py-2 rounded-full border border-[#e86a0c]">
       <span
         style={{ fontFamily: "var(--font-urbanist)" }}
         className="text-lg text-[#dad1c7] tracking-wide"

@@ -40,17 +40,17 @@ export default function Hero() {
               </span>
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4">
-             <Link href={"https://wa.me/5511999024090"} target="_blank">
-              <button className="bg-[#dad1c8] text-[#111143] text-base lg:text-lg cursor-pointer px-8 py-3 rounded-full font-bold hover:opacity-90 transition-all flex items-center justify-center gap-2 shadow-md">
+            <div className="flex flex-col sm:flex-row gap-4 ">
+             <Link className="lg:block flex justify-center" href={"https://wa.me/5511999024090"} target="_blank">
+              <button className="bg-[#dad1c8] w-full lg:w-auto text-[#111143] text-base lg:text-lg cursor-pointer px-8 py-3 rounded-full font-bold hover:opacity-90 transition-all flex items-center justify-center gap-2 shadow-md">
                 Agende uma conversa
                 <div className="rounded-full p-[0.1rem] border border-[#111143]">
                   <ArrowRight className="text-primary" size={20} />
                 </div>
               </button>
              </Link>
-              <Link href={"/servicos"}>
-                <button className="border cursor-pointer text-base lg:text-lg border-[#dad1c8] text-[#dad1c8] px-8 py-3 rounded-full font-bold hover:bg-[#111143]/5 transition-colors">
+              <Link className="lg:block flex justify-center lg:w-auto w-full" href={"/servicos"}>
+                <button className="w-full lg:w-auto border cursor-pointer text-base lg:text-lg border-[#dad1c8] text-[#dad1c8] px-8 py-3 rounded-full font-bold hover:bg-[#111143]/5 transition-colors">
                   Conhecer Serviços
                 </button>
               </Link>
