@@ -24,7 +24,8 @@ export default function Header() {
     { label: "Início", href: "/" },
     { label: "Sobre Mim", href: "/sobre" },
     { label: "Serviços", href: "/servicos" },
-    // { label: "Parcerias", href: "/parcerias" },
+    { label: "Na Mídia", href: "/namidia" },
+    { label: "Parcerias", href: "/parcerias" },
   ];
 
   return (

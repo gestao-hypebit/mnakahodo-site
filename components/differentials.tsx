@@ -41,10 +41,10 @@ export default function Differentials() {
           
           className="lg:mb-16"
         >
-          <div className="inline-block mb-6 px-4 py-2 bg-primary rounded-full">
+          <div className="inline-block mb-6 px-4 py-2 bg-[#dad1c7] rounded-full">
             <span
               style={{ fontFamily: "var(--font-urbanist)" }}
-              className="text-lg text-[#dad1c7] font-medium"
+              className="text-lg text-[#111143] font-medium"
             >
               Nossos diferenciais
             </span>
@@ -70,7 +70,7 @@ export default function Differentials() {
               <div
                 key={index}
             
-                className="flex gap-6 p-4 lg:p-6 rounded-2xl bg-primary  transition-colors "
+                className="flex gap-6 p-4 lg:p-6 rounded-2xl bg-[#dad1c7]  transition-colors "
               >
                 {/* Ícone */}
                 {/* <div className="flex-shrink-0">
@@ -80,14 +80,14 @@ export default function Differentials() {
                 </div> */}
                 <div>
                   <h3
-                    className="text-lg font-bold text-[#dad1c7] mb-2"
+                    className="text-lg font-bold text-[#111143] mb-2"
                     style={{ fontFamily: "var(--font-campora)" }}
                   >
                     {diff.title}{" "}
-                    <span className="text-[#111143]">{diff.highlight}</span>
+                    <span className="text-primary font-bold">{diff.highlight}</span>
                   </h3>
                   <p
-                    className="text-[#dad1c7] leading-relaxed"
+                    className="text-[#111143] leading-relaxed"
                     style={{ fontFamily: "var(--font-montserrat)" }}
                   >
                     {diff.description}
@@ -95,7 +95,7 @@ export default function Differentials() {
                 </div>
                       <div className="lg:flex-shrink-0 hidden">
                   <div className="flex items-center justify-center h-12 w-12 rounded-lg  transition-shadow group-hover:shadow-md">
-                    <Icon className="text-[#dad1c7]" size={30} />
+                    <Icon className="text-[#111143]" size={30} />
                   </div>
                 </div>
               </div>
