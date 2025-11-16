@@ -96,9 +96,11 @@ export default function Header() {
                 </Link>
               );
             })}
+                 <Link href={"https://wa.me/5511999024090"} target="_blank">
             <button className="bg-[#E86A0C] text-white px-6 py-2 rounded-full text-sm font-medium hover:bg-[#E86A0C]/90 transition-colors w-full">
               Me chame para palestrar
             </button>
+           </Link>
           </div>
         </div>
       )}
