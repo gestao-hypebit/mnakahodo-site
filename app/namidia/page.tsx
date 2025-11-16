@@ -83,7 +83,7 @@ export default function NaMidia() {
 
       <section
         id="featured"
-        className="bg-[#dad1c7] text-[#111143] py-20 px-6 sm:px-8"
+        className="bg-[#dad1c7] text-[#111143] py-10 lg:py-20 px-6 sm:px-8"
       >
         <div className="max-w-6xl mx-auto">
           <div className="flex justify-center mb-12 ">
