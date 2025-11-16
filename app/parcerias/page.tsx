@@ -132,7 +132,7 @@ export default function ParceriasPage() {
           </div>
         </div>
       </section>
-      <section className="bg-[#dad1c8] py-20 px-6 sm:px-8">
+      <section className="bg-[#dad1c8] py-10 lg:py-20 px-6 sm:px-8">
         <div className="max-w-6xl mx-auto text-center">
           {/* Título */}
           <h2
@@ -142,7 +142,7 @@ export default function ParceriasPage() {
             Parcerias e Colaborações.
           </h2>
           {/* Linha decorativa */}
-          <div className="w-full h-[1px] bg-[#e86a0c] mx-auto mb-16"></div>
+          <div className="w-full h-[1px] bg-[#e86a0c] mx-auto mb-16 hidden lg:block"></div>
 
           {/* Cards */}
           <div className="grid md:grid-cols-3 gap-6">
@@ -208,7 +208,7 @@ export default function ParceriasPage() {
         </div>
       </section>
 
-      <section className="bg-[#111143] py-20 px-6 sm:px-8">
+      <section className="bg-[#111143] py-10 lg:py-20 px-6 sm:px-8">
         <div className="max-w-6xl mx-auto text-center">
           {/* Selo superior */}
           <div className="inline-block mb-10 px-6 py-2 border border-[#e86a0c] rounded-full">
