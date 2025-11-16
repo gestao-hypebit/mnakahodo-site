@@ -346,7 +346,7 @@ export default function SobrePage() {
     {/* Layout Mobile */}
     <div className="flex flex-col items-center gap-12 lg:hidden relative">
       {/* Linha vertical principal */}
-      <div className="absolute top-0 bottom-0 left-1/2 transform -translate-x-1/2 w-[2px] bg-[#e86a0c]" />
+      {/* <div className="absolute top-0 bottom-0 left-1/2 transform -translate-x-1/2 w-[2px] bg-[#e86a0c]" /> */}
 
       {[1, 2, 3].map((num, index) => (
         <div key={num} className="relative flex flex-col items-center">

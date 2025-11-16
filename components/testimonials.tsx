@@ -5,24 +5,24 @@ import { motion } from "framer-motion"
 
 const testimonials = [
   {
-    name: "João Silva",
+    name: "Lucas Tai",
     role: "Diretor Executivo",
     company: "Empresa XYZ",
-    text: "A palestra foi excelente! Conseguiu transformar conceitos complexos em aprendizados práticos que toda a equipe compreendeu.",
+    text: "Trabalhei alguns anos com o Mauricio e posso dizer que ele é um profissional muito competente, que sabe aliar um excelente conteúdo com uma forma muito clara de comunicação.",
     rating: 5,
   },
   {
-    name: "Maria Santos",
+    name: "Vivian Padilha",
     role: "Gerente de RH",
     company: "Banco ABC",
-    text: "O workshop de educação financeira foi um sucesso. Os colaboradores saíram com ferramentas reais para melhorar sua saúde financeira.",
+    text: "Durante nossa colaboração, pude observar como Maurício torna temas complexos acessíveis com explicações claras e didáticas. Ele possui profundo entendimento técnico da economia, destacado por suas projeções e análises perspicazes.",
     rating: 5,
   },
   {
-    name: "Carlos Oliveira",
+    name: "Eduardo Hiroshi",
     role: "CFO",
     company: "Tech Solutions",
-    text: "Profissional altamente qualificado. A consultoria agregou muito valor ao nosso planejamento estratégico.",
+    text: "Profissional extremamente competente, comprometido e com um vasto conhecimento teórico e prático na área da ciência ecônomica, e - somando-se a tudo isso - um profissional humano acima de tudo.",
     rating: 5,
   },
 ]
@@ -86,9 +86,9 @@ export default function Testimonials() {
                   className=" text-[#111143] text-center"
                   style={{ fontFamily: "var(--font-campora)" }}
                 >
-                  <span className="font-bold">{testimonial.name}</span> {testimonial.role}
+                  <span className="font-bold">{testimonial.name}</span> 
                 </p>
-                <p className="text-sm font-bold text-[#111143] text-center">{testimonial.company}</p>
+                {/* <p className="text-sm font-bold text-[#111143] text-center">{testimonial.company}</p> */}
               </div>
             </div>
           ))}

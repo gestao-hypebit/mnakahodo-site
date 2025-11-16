@@ -11,6 +11,8 @@ import Partners from "@/components/partners"
 import CtaProspect from "@/components/cta-prospect"
 import Academic from "@/components/academic"
 import Experience from "@/components/experience"
+import LecturesHighlight from "@/components/lectures"
+import CoursesHighlight from "@/components/courses"
 
 export default function Home() {
   return (
@@ -19,8 +21,11 @@ export default function Home() {
       {/* <Scrolling/> */}
       <About/>
       <CtaProspect/>
+      <CoursesHighlight/>
 
       <Services />
+      {/* <LecturesHighlight/> */}
+         {/* <CtaProspect/> */}
       <Academic/>
       <Stats/>
       {/* <Experience/> */}

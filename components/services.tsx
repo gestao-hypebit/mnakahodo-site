@@ -51,7 +51,7 @@ export default function Services() {
               style={{ fontFamily: "var(--font-urbanist)" }}
               className="text-lg text-[#dad1c7] font-medium"
             >
-              Nossos serviçossss
+              Nossos serviços
             </span>
           </div>
           <h2

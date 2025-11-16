@@ -1,5 +1,6 @@
 "use client";
 
+import VideoGallery from "@/components/video-gallery";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import NextLink from "next/link";
@@ -55,7 +56,8 @@ export default function NaMidia() {
           <div className="mt-6 mb-10">
             <iframe
               className="w-full h-[400px]"
-              src="https://www.youtube.com/embed/MC70uysyYr0?si=5tiHcr7xOGkh1G6u"
+              src="https://www.youtube.com/embed/8JHOHuu3_eI?si=5hSd-mNxYOBnUEUs"
+              // src="https://www.youtube.com/embed/MC70uysyYr0?si=5tiHcr7xOGkh1G6u"
               title="YouTube video player"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             ></iframe>
@@ -130,8 +132,11 @@ export default function NaMidia() {
             ))}
           </div>
         </div>
+  
       </section>
 
+      <VideoGallery/>
+{/* 
   <section className="py-20 px-6 sm:px-8 bg-[#111143]">
   <div className="max-w-7xl mx-auto text-center">
     <h2
@@ -142,7 +147,6 @@ export default function NaMidia() {
     </h2>
 
     <div className="grid grid-cols-4 gap-4 auto-rows-[200px] md:auto-rows-[300px]">
-      {/* Imagem 1 - alta (row-span-2) */}
       <div className="row-span-2 bg-[#dad1c8] rounded-xl overflow-hidden">
         <Image
           src="/images/aparicoes/aparicao2.jpg"
@@ -153,7 +157,6 @@ export default function NaMidia() {
         />
       </div>
 
-      {/* Imagem 2 */}
       <div className="bg-[#dad1c8] rounded-xl overflow-hidden">
         <Image
           src="/images/aparicoes/aparicao5.jpg"
@@ -164,7 +167,6 @@ export default function NaMidia() {
         />
       </div>
 
-      {/* Imagem 3 - larga (col-span-2) */}
       <div className="bg-[#dad1c8] rounded-xl overflow-hidden col-span-2">
         <Image
           src="/images/aparicoes/aparicao1.jpg"
@@ -175,7 +177,6 @@ export default function NaMidia() {
         />
       </div>
 
-      {/* Blocos vazios para completar layout */}
          <div className="bg-[#dad1c8] rounded-xl overflow-hidden">
         <Image
           src="/images/aparicoes/aparicao3.jpg"
@@ -196,16 +197,16 @@ export default function NaMidia() {
       </div>
             <div className="bg-[#dad1c8] rounded-xl overflow-hidden">
         <Image
-          src="/images/aparicoes/aparicao4.jpg"
+          src="/images/aparicoes/aparicao6.jpg"
           width={300}
           height={300}
           alt=""
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover bg-left object-left"
         />
       </div>
     </div>
   </div>
-</section>
+</section> */}
 
 
       {/* <section className="bg-[#dad1c8] py-24 px-6 min-h-[40vh] flex items-center">

@@ -26,6 +26,7 @@ export default function Header() {
     { label: "Serviços", href: "/servicos" },
     { label: "Na Mídia", href: "/namidia" },
     { label: "Parcerias", href: "/parcerias" },
+    { label: "Palestras", href: "/palestras" },
   ];
 
   return (

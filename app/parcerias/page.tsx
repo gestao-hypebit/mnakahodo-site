@@ -233,7 +233,7 @@ export default function ParceriasPage() {
             {/* Card 1 */}
             <div className="bg-[#dad1c8] text-[#111143] rounded-[2rem] p-10 flex flex-col items-center text-center">
               <h3
-                className="text-2xl font-semibold mb-4 text-[#e86a0c]"
+                className="text-2xl font-semibold mb-4 text-[#111143]"
                 style={{ fontFamily: "var(--font-campora)" }}
               >
                 Psicologia financeira
@@ -250,7 +250,7 @@ export default function ParceriasPage() {
             {/* Card 2 */}
             <div className="bg-[#dad1c8] text-[#111143] rounded-[2rem] p-10 flex flex-col items-center text-center">
               <h3
-                className="text-2xl font-semibold mb-4 text-[#e86a0c]"
+                className="text-2xl font-semibold mb-4 text-[#111143]"
                 style={{ fontFamily: "var(--font-campora)" }}
               >
                 Contabilidade e gestão tributária
@@ -267,7 +267,7 @@ export default function ParceriasPage() {
             {/* Card 3 */}
             <div className="bg-[#dad1c8] text-[#111143] rounded-[2rem] p-10 flex flex-col items-center text-center">
               <h3
-                className="text-2xl font-semibold mb-4 text-[#e86a0c]"
+                className="text-2xl font-semibold mb-4 text-[#111143]"
                 style={{ fontFamily: "var(--font-campora)" }}
               >
                 Consultoria jurídica e sucessória

@@ -4,6 +4,7 @@ import { Cambo as Campora, Urbanist, Montserrat } from "next/font/google"
 import "./globals.css"
 import Header from "@/components/header"
 import Footer from "@/components/footer"
+import { ToasterProvider } from "./providers/ToasterProvider"
 
 const campora = Campora({
   weight: "400",
@@ -39,6 +40,7 @@ export default function RootLayout({
     <html lang="pt-BR">
       <body className={`${campora.variable} ${urbanist.variable} ${montserrat.variable} bg-background text-foreground`}>
         <Header />
+        <ToasterProvider/>
         {children}
         <Footer />
       </body>

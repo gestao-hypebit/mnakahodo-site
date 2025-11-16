@@ -4,6 +4,12 @@
 
 @custom-variant dark (&:is(.dark *));
 
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+
 :root {
   /* Paleta de cores completa com todos os tons de azul */
   --color-dark: #09080d;
