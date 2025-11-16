@@ -83,7 +83,7 @@ export default function ParceriasPage() {
                   style={{ fontFamily: "var(--font-urbanist)" }}
                   className="text-lg text-[#dad1c8]"
                 >
-                  Parcerias e Colaborações
+                  Veja algumas de nossas parcerias
                 </span>
               </div>
 
