@@ -135,8 +135,8 @@ export default function NaMidia() {
   
       </section>
 
-      <VideoGallery/>
-{/* 
+      {/* <VideoGallery/> */}
+
   <section className="py-20 px-6 sm:px-8 bg-[#111143]">
   <div className="max-w-7xl mx-auto text-center">
     <h2
@@ -206,7 +206,7 @@ export default function NaMidia() {
       </div>
     </div>
   </div>
-</section> */}
+</section>
 
 
       {/* <section className="bg-[#dad1c8] py-24 px-6 min-h-[40vh] flex items-center">

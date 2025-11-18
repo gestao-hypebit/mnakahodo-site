@@ -163,7 +163,8 @@ export default function ParceriasPage() {
                 e brasileiro.
               </p>
               <a
-                href="#"
+                href="https://marcelocarvalhomacroeconomist.com/"
+                target="_blank"
                 className="text-[#e86a0c] font-semibold flex items-center gap-2"
                 style={{ fontFamily: "var(--font-montserrat)" }}
               >

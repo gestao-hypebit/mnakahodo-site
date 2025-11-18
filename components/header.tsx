@@ -27,6 +27,7 @@ export default function Header() {
     { label: "Na Mídia", href: "/namidia" },
     { label: "Parcerias", href: "/parcerias" },
     { label: "Palestras", href: "/palestras" },
+    { label: "Blog", href: "https://medium.com/@mauricio.nakahodo" },
   ];
 
   return (

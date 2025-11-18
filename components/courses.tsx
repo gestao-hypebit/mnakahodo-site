@@ -24,8 +24,7 @@ export default function CoursesHighlight() {
           className="text-base lg:text-lg max-w-2xl mx-auto mb-10"
           style={{ fontFamily: "var(--font-montserrat)" }}
         >
-          Aprofunde seus conhecimentos com cursos diretos ao ponto,
-          pensados para quem busca clareza, autonomia e resultados reais.
+         Aprofunde seus conhecimentos com cursos pensados para quem busca clareza, autonomia e resultados que você sente no dia-a-dia.
         </p>
 
         {/* Card do curso */}

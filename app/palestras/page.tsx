@@ -268,6 +268,99 @@ inspiradora.
   </div>
 </section>
 
+<section className="bg-[#111143] py-16 px-6 sm:px-8">
+  <div className="max-w-7xl mx-auto">
+
+    <div className="text-center mb-12">
+      <span className="inline-block px-6 py-2 border border-[#e86a0c] rounded-full text-[#dad1c8] text-lg"
+        style={{ fontFamily: "var(--font-urbanist)" }}>
+        Educação Financeira
+      </span>
+    </div>
+
+    <h2
+      className="text-3xl md:text-4xl font-bold text-[#dad1c8] text-center mb-8 leading-snug"
+      style={{ fontFamily: "var(--font-campora)" }}
+    >
+      Palestras práticas para transformar a relação das pessoas com o dinheiro
+    </h2>
+
+    <ul className="grid md:grid-cols-2 gap-8 mt-10">
+      <li className="bg-[#dad1c8] text-[#111143] rounded-3xl p-8">
+        <h3 className="text-2xl font-bold mb-4" style={{ fontFamily: "var(--font-campora)" }}>
+          Finanças Pessoais na Prática
+        </h3>
+        <ul className="space-y-2 text-lg" style={{ fontFamily: "var(--font-montserrat)" }}>
+          <li>• Organização das finanças</li>
+          <li>• Tipos de orçamento</li>
+          <li>• Controle de gastos consciente</li>
+        </ul>
+      </li>
+
+      <li className="bg-[#dad1c8] text-[#111143] rounded-3xl p-8">
+        <h3 className="text-2xl font-bold mb-4" style={{ fontFamily: "var(--font-campora)" }}>
+          Mentalidade e Comportamento Financeiro
+        </h3>
+        <ul className="space-y-2 text-lg" style={{ fontFamily: "var(--font-montserrat)" }}>
+          <li>• Economia comportamental</li>
+          <li>• Hábitos que impedem o progresso financeiro</li>
+          <li>• Tomada de decisão sob incerteza</li>
+        </ul>
+      </li>
+    </ul>
+
+  </div>
+</section>
+
+<section className="bg-[#dad1c7] py-16 px-6 sm:px-8">
+  <div className="max-w-7xl mx-auto">
+
+    <div className="text-center mb-12">
+      <span className="inline-block px-6 py-2 border border-[#e86a0c] rounded-full text-[#111143] text-lg"
+        style={{ fontFamily: "var(--font-urbanist)" }}>
+        Economia
+      </span>
+    </div>
+
+    
+
+    <h2
+      className="text-3xl md:text-4xl font-bold text-[#111143] text-center mb-8 leading-snug"
+      style={{ fontFamily: "var(--font-campora)" }}
+    >
+      Palestras estratégicas sobre o cenário econômico para empresas
+    </h2>
+
+    <div className="grid md:grid-cols-2 gap-8 mt-10">
+
+      <div className="bg-[#111143] text-[#dad1c8] rounded-3xl p-8">
+        <h3 className="text-2xl font-bold mb-4" style={{ fontFamily: "var(--font-campora)" }}>
+          Cenário Econômico Atual
+        </h3>
+        <ul className="space-y-3 text-lg" style={{ fontFamily: "var(--font-montserrat)" }}>
+          <li>• Brasil: juros, inflação, mercado</li>
+          <li>• América Latina</li>
+          <li>• Panorama global</li>
+        </ul>
+      </div>
+
+      <div className="bg-[#111143] text-[#dad1c8] rounded-3xl p-8">
+        <h3 className="text-2xl font-bold mb-4" style={{ fontFamily: "var(--font-campora)" }}>
+          Impacto Econômico no Setor da Empresa
+        </h3>
+        <ul className="space-y-3 text-lg" style={{ fontFamily: "var(--font-montserrat)" }}>
+          <li>• Estudos personalizados</li>
+          <li>• Indicadores relevantes</li>
+          <li>• Riscos e oportunidades</li>
+        </ul>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
 <VideoGallery/>
 
 

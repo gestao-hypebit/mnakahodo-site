@@ -7,9 +7,9 @@ import Link from "next/link";
 export default function SobrePage() {
   return (
     <main>
-      <section className="pt-32 px-4 sm:px-6 lg:px-8 bg-[#111143] min-h-screen flex flex-col lg:flex-row justify-center">
+      <section className="pt-32 px-4 sm:px-6 lg:px-8 bg-[#111143] min-h-screen flex flex-col lg:flex-row justify-center relative">
         <div className="flex flex-col  ">
-          <div className="flex justify-center mt-4 ">
+          <div className="flex justify-center mt-auto ">
             <div className=" px-6 py-2 rounded-full border border-primary w-fit">
               <span
                 style={{ fontFamily: "var(--font-urbanist)" }}
@@ -19,8 +19,8 @@ export default function SobrePage() {
               </span>
             </div>
           </div>
-          <div className="flex flex-col lg:flex-row max-w-6xl gap-x-8 ">
-            <div className="flex items-end justify-end w-full h-full  ">
+          <div className="flex flex-col lg:flex-row  gap-x-8 ">
+            <div className="   ">
               <Image
                 src="/images/img_sobre.png"
                 width={400}
@@ -31,7 +31,7 @@ export default function SobrePage() {
               />
             </div>
 
-            <div className="flex flex-col   lg:items-start h-full mt-8 lg:mt-12 ">
+            <div className="flex flex-col   lg:items-start h-full mt-8 lg:mt-6 max-w-3xl text-justify">
               <h1
                 className="text-3xl lg:text-5xl font-bold text-[#dad1c8] mb-6 leading-tight text-center lg:text-start text-balance"
                 style={{ fontFamily: "var(--font-campora)" }}
@@ -41,23 +41,37 @@ export default function SobrePage() {
               </h1>
 
               <p
-                className="text-base lg:text-lg text-[#dad1c8] mb-4 lg:mb-8 leading-relaxed text-center lg:text-start text-balance "
+                className="text-base lg:text-lg text-[#dad1c8] mb-4 lg:mb-4 leading-relaxed text-center lg:text-start text-balance max-w-5xl "
                 style={{ fontFamily: "var(--font-montserrat)" }}
               >
-                Planejador financeiro com foco em ajudar pessoas a conquistarem
+                Sou economista formado pela USP e mestre pela UFRGS e pela Paris School of Economics. Depois de mais de 20 anos no mercado financeiro, sigo atuando como economista, palestrante e educador financeiro — usando toda essa experiência para ajudar pessoas e empresas a tomarem decisões mais seguras e viverem com mais tranquilidade.
+                {/* Planejador financeiro com foco em ajudar pessoas a conquistarem
                 liberdade e segurança financeira{" "}
-                <strong>sem abrir mão da qualidade de vida.</strong>
+                <strong>sem abrir mão da qualidade de vida.</strong> */}
               </p>
               <p
-                className="text-base lg:text-lg text-[#dad1c8] mb-6 lg:mb-8 leading-relaxed text-center lg:text-start text-balance "
+                className="text-base lg:text-lg text-[#dad1c8] mb-6 lg:mb-4 leading-relaxed text-center lg:text-start text-balance max-w-5xl"
                 style={{ fontFamily: "var(--font-montserrat)" }}
               >
-                Sou formado em [área], e há [X] anos ajudo pessoas a
+                Desde 2020, dedico-me intensamente à educação financeira, apoiando indivíduos e famílias a alcançarem bem-estar, equilíbrio e liberdade para realizar seus sonhos.
+                {/* Sou formado em [área], e há [X] anos ajudo pessoas a
                 conquistarem liberdade e segurança financeira, sem abrir mão da
                 qualidade de vida. Acredito que planejar é o primeiro passo para
-                viver com tranquilidade
+                viver com tranquilidade */}
               </p>
-   <div className="flex items-end justify-end w-full h-full  ">
+              <p
+                className="text-base lg:text-lg text-[#dad1c8] mb-6 lg:mb-4 leading-relaxed text-center lg:text-start text-balance max-w-5xl"
+                style={{ fontFamily: "var(--font-montserrat)" }}
+              >
+                Levo esse propósito para empresas, universidades e eventos, conduzindo palestras e workshops que transformam conhecimento em ação e aproximam as pessoas de uma vida financeira mais consciente.
+              </p>
+              <p
+                className="text-base lg:text-lg text-[#dad1c8] mb-6 lg:mb-4 leading-relaxed text-center lg:text-start text-balance max-w-5xl"
+                style={{ fontFamily: "var(--font-montserrat)" }}
+              >
+                Acredito que planejar com clareza — na vida pessoal, familiar ou empresarial — é um dos caminhos mais poderosos para enfrentar imprevistos e conquistar metas com confiança.
+              </p>
+   <div className="flex items-center justify-center w-full h-full  ">
               <Image
                 src="/images/img_sobre.png"
                 width={400}
@@ -67,7 +81,7 @@ export default function SobrePage() {
                 priority
               />
             </div>
-              <div className="lg:flex justify-end w-full hidden pb-16">
+              <div className="lg:block lg:absolute lg:bottom-0 lg:right-24 pb-12  hidden ">
                 <Image
                   src="/images/logos/logo-icon-white.png"
                   width={150}
@@ -127,8 +141,7 @@ export default function SobrePage() {
                   Missão
                 </h3>
                 <p className="text-[#111143] text-base leading-relaxed max-w-xs mx-auto">
-                  Ajudar pessoas a entenderem, organizarem e conquistarem uma
-                  vida financeira equilibrada e consciente.
+                  Promover segurança, clareza e bem-estar financeiro, capacitando indivíduos e empresas a tomarem decisões mais conscientes e consistentes.
                 </p>
               </div>
 
@@ -158,8 +171,7 @@ export default function SobrePage() {
                   Visão
                 </h3>
                 <p className="text-[#111143] text-base leading-relaxed max-w-xs mx-auto">
-                  Ser referência em educação e planejamento financeiro
-                  humanizado no Brasil.
+                  Transformar a relação de pessoas e empresas com suas finanças, fortalecendo escolhas inteligentes e sustentáveis para enfrentar os imprevistos da economia e do cotidiano.
                 </p>
               </div>
 
@@ -188,7 +200,7 @@ export default function SobrePage() {
                   Valores
                 </h3>
                 <p className="text-[#111143] text-base leading-relaxed max-w-xs mx-auto">
-                  Transparência, ética, personalização e educação contínua.
+                  Transparência, ética, profissionalismo, respeito às necessidades individuais. 
                 </p>
               </div>
             </div>

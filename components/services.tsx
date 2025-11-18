@@ -8,31 +8,31 @@ import Link from "next/link"
 const services = [
   {
     icon: TrendingUp,
-    title: "Análise Econômica Empresarial",
+    title: "Análise Econômica no Brasil e Mundo",
     description:
-      "Estudos e projeções sobre crescimento, inflação, juros e câmbio, com foco prático em planejamento estratégico e impacto setorial.",
-    features: ["Cenários econômicos", "Impacto setorial", "Planejamento estratégico"],
+      "Estudos e projeções sobre os principais indicadores econômicos e impactos nos setores da economia para ajudar no planejamento estratégico de seus negócios.",
+    features: ["Construção de cenários econômicos", "Análise de impacto setorial", "Planejamento estratégico baseado em dados"],
   },
   {
     icon: Users,
     title: "Palestras e Workshops",
     description:
       "Programas dinâmicos de saúde financeira e educação econômica para equipes, com metodologias interativas e conteúdo sob medida.",
-    features: ["Presencial ou remoto", "Dinâmicas práticas", "Conteúdo personalizado"],
+    features: ["Modalidades: presencial ou remoto", "Dinâmicas práticas e gamificação", "Conteúdo adaptado ao nível de formação dos colaboradores"],
   },
   {
     icon: BookOpen,
     title: "Educação Financeira Pessoal",
     description:
-      "Planejamento financeiro e investimentos com base em economia comportamental e ferramentas práticas de organização.",
-    features: ["Metodologia adaptada", "Gamificação", "Simulações personalizadas"],
+      "Planejamento financeiro com base em economia/finanças comportamentais e ferramentas práticas de organização.",
+    features: ["Metodologia baseada em economia comportamental", "Gamificação aplicada à educação financeira", "Simulações práticas e personalizadas"],
   },
   {
     icon: Handshake,
     title: "Consultoria Especializada",
     description:
-      "Projetos sob demanda para empresas e profissionais, com relatórios exclusivos e acompanhamento estratégico.",
-    features: ["Sob demanda", "Consultoria 1:1", "Relatórios customizados"],
+      "Projetos/estudos sob demanda para empresas e profissionais, com relatórios exclusivos e acompanhamento estratégico.",
+    features: ["Projetos sob demanda", "Consultoria 1:1", "Relatórios e análises customizadas"],
   },
 ]
 
@@ -44,7 +44,7 @@ export default function Services() {
       <div className="px-0 lg:px-12 mx-auto relative z-10">
         <div
      
-          className="text-center mb-6 lg:mb-16  mx-auto  flex justify-center flex-col items-center"
+          className="text-center mb-6 lg:mb-12  mx-auto  flex justify-center flex-col items-center"
         >
           <div className="inline-block mb-5 px-4 py-2 bg-[#111143] rounded-full">
             <span
@@ -59,15 +59,20 @@ export default function Services() {
             style={{ fontFamily: "var(--font-campora)" }}
           >
             Soluções personalizadas em{" "}
-            <span className="text-primary">Economia e Finanças</span>
+            <span className="text-primary">Economia e Educação Financeira</span>
           </h2>
-          <p
-            className="text-base lg:text-lg text-[#111143] leading-relaxed  text-center  max-w-4xl"
-            style={{ fontFamily: "var(--font-urbanist)" }}
-          >
-            Consultoria, palestras e programas de educação financeira
-            desenvolvidos <span className="font-bold">para transformar conhecimento econômico em resultados reais.</span>
-          </p>
+      <p
+  className="text-base lg:text-lg text-[#111143] leading-relaxed text-center max-w-4xl mt-3"
+  style={{ fontFamily: "var(--font-urbanist)" }}
+>
+  Consultoria, palestras e workshops desenvolvidos para {" "}
+  <strong>alavancar seu nível de conhecimento e consciência</strong> {" "}
+  levando a decisões {" "}
+  <strong>mais seguras e estratégicas</strong>. 
+  Mais do que levar apenas informação, {" "} 
+  <strong>pensamos em sua transformação</strong>.
+</p>
+
         </div>
 
         <div className="grid md:grid-cols-2 gap-4 lg:gap-10">

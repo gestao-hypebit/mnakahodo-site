@@ -51,7 +51,7 @@ export default function Academic() {
               </li>
               <li className="gap-2 font-bold">
                 {/* <span className="w-1.5 h-1.5 mt-2 bg-[#dad1c7] rounded-full flex-shrink-0"></span> */}
-                Aulas com <strong>Esther Duflo</strong> (Nobel), <strong>Thomas Piketty</strong> e <strong>Kenneth Rogoff</strong>.
+                Aulas com <strong>Esther Duflo (Prêmio Nobel de Economia)</strong>, <strong>Thomas Piketty (autor do best-seller O Capital no Século 21)</strong>, <strong>Kenneth Rogoff (ex economista-chefe do FMI)</strong>, e <strong>François Bourguignon (ex economista-chefe do Banco Mundial)</strong>.
               </li>
             </ul>
 
