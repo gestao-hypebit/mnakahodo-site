@@ -218,22 +218,26 @@ export default function SobrePage() {
             className="text-4xl md:text-5xl font-bold text-[#dad1c8] mb-6"
             style={{ fontFamily: "var(--font-campora)" }}
           >
-            Minha jornada.
+            Minha jornada até o momento
           </h2>
 
           {/* Texto introdutório */}
-          <p
-            className="text-[#dad1c8] text-base md:text-lg leading-relaxed mx-auto mb-8 lg:mb-12"
-            style={{ fontFamily: "var(--font-montserrat)" }}
-          >
-            Minha trajetória começou quando percebi que muitas pessoas ao meu
-            redor viviam com insegurança financeira — e eu mesmo já passei por
-            isso. Decidi transformar essa realidade estudando, me especializando
-            e criando um método acessível{" "}
-            <span className="font-semibold">
-              para quem busca estabilidade e liberdade financeira.
-            </span>
-          </p>
+         <p
+  className="text-[#dad1c8] text-base md:text-lg leading-relaxed mx-auto mb-8 lg:mb-12"
+  style={{ fontFamily: "var(--font-montserrat)" }}
+>
+  Minha trajetória na economia começou quando percebi que essa ciência — 
+  <span className="font-bold">humana antes de tudo</span> — podia aproximar conhecimento e vida real. 
+  Formei-me economista em <span className="font-bold">2002</span>, ano do pentacampeonato (futebol sempre foi 
+  uma das minhas paixões), e desde então me dedico à <span className="font-bold">construção de cenários</span> e 
+  <span className="font-bold">análises econômicas</span>. Após mais de <span className="font-bold">20 anos de carreira</span>, entendi que muitas 
+  pessoas ainda viviam com <span className="font-bold">insegurança financeira</span>, mesmo em um mundo cheio de 
+  informação. Foi essa inquietação que me levou, a partir de <span className="font-bold">2020</span>, a mergulhar na 
+  <span className="font-bold">educação financeira</span> e aproveitar minha visão de economista para ajudar 
+  <span className="font-bold">famílias, empresas e estudantes</span> a construir planejamento financeiro e estratégico mais 
+  sólido e equilibrado.
+</p>
+
 
           {/* Cards */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-8 lg:gap-10">
@@ -243,13 +247,15 @@ export default function SobrePage() {
                 className="text-4xl font-bold text-[#e86a0c] mb-4"
                 style={{ fontFamily: "var(--font-campora)" }}
               >
-                2015
+                2002 e 2007
               </h3>
+              <h1  className="text-[#111143] font-bold text-xl leading-relaxed">Formação acadêmica inicial</h1>
               <p
-                className="text-[#111143] font-bold text-lg leading-relaxed"
+                className="text-[#111143] leading-relaxed text-sm"
                 style={{ fontFamily: "var(--font-montserrat)" }}
               >
-                Primeiros passos em consultoria financeira.
+                Graduação em Economia pela USP e Mestrado pela UFRGS, consolidando a
+base teórica que sustenta meu trabalho até hoje.
               </p>
             </div>
 
@@ -259,13 +265,15 @@ export default function SobrePage() {
                 className="text-4xl font-bold text-[#e86a0c] mb-4"
                 style={{ fontFamily: "var(--font-campora)" }}
               >
-                2018
+                2008 - 2011
               </h3>
+              <h1  className="text-[#111143] font-bold text-xl leading-relaxed">Vivência internacional</h1>
               <p
-                className="text-[#111143] font-bold text-lg leading-relaxed"
+                className="text-[#111143] leading-relaxed text-sm"
                 style={{ fontFamily: "var(--font-montserrat)" }}
               >
-                Certificação [X] e início da carreira independente.
+               Experiência acadêmica e profissional na Alemanha, Bélgica e França,
+ampliando repertório multicultural e visão global da economia.  
               </p>
             </div>
 
@@ -275,13 +283,18 @@ export default function SobrePage() {
                 className="text-4xl font-bold text-[#e86a0c] mb-4"
                 style={{ fontFamily: "var(--font-campora)" }}
               >
-                2022
+                2002 - 2025
               </h3>
-              <p
-                className="text-[#111143] font-bold text-lg leading-relaxed"
+              <h1  className="text-[#111143] font-bold text-xl leading-relaxed">Atuação como economista</h1>
+               <p
+                className="text-[#111143] leading-relaxed text-sm"
                 style={{ fontFamily: "var(--font-montserrat)" }}
               >
-                Criação do método [nome da metodologia].
+                Trabalhei em instituições nacionais e globais: Unibanco, B3, Datagro, ABN
+Amro, MUFG, CM Capital Markets, Bruegel (Bélgica) e Kiel Institute
+(Alemanha).
+Mais de 500 reuniões e palestras para clientes, e mais de 200 empresas
+atendidas ao longo da carreira.
               </p>
             </div>
 
@@ -291,22 +304,37 @@ export default function SobrePage() {
                 className="text-4xl font-bold text-[#e86a0c] mb-4"
                 style={{ fontFamily: "var(--font-campora)" }}
               >
-                2024
+                2020 - 2025
               </h3>
-              <p
-                className="text-[#111143] font-bold text-lg leading-relaxed"
+              <h1  className="text-[#111143] font-bold text-xl leading-relaxed">Educador financeiro</h1>
+             <p
+                className="text-[#111143] leading-relaxed text-sm"
                 style={{ fontFamily: "var(--font-montserrat)" }}
               >
-                Mais de 100 famílias atendidas.
+               Início de uma nova fase como Educador Financeiro, atuando como palestrante,
+professor e condutor de workshops para pessoas, empresas e universidades,
+levando planejamento financeiro e bem-estar econômico para o dia a dia das
+pessoas.
               </p>
+            </div>
+            <div className="bg-[#dad1c8] rounded-3xl py-10 px-8 col-span-2">
+              <h3
+                className="text-4xl font-bold text-[#e86a0c] mb-4"
+                style={{ fontFamily: "var(--font-campora)" }}
+              >
+                2025
+              </h3>
+              <h1  className="text-[#111143] font-bold text-xl leading-relaxed">Lançamento oficial de minha empresa MNakahodo Economia e Finanças</h1>
+        
             </div>
           </div>
         </div>
       </section>
 
-  <section className="bg-[#dad1c8] lg:py-20 py-10 px-6 sm:px-8 text-center">
+<section className="bg-[#dad1c8] lg:py-20 py-10 px-6 sm:px-8 text-center">
   <div className="max-w-6xl mx-auto">
-    {/* Título */}
+
+    {/* Título Geral */}
     <h2
       className="text-4xl md:text-5xl font-bold mb-12 lg:mb-20"
       style={{ fontFamily: "var(--font-campora)" }}
@@ -315,40 +343,39 @@ export default function SobrePage() {
       <span className="text-[#e86a0c]">meu processo</span>
     </h2>
 
+    {/* ============================ */}
+    {/* ====== LINHA ECONOMIA ====== */}
+    {/* ============================ */}
+    <h3
+      className="text-3xl md:text-4xl font-bold mb-12 text-[#111143]"
+      style={{ fontFamily: "var(--font-campora)" }}
+    >
+      <span className="text-[#e86a0c]">Economia</span>
+    </h3>
+
     {/* Layout Desktop */}
     <div className="relative hidden lg:flex justify-between items-start md:mx-8">
-      {/* Linha horizontal principal */}
       <div className="absolute top-[28px] left-0 right-0 h-[2px] bg-[#e86a0c]" />
 
-      {[1, 2, 3].map((num, index) => (
-        <div key={num} className="flex flex-col items-center w-1/3 px-2">
+      {[
+        "Palestra pontual sobre cenário macroeconômico",
+        "Palestra recorrente sobre impactos do cenário econômico no setor da empresa",
+        "Consultoria econômica: estudos econômicos e setoriais sob demanda"
+      ].map((text, index) => (
+        <div key={index} className="flex flex-col items-center w-1/3 px-2">
           <div className="relative">
             <div className="bg-[#111143] text-[#e86a0c] font-bold rounded-full w-14 h-14 flex items-center justify-center text-xl z-10">
-              {num}
+              {index + 1}
             </div>
             <div className="absolute left-1/2 transform -translate-x-1/2 top-14 h-16 w-[2px] bg-[#e86a0c]" />
           </div>
 
           <div className="mt-20">
-            <h3
-              className="text-[#111143] font-semibold text-lg mb-2"
-              style={{ fontFamily: "var(--font-montserrat)" }}
-            >
-              {index === 0
-                ? "Diagnóstico:"
-                : index === 1
-                ? "Plano Personalizado:"
-                : "Acompanhamento Contínuo:"}
-            </h3>
             <p
-              className="text-[#111143] text-base leading-relaxed max-w-xs mx-auto"
+              className="text-[#111143] text-base leading-relaxed max-w-xs mx-auto font-semibold"
               style={{ fontFamily: "var(--font-montserrat)" }}
             >
-              {index === 0
-                ? "Análise detalhada da situação atual."
-                : index === 1
-                ? "Metas realistas e estratégias sob medida."
-                : "Suporte e ajustes ao longo do caminho."}
+              {text}
             </p>
           </div>
         </div>
@@ -357,55 +384,94 @@ export default function SobrePage() {
 
     {/* Layout Mobile */}
     <div className="flex flex-col items-center gap-12 lg:hidden relative">
-      {/* Linha vertical principal */}
-      {/* <div className="absolute top-0 bottom-0 left-1/2 transform -translate-x-1/2 w-[2px] bg-[#e86a0c]" /> */}
-
-      {[1, 2, 3].map((num, index) => (
-        <div key={num} className="relative flex flex-col items-center">
+      {[
+        "Palestra pontual sobre cenário macroeconômico",
+        "Palestra recorrente sobre impactos do cenário econômico no setor da empresa",
+        "Consultoria econômica: estudos econômicos e setoriais sob demanda"
+      ].map((text, index) => (
+        <div key={index} className="relative flex flex-col items-center">
           <div className="bg-[#111143] text-[#e86a0c] font-bold rounded-full w-14 h-14 flex items-center justify-center text-xl z-10">
-            {num}
+            {index + 1}
           </div>
 
           <div className="mt-6">
-            <h3
-              className="text-[#111143] font-semibold text-lg mb-2"
-              style={{ fontFamily: "var(--font-montserrat)" }}
-            >
-              {index === 0
-                ? "Diagnóstico:"
-                : index === 1
-                ? "Plano Personalizado:"
-                : "Acompanhamento Contínuo:"}
-            </h3>
             <p
-              className="text-[#111143] text-base leading-relaxed max-w-[280px] mx-auto"
+              className="text-[#111143] text-base leading-relaxed max-w-[280px] mx-auto font-semibold"
               style={{ fontFamily: "var(--font-montserrat)" }}
             >
-              {index === 0
-                ? "Análise detalhada da situação atual."
-                : index === 1
-                ? "Metas realistas e estratégias sob medida."
-                : "Suporte e ajustes ao longo do caminho."}
+              {text}
             </p>
           </div>
         </div>
       ))}
     </div>
 
-    {/* Texto final */}
-    <p
-      className="mt-12 lg:mt-24 text-[#111143] text-lg md:text-xl font-semibold leading-relaxed mx-auto max-w-4xl"
-      style={{ fontFamily: "var(--font-montserrat)" }}
+    {/* ============================ */}
+    {/* === LINHA EDUCAÇÃO FIN ===== */}
+    {/* ============================ */}
+    <h3
+      className="text-3xl md:text-4xl font-bold mb-12 mt-20 text-[#111143]"
+      style={{ fontFamily: "var(--font-campora)" }}
     >
-      Utilizo uma metodologia baseada em{" "}
-      <span className="text-[#111143] font-bold">metas realistas</span>,{" "}
-      <span className="text-[#111143] font-bold">análise personalizada</span> e{" "}
-      <span className="text-[#111143] font-bold">
-        acompanhamento contínuo.
-      </span>
-    </p>
+      <span className="text-[#e86a0c]">Educação Financeira</span>
+    </h3>
+
+    {/* Desktop */}
+    <div className="relative hidden lg:flex justify-between items-start md:mx-8">
+      <div className="absolute top-[28px] left-0 right-0 h-[2px] bg-[#e86a0c]" />
+
+      {[
+        "Palestra sobre saúde financeira (para todos os colaboradores)",
+        "Workshop aprofundado para um grupo selecionado",
+        "Mentoria com encontros individuais para um grupo seleto de funcionários"
+      ].map((text, index) => (
+        <div key={index} className="flex flex-col items-center w-1/3 px-2">
+          <div className="relative">
+            <div className="bg-[#111143] text-[#e86a0c] font-bold rounded-full w-14 h-14 flex items-center justify-center text-xl z-10">
+              {index + 1}
+            </div>
+            <div className="absolute left-1/2 transform -translate-x-1/2 top-14 h-16 w-[2px] bg-[#e86a0c]" />
+          </div>
+
+          <div className="mt-20">
+            <p
+              className="text-[#111143] text-base leading-relaxed max-w-xs mx-auto font-semibold"
+              style={{ fontFamily: "var(--font-montserrat)" }}
+            >
+              {text}
+            </p>
+          </div>
+        </div>
+      ))}
+    </div>
+
+    {/* Mobile */}
+    <div className="flex flex-col items-center gap-12 lg:hidden relative">
+      {[
+        "Palestra sobre saúde financeira (para todos os colaboradores)",
+        "Workshop aprofundado para um grupo selecionado",
+        "Mentoria com encontros individuais para um grupo seleto de funcionários"
+      ].map((text, index) => (
+        <div key={index} className="relative flex flex-col items-center">
+          <div className="bg-[#111143] text-[#e86a0c] font-bold rounded-full w-14 h-14 flex items-center justify-center text-xl z-10">
+            {index + 1}
+          </div>
+
+          <div className="mt-6">
+            <p
+              className="text-[#111143] text-base leading-relaxed max-w-[280px] mx-auto font-semibold"
+              style={{ fontFamily: "var(--font-montserrat)" }}
+            >
+              {text}
+            </p>
+          </div>
+        </div>
+      ))}
+    </div>
+
   </div>
 </section>
+
 
 <section className="relative py-10 lg:py-20 px-6 sm:px-8 bg-[#111143] overflow-hidden">
   <div className="max-w-6xl mx-auto text-center">
@@ -429,32 +495,31 @@ export default function SobrePage() {
             className="text-4xl lg:text-5xl font-bold text-[#dad1c8]"
             style={{ fontFamily: "var(--font-campora)" }}
           >
-            +100
+            +200
           </h3>
           <p
-            className="text-[#e86a0c] text-lg lg:text-xl font-semibold leading-snug mt-2 text-center md:text-right"
+            className="text-[#e86a0c] text-lg lg:text-xl font-semibold leading-snug mt-2 text-center md:text-left"
             style={{ fontFamily: "var(--font-montserrat)" }}
           >
-            Famílias organizadas
-            <br />
-            financeiramente.
+            Empresas atendidas em palestras sobre economia e saúde financeira
+            {/* <br />
+            financeiramente. */}
           </p>
         </div>
 
         {/* Caixa de depoimento */}
-        <div className="bg-[#dad1c8] rounded-3xl px-6 py-8 lg:px-8 lg:py-12 max-w-sm mt-10 shadow-md">
+        <div className="bg-[#dad1c8] rounded-3xl px-6 py-8 lg:px-8 lg:py-12  mt-10 shadow-md">
           <p
             className="italic text-[#111143] text-base mb-4 leading-relaxed"
             style={{ fontFamily: "var(--font-montserrat)" }}
           >
-            “Graças ao acompanhamento, consegui quitar dívidas e começar a
-            investir.”
+            “Trabalhei alguns anos com o Mauricio e posso dizer que ele é um profissional muito competente, que sabe aliar um excelente conteúdo com uma forma muito clara de comunicação.”
           </p>
           <p
             className="text-[#111143] font-semibold text-sm"
             style={{ fontFamily: "var(--font-montserrat)" }}
           >
-            – Cliente X
+            - Lucas Tai
           </p>
         </div>
       </div>
@@ -466,15 +531,14 @@ export default function SobrePage() {
             className="text-4xl lg:text-5xl font-bold text-[#dad1c8]"
             style={{ fontFamily: "var(--font-campora)" }}
           >
-            +300
+            +500
           </h3>
           <p
             className="text-[#e86a0c] text-lg lg:text-xl font-semibold leading-snug mt-2 text-center md:text-left"
             style={{ fontFamily: "var(--font-montserrat)" }}
           >
-            Horas de consultoria
-            <br />
-            individual.
+            Profissionais e estudantes impactados positivamente com as palestras e
+cursos sobre economia e saúde financeira.
           </p>
         </div>
 
@@ -484,13 +548,13 @@ export default function SobrePage() {
             className="italic text-[#111143] text-base mb-4 leading-relaxed"
             style={{ fontFamily: "var(--font-montserrat)" }}
           >
-            “As orientações me ajudaram a estruturar melhor meus investimentos.”
+            “Profissional extremamente competente, comprometido e com um vasto conhecimento teórico e prático na área da ciência ecônomica, e - somando-se a tudo isso - um profissional humano acima de tudo.”
           </p>
           <p
             className="text-[#111143] font-semibold text-sm"
             style={{ fontFamily: "var(--font-montserrat)" }}
           >
-            – Cliente Y
+            - Eduardo Hiroshi
           </p>
         </div>
       </div>
@@ -500,13 +564,13 @@ export default function SobrePage() {
 
 
       <section className="bg-[#dad1c8] py-10 lg:py-20 px-6 sm:px-8">
-        <div className="max-w-5xl mx-auto text-center">
+        <div className="max-w-5xl mx-auto space-y-2">
           {/* Título */}
           <h2
-            className="text-4xl md:text-5xl font-bold text-[#111143] mb-8"
+            className="text-4xl md:text-5xl font-bold text-[#111143] mb-8 text-center"
             style={{ fontFamily: "var(--font-campora)" }}
           >
-            Formação e reconhecimento.
+            Formação e reconhecimento
           </h2>
 
           {/* Linha */}
@@ -517,8 +581,61 @@ export default function SobrePage() {
             className="text-[#111143] text-base md:text-lg leading-relaxed"
             style={{ fontFamily: "var(--font-montserrat)" }}
           >
-            Certificado CFP®, especialista em Planejamento Financeiro pela
-            [instituição]. Participações em [revista, evento].
+           <strong>Mestrado - Políticas Públicas e Desenvolvimento</strong> - Paris School of Economics - Paris,
+França - 2011.
+          </p>
+          <p
+            className="text-[#111143] text-base md:text-lg leading-relaxed"
+            style={{ fontFamily: "var(--font-montserrat)" }}
+          >
+          <strong>Especialização - Política Econômica Internacional</strong> - Kiel Institute for the World
+Economy - Kiel, Alemanha - 2009.
+          </p>
+          <p
+            className="text-[#111143] text-base md:text-lg leading-relaxed"
+            style={{ fontFamily: "var(--font-montserrat)" }}
+          >
+          <strong>Mestrado - Economia Aplicada</strong> - Universidade Federal do Rio Grande do Sul - 2007.
+          </p>
+          <p
+            className="text-[#111143] text-base md:text-lg leading-relaxed"
+            style={{ fontFamily: "var(--font-montserrat)" }}
+          >
+         <strong>Graduação - Economia</strong> - Universidade São Paulo - 2002.
+          </p>
+
+           <h2
+            className="text-4xl md:text-5xl font-bold text-[#111143] mb-8 mt-8 text-center"
+            style={{ fontFamily: "var(--font-campora)" }}
+          >
+            Cursos de Especialização
+          </h2>
+
+          {/* Linha */}
+          <div className="w-full border-t border-[#e86a0c] mb-8" />
+              <p
+            className="text-[#111143] text-base md:text-lg leading-relaxed"
+            style={{ fontFamily: "var(--font-montserrat)" }}
+          >
+          <strong>Imersão em Criação de Conteúdo e Inteligência Artificial</strong> - Dueto.ai - 2024
+          </p>
+          <p
+            className="text-[#111143] text-base md:text-lg leading-relaxed"
+            style={{ fontFamily: "var(--font-montserrat)" }}
+          >
+          <strong>Modelagem e Previsão Econômica usando R e Python</strong> - Análise Macro - 2024
+          </p>
+          <p
+            className="text-[#111143] text-base md:text-lg leading-relaxed"
+            style={{ fontFamily: "var(--font-montserrat)" }}
+          >
+          <strong>Macroeconometric Forecasting</strong> - FMI - 2020
+          </p>
+          <p
+            className="text-[#111143] text-base md:text-lg leading-relaxed"
+            style={{ fontFamily: "var(--font-montserrat)" }}
+          >
+         <strong>Formação de Profissionais em Mercado de câmbio e Derivativos</strong> - B3 - 2007/2008
           </p>
         </div>
       </section>
