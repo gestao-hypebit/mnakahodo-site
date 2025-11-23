@@ -83,7 +83,7 @@ export default function ParceriasPage() {
                   style={{ fontFamily: "var(--font-urbanist)" }}
                   className="text-lg text-[#dad1c8]"
                 >
-                  Veja algumas de nossas parcerias
+                  Parcerias que geram impacto
                 </span>
               </div>
 
@@ -101,9 +101,7 @@ export default function ParceriasPage() {
                 className="text-base lg:text-lg text-[#dad1c8] mb-8 leading-relaxed text-center lg:text-start text-balance"
                 style={{ fontFamily: "var(--font-montserrat)" }}
               >
-                Unimos economistas, profissionais de finanças e especialistas de
-                áreas complementares para promover educação e estratégia
-                financeira de alto impacto.
+                Trabalho em colaboração com especialistas de diferentes áreas para ampliar análises econômicas, enriquecer estratégias financeiras e entregar soluções mais completas para empresas, equipes e famílias.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4">

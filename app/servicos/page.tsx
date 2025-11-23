@@ -208,7 +208,7 @@ export default function ServicosPage() {
                           </div>
                           <div>
                             <h1 className="font-bold text-[#dad1c7] text-xl lg:text-2xl">
-                              Palestras Regulares.
+                              Workshops
                             </h1>
                           </div>
                         </li>
@@ -218,7 +218,7 @@ export default function ServicosPage() {
                           </div>
                           <div>
                             <h1 className="font-bold text-[#dad1c7]  text-xl lg:text-2xl">
-                              Consultoria Econômica.
+                              Mentoria personalizada para funcionários
                             </h1>
                           </div>
                         </li>
@@ -411,9 +411,12 @@ export default function ServicosPage() {
                           <CheckCircle size={30} className="text-[#111143]" />
                         </div>
                         <div>
-                          <h1 className="font-bold text-[#111143] text-xl lg:text-2xl">
+                          {/* <h1 className="font-bold text-[#111143] text-xl lg:text-2xl">
                             Workshops.
-                          </h1>
+                          </h1> */}
+                          <h1 className="font-bold text-[#111143] text-xl lg:text-2xl">
+                              Palestras Regulares
+                            </h1>
                         </div>
                       </li>
                       <li className="flex justify-center items-center gap-x-4">
@@ -421,11 +424,16 @@ export default function ServicosPage() {
                           <CheckCircle size={30} className="text-[#111143]" />
                         </div>
                         <div>
-                          <h1 className="font-bold text-[#111143]  text-xl lg:text-2xl">
+                          {/* <h1 className="font-bold text-[#111143]  text-xl lg:text-2xl">
                             Mentoria personalizada para funcionários.
-                          </h1>
+                          </h1> */}
+                             <h1 className="font-bold text-[#111143]  text-xl lg:text-2xl">
+                              Consultoria Econômica
+                            </h1>
                         </div>
                       </li>
+
+                    
                     </ul>
                   </div>
                 </div>
