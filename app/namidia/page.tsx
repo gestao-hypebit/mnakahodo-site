@@ -49,9 +49,7 @@ export default function NaMidia() {
             Na <span className="text-primary">mídia</span>
           </h1>
           <p className="text-lg md:text-xl max-w-2xl mx-auto text-[#dad1c7]">
-            Confira minhas participações em veículos de comunicação e
-            plataformas digitais que reforçam o compromisso com a educação
-            financeira de qualidade.
+           Confira minhas participações em veículos de comunicação e plataformas digitais em que falo sobre assuntos de economia e educação financeira.
           </p>
           <div className="mt-6 mb-10">
             <iframe

@@ -288,24 +288,29 @@ inspiradora.
     <ul className="grid md:grid-cols-2 gap-8 mt-10">
       <li className="bg-[#dad1c8] text-[#111143] rounded-3xl p-8">
         <h3 className="text-2xl font-bold mb-4" style={{ fontFamily: "var(--font-campora)" }}>
-          Finanças Pessoais na Prática
+          Finanças Pessoais na Prática - Estrutura para decisões mais seguras
         </h3>
         <ul className="space-y-2 text-lg" style={{ fontFamily: "var(--font-montserrat)" }}>
-          <li>• Organização das finanças</li>
-          <li>• Tipos de orçamento</li>
-          <li>• Controle de gastos consciente</li>
+          <li>• Estruturação do orçamento pessoal</li>
+          <li>• Gestão consciente dos gastos</li>
+          <li>• Prevenção ao endividamento e construção de reserva de emergência</li>
+          <li>• Alinhamento financeiro para metas individuais e familiares</li>
         </ul>
       </li>
 
       <li className="bg-[#dad1c8] text-[#111143] rounded-3xl p-8">
         <h3 className="text-2xl font-bold mb-4" style={{ fontFamily: "var(--font-campora)" }}>
-          Mentalidade e Comportamento Financeiro
+          Mentalidade e Comportamento Financeiro - Consciência para decisões consistentes
         </h3>
         <ul className="space-y-2 text-lg" style={{ fontFamily: "var(--font-montserrat)" }}>
-          <li>• Economia comportamental</li>
+          <li>• Reconhecimento dos fatores emocionais que influenciam decisões</li>
           <li>• Hábitos que impedem o progresso financeiro</li>
-          <li>• Tomada de decisão sob incerteza</li>
+          <li>• Estratégias para tomada de decisão em cenários de incerteza</li>
+          <li>• Promoção de práticas financeiras saudáveis e consistentes</li>
         </ul>
+        <p className="mt-4 text-lg">
+          Pense que equipes com maior consciência e bem-estar financeiro contribuem diretamente para maior foco e estabilidade no ambiente de trabalho
+        </p>
       </li>
     </ul>
 
@@ -331,31 +336,91 @@ inspiradora.
       Palestras estratégicas sobre o cenário econômico para empresas
     </h2>
 
-    <div className="grid md:grid-cols-2 gap-8 mt-10">
+    <div className="grid lg:grid-cols-2 gap-8 mt-10">
 
       <div className="bg-[#111143] text-[#dad1c8] rounded-3xl p-8">
-        <h3 className="text-2xl font-bold mb-4" style={{ fontFamily: "var(--font-campora)" }}>
+        <h3 className="text-2xl font-bold mb-2" style={{ fontFamily: "var(--font-campora)" }}>
           Cenário Econômico Atual
         </h3>
+        <p className="mb-4 text-lg">
+          Transforme incertezas em clareza com uma leitura direta do que realmente impacta sua empresa.
+        </p>
         <ul className="space-y-3 text-lg" style={{ fontFamily: "var(--font-montserrat)" }}>
-          <li>• Brasil: juros, inflação, mercado</li>
-          <li>• América Latina</li>
-          <li>• Panorama global</li>
+          <li>• Tendências de juros, inflação e câmbio que afetam custos, preços e investimentos</li>
+          <li>• Sinais do mercado de trabalho, consumo e crédito — essenciais para planejar demanda</li>
+          <li>• Alertas sobre riscos fiscais e seus efeitos na curva de juros</li>
+          <li>• Panorama internacional (EUA, China, Europa) e impacto no Brasil e na América Latina</li>
+          <li>• Projeções exclusivas para os próximos meses</li>
         </ul>
+        <p className="mt-4 text-lg">
+          Decisões melhores começam com informação confiável e análises robustas.
+        </p>
       </div>
 
       <div className="bg-[#111143] text-[#dad1c8] rounded-3xl p-8">
-        <h3 className="text-2xl font-bold mb-4" style={{ fontFamily: "var(--font-campora)" }}>
-          Impacto Econômico no Setor da Empresa
+        <h3 className="text-2xl font-bold mb-2" style={{ fontFamily: "var(--font-campora)" }}>
+          Impacto Econômico no Setor da Sua Empresa - Cenários sob medida
         </h3>
+        <p className="mb-4 text-lg">
+          Conecte o macro ao seu mercado para identificar riscos, oportunidades e pontos de atenção antes da concorrência.
+        </p>
         <ul className="space-y-3 text-lg" style={{ fontFamily: "var(--font-montserrat)" }}>
-          <li>• Estudos personalizados</li>
-          <li>• Indicadores relevantes</li>
-          <li>• Riscos e oportunidades</li>
+          <li>• Estudos personalizados para o seu setor ou segmento</li>
+          <li>• Indicadores práticos para orientar pricing, demanda e investimentos</li>
+          <li>• Mapeamento de riscos e oportunidades no curto e médio prazo</li>
+          <li>• Conexão entre economia e estratégia empresarial</li>
         </ul>
+      </div>
+      <div className="bg-[#111143] text-[#dad1c8] rounded-3xl p-8 lg:col-span-2">
+        <h3 className="text-2xl font-bold mb-2" style={{ fontFamily: "var(--font-campora)" }}>
+          Palestra - Economia e Finanças Pessoais
+        </h3>
+        <p className="mb-4 text-lg">
+          Palestra voltada à integração entre análise econômica e decisões individuais de investimento, oferecendo clareza para a construção de estratégias financeiras consistentes.
+        </p>
+        <ul className="space-y-3 text-lg" style={{ fontFamily: "var(--font-montserrat)" }}>
+          <li>• Entendimento do cenário econômico e seus impactos nos investimentos</li>
+          <li>• Leitura de juros, inflação, câmbio e tendências relevantes</li>
+          <li>• Alocação adequada ao perfil de risco e aos objetivos de vida</li>
+          <li>• Estratégias de diversificação e proteção patrimonial</li>
+          <li>• Orientações para decisões mais seguras em ambientes voláteis</li>
+        </ul>
+        <p className="mt-4 text-lg">
+          Promove maior consciência financeira e apoia escolhas de investimento alinhadas ao contexto econômico e às metas pessoais.
+        </p>
       </div>
 
     </div>
+
+      <hr className="border-t border-primary my-12" />
+
+ <div className="lg:mt-16  ">
+  <h3
+    className="text-3xl md:text-4xl font-bold text-[#111143] mb-6"
+    style={{ fontFamily: "var(--font-campora)" }}
+  >
+    Por que contratar estas palestras?
+  </h3>
+
+  <ul
+    className="space-y-3 text-lg text-[#111143] font-bold"
+    style={{ fontFamily: "var(--font-montserrat)" }}
+  >
+    <li>• Conteúdo sempre atualizado</li>
+    <li>• Explicação clara e didática, sem jargões</li>
+    <li>• Personalização total ao momento pessoal e da empresa</li>
+    <li>• Experiência de mais de 20 anos em economia e educação financeira</li>
+  </ul>
+
+  <p
+    className="mt-6 text-xl leading-relaxed text-[#111143] font-bold"
+    style={{ fontFamily: "var(--font-montserrat)" }}
+  >
+    Leve para sua equipe uma visão econômica e de educação financeira que gera resultados — não apenas informação.
+  </p>
+</div>
+
+
 
   </div>
 </section>
