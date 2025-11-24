@@ -24,17 +24,19 @@ export default function Hero() {
             </div>
 
             {/* TÍTULO */}
-            <h1
-              className="text-3xl lg:text-5xl font-bold text-[#dad1c8] mb-4 leading-tight text-center lg:text-start text-balance"
-              style={{ fontFamily: "var(--font-campora)" }}
-            >
-              Empoderando as empresas e pessoas para o planejamento mais efetivo
-              para obter <span className="text-primary">melhores resultados</span>.
-            </h1>
+        <h1
+  className="text-3xl lg:text-4xl font-bold text-[#dad1c8] mb-4 leading-tight text-center lg:text-start text-balance"
+  style={{ fontFamily: "var(--font-campora)" }}
+>
+  <span className="text-primary">Visão econômica</span> e
+  <span className="text-primary"> educação financeira</span> para que empresas e pessoas planejem de forma mais consciente e tomem 
+  <span className="text-primary"> decisões mais consistentes</span>
+</h1>
+
 
             {/* PARÁGRAFOS — texto idêntico ao seu */}
             <p
-              className="text-base lg:text-lg text-[#dad1c8] leading-relaxed text-center lg:text-start text-balance mb-4"
+              className="text-base lg:text-lg text-[#dad1c8] leading-relaxed text-center lg:text-start text-balance mb-2"
               style={{ fontFamily: "var(--font-montserrat)" }}
             >
               Palestras, workshops e consultoria especializada em prover instrumentos
@@ -42,7 +44,7 @@ export default function Hero() {
             </p>
 
             <p
-              className="text-base lg:text-lg text-[#dad1c8] leading-relaxed text-center lg:text-start text-balance mb-4"
+              className="text-base lg:text-lg text-[#dad1c8] leading-relaxed text-center lg:text-start text-balance mb-2"
               style={{ fontFamily: "var(--font-montserrat)" }}
             >
               Para empresas: perspectivas econômicas e dos setores de atuação das
@@ -51,7 +53,7 @@ export default function Hero() {
             </p>
 
             <p
-              className="text-base lg:text-lg text-[#dad1c8] mb-8 leading-relaxed text-center lg:text-start text-balance"
+              className="text-base lg:text-lg text-[#dad1c8] mb-4 leading-relaxed text-center lg:text-start text-balance"
               style={{ fontFamily: "var(--font-montserrat)" }}
             >
               Para pessoas: educação financeira para dar suporte ao{" "}
