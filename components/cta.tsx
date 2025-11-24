@@ -59,7 +59,7 @@ export default function CTA() {
             <Mail className="text-primary" size={32} />
             <div className="text-left">
               <p className="text-sm text-[#111143]">Email</p>
-              <p className="text-[#111143] font-bold">mauricio.nakahodo@gmail.com</p>
+              <p className="text-[#111143] font-bold">contato@mnakahodo.com.br</p>
             </div>
           </div>
           <div className="flex items-center lg:justify-center gap-3">
