@@ -1,8 +1,8 @@
-"use client"
+"use client";
 
-import { ArrowRight, Mail, Phone } from "lucide-react"
-import { motion } from "framer-motion"
-import Link from "next/link"
+import { ArrowRight, Mail, Phone } from "lucide-react";
+import { motion } from "framer-motion";
+import Link from "next/link";
 
 export default function CTA() {
   return (
@@ -11,7 +11,6 @@ export default function CTA() {
         <h2
           className="text-3xl lg:text-5xl font-bold text-primary mb-6 text-balance"
           style={{ fontFamily: "var(--font-campora)" }}
- 
         >
           Pronto para transformar sua empresa?
         </h2>
@@ -19,47 +18,46 @@ export default function CTA() {
         <p
           style={{ fontFamily: "var(--font-montserrat)" }}
           className="text-base lg:text-lg text-[#111143] mb-8 leading-relaxed text-balance"
- 
-      
         >
-          Entre em contato conosco para solicitar uma palestra, workshop ou consultoria especializada.
+          Entre em contato conosco para solicitar uma palestra, workshop ou
+          consultoria especializada.
         </p>
 
-        <div
-          className="flex flex-col sm:flex-row gap-4 justify-center mb-12"
-          
-        >
-         <div
-              className="flex flex-col sm:flex-row gap-4"
+        <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+          <div className="flex flex-col sm:flex-row gap-4">
+            <Link
+              className="lg:block flex justify-center lg:w-auto w-full"
+              href={"https://wa.me/5511999024090"}
+              target="_blank"
             >
-              <Link className="lg:block flex justify-center lg:w-auto w-full" href={"https://wa.me/5511999024090"} target="_blank">
               <button className="bg-[#111143] lg:w-auto w-full text-base lg:text-lg font-bold text-[#dad1c7] cursor-pointer px-8 py-3 rounded-full  transition-all flex items-center justify-center gap-2 ">
-               Me chame para palestrar
-                     <div className="rounded-full p-[0.1rem] border border-[#dad1c7]">
+                Me chame para palestrar
+                <div className="rounded-full p-[0.1rem] border border-[#dad1c7]">
                   <ArrowRight className="text-primary" size={20} />
                 </div>
               </button>
-             </Link>
-            </div>
-<Link className="lg:block flex justify-center lg:w-auto w-full" href={"https://wa.me/5511999024090"} target="_blank">
-             <button
-            className="lg:w-auto w-full border-2 border-[#111143] cursor-pointer text-[#111143] px-8 py-3 rounded-full font-medium  transition-colors"
+            </Link>
+          </div>
+          <Link
+            className="lg:block flex justify-center lg:w-auto w-full"
+            href={"https://wa.me/5511999024090"}
+            target="_blank"
           >
-            Solicitar Consultoria
-          </button>
-    </Link>
+            <button className="lg:w-auto w-full border-2 border-[#111143] cursor-pointer text-[#111143] px-8 py-3 rounded-full font-medium  transition-colors">
+              Solicitar Consultoria
+            </button>
+          </Link>
         </div>
 
         {/* Contato */}
-        <div
-          className="grid sm:grid-cols-2 gap-8 pt-8 border-t border-[#111143] "
-         
-        >
+        <div className="grid sm:grid-cols-2 gap-8 pt-8 border-t border-[#111143] ">
           <div className="flex items-center lg:justify-center gap-3">
             <Mail className="text-primary" size={32} />
             <div className="text-left">
               <p className="text-sm text-[#111143]">Email</p>
-              <p className="text-[#111143] font-bold">contato@mnakahodo.com.br</p>
+              <p className="text-[#111143] font-bold">
+                contato@mnakahodo.com.br
+              </p>
             </div>
           </div>
           <div className="flex items-center lg:justify-center gap-3">
@@ -72,5 +70,5 @@ export default function CTA() {
         </div>
       </div>
     </section>
-  )
+  );
 }
