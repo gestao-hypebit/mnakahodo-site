@@ -157,10 +157,12 @@ export default function PalestrasPage() {
                 className="text-4xl lg:text-5xl font-bold text-[#dad1c8] mb-6 leading-tight text-center lg:text-start text-balance"
                 style={{ fontFamily: "var(--font-campora)" }}
               >
-                <span className="text-primary font-bold">
+                {/* <span className="text-primary font-bold">
                   Transforme {" "}
                 </span>
-                 a relação da sua equipe com o dinheiro.
+                 a relação da sua equipe com o dinheiro. */}
+
+                 <span className="font-bold text-primary">Análises econômicas</span> e <span className="font-bold text-primary">educação financeira</span> para orientar decisões mais seguras 
 
               </h1>
 
@@ -169,9 +171,7 @@ export default function PalestrasPage() {
                 className="text-base lg:text-lg text-[#dad1c8] mb-8 leading-relaxed text-center lg:text-start text-balance"
                 style={{ fontFamily: "var(--font-montserrat)" }}
               >
-                Eventos corporativos, instituições de ensino e treinamentos 
-personalizados com foco em educação financeira prática e 
-inspiradora.
+               Palestras que ajudam empresas e pessoas a planejar melhor e decidir com clareza.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4">
@@ -229,12 +229,16 @@ inspiradora.
 
     {/* Texto principal */}
     <p
-      className="text-center text-xl md:text-2xl text-[#111143] mx-auto leading-relaxed mb-12"
+      className="text-center text-xl md:text-2xl text-[#111143] mx-auto leading-relaxed mb-4"
       style={{ fontFamily: "var(--font-montserrat)" }}
     >
-      Mais do que falar sobre finanças, minhas palestras convidam o público a 
-      refletir sobre comportamento, propósito e hábitos financeiros.  
-      Cada apresentação é construída para inspirar ação imediata e resultados reais.
+     Mais do que apresentar números e gráficos, minhas palestras traduzem o cenário político-econômico do Brasil e do mundo em insights práticos para o planejamento das empresas. Cada encontro conecta tendências macroeconômicas aos desafios reais dos setores de atuação, ajudando líderes e equipes a tomar decisões mais conscientes e estratégicas.
+    </p>
+    <p
+      className="text-center text-xl md:text-2xl text-[#111143] mx-auto leading-relaxed"
+      style={{ fontFamily: "var(--font-montserrat)" }}
+    >
+      Minha outra linha de atuação é levar educação financeira prática aos colaboradores, fortalecendo bem-estar financeiro pessoal, o que se traduz em maior engajamento no ambiente corporativo.
     </p>
 
     {/* Linha divisória */}

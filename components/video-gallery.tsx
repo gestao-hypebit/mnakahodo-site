@@ -3,9 +3,9 @@ import { useState } from "react"
 import { ArrowLeft, ArrowRight } from "lucide-react"
 
 const videos = [
-  { id: 1, url: "https://www.youtube.com/embed/8JHOHuu3_eI?si=Svp2gzetdtQHI_Ep" },
+  // { id: 1, url: "https://www.youtube.com/embed/8JHOHuu3_eI?si=Svp2gzetdtQHI_Ep" },
   { id: 2, url: "https://www.youtube.com/embed/uHGxlZA9-x8?si=vGwVdxBux2xQp32i" },
-  { id: 3, url: "https://www.youtube.com/embed/dyWDOLPdE7Q?start=4881" },
+  // { id: 3, url: "https://www.youtube.com/embed/dyWDOLPdE7Q?start=4881" },
 ]
 
 

@@ -55,9 +55,9 @@ export default function CTA() {
             <Mail className="text-primary" size={32} />
             <div className="text-left">
               <p className="text-sm text-[#111143]">Email</p>
-              <p className="text-[#111143] font-bold">
+              <a href="mailto:contato@mnakahodo.com.br" className="text-[#111143] font-bold">
                 contato@mnakahodo.com.br
-              </p>
+              </a>
             </div>
           </div>
           <div className="flex items-center lg:justify-center gap-3">
