@@ -211,6 +211,35 @@ export default function NaMidia() {
           className="w-full h-full object-cover"
         />
       </div>
+         <div className="bg-[#dad1c8] rounded-xl overflow-hidden col-span-2">
+        <Image
+          src="/images/aparicoes/aparicao8.jpg"
+          width={300}
+          height={300}
+          alt=""
+         className="w-full h-full object-cover"
+        />
+      </div>
+          <div className="row-span-2 bg-[#dad1c8] rounded-xl overflow-hidden col-span-2">
+        <Image
+          src="/images/aparicoes/aparicao10.jpg"
+          width={300}
+          height={300}
+          alt=""
+          className="w-full h-full object-cover object-top"
+        />
+      </div>
+          
+            <div className="bg-[#dad1c8] rounded-xl overflow-hidden col-span-2">
+        <Image
+          src="/images/aparicoes/aparicao9.png"
+          width={300}
+          height={300}
+          alt=""
+             className="w-full h-full object-cover"
+        />
+      </div>
+     
     </div>
   </div>
 </section>
