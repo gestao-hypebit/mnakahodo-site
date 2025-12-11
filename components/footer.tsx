@@ -1,5 +1,5 @@
-import Link from "next/link"
-import { Mail, Linkedin, Twitter, Instagram } from "lucide-react"
+import Link from "next/link";
+import { Mail, Linkedin, Twitter, Instagram } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -9,25 +9,35 @@ export default function Footer() {
           <div>
             <h3 className="text-xl font-bold mb-4">MNAKAHODO</h3>
             <p className="text-background/70 text-sm leading-relaxed">
-              Consultoria em economia e educação financeira com mais de 20 anos de experiência.
+              Consultoria em economia e educação financeira com mais de 20 anos
+              de experiência.
             </p>
           </div>
 
           <div>
             <h1 className="font-bold mb-4">Navegação</h1>
             <ul className="space-y-2 text-sm">
-                      <li>
-                <Link href="/" className="text-background/70 hover:text-background transition-colors">
+              <li>
+                <Link
+                  href="/"
+                  className="text-background/70 hover:text-background transition-colors"
+                >
                   Home
                 </Link>
               </li>
               <li>
-                <Link href="/sobre" className="text-background/70 hover:text-background transition-colors">
+                <Link
+                  href="/sobre"
+                  className="text-background/70 hover:text-background transition-colors"
+                >
                   Sobre Mim
                 </Link>
               </li>
               <li>
-                <Link href="/servicos" className="text-background/70 hover:text-background transition-colors">
+                <Link
+                  href="/servicos"
+                  className="text-background/70 hover:text-background transition-colors"
+                >
                   Serviços
                 </Link>
               </li>
@@ -73,12 +83,18 @@ export default function Footer() {
           <div>
             <h1 className="font-bold mb-4">Conecte-se</h1>
             <div className="flex gap-4">
-            <Link href={"https://br.linkedin.com/in/mauricio-nakahodo"} target="_blank">
-              <button  className="text-background/70 hover:text-background transition-colors cursor-pointer">
-                <Linkedin size={20} />
-              </button>
-            </Link>
-              <a href="#" className="text-background/70 hover:text-background transition-colors">
+              <Link
+                href={"https://br.linkedin.com/in/mauricio-nakahodo"}
+                target="_blank"
+              >
+                <button className="text-background/70 hover:text-background transition-colors cursor-pointer">
+                  <Linkedin size={20} />
+                </button>
+              </Link>
+              <a
+                href="#"
+                className="text-background/70 hover:text-background transition-colors"
+              >
                 <Instagram size={20} />
               </a>
               <a
@@ -93,16 +109,8 @@ export default function Footer() {
 
         <div className="border-t border-background/20 pt-8 flex flex-col sm:flex-row justify-between items-center text-sm text-background/60">
           <p>&copy; 2025 MNAKAHODO. Todos os direitos reservados.</p>
-          {/* <div className="flex gap-6 mt-4 sm:mt-0">
-            <Link href="/privacidade" className="hover:text-background transition-colors">
-              Política de Privacidade
-            </Link>
-            <Link href="/termos" className="hover:text-background transition-colors">
-              Termos de Uso
-            </Link>
-          </div> */}
         </div>
       </div>
     </footer>
-  )
+  );
 }
