@@ -4,14 +4,15 @@ import Image from "next/image"
 import { motion } from "framer-motion"
 
 const partners = [
-  { name: "USP", logo: "images/partners/unibanco.webp" },
-  { name: "B3", logo: "images/partners/b3.png" },
-  { name: "Datagro", logo: "images/partners/datagro.png" },
-  { name: "MUFG", logo: "images/partners/mufg.png" },
-  { name: "Honda", logo: "images/partners/honda.png" },
-  { name: "Toyota", logo: "images/partners/toyota.png" },
-  { name: "Kumon", logo: "images/partners/kumon.png" },
-  { name: "Asics", logo: "images/partners/asics.png" },
+  { name: "USP", logo: "images/partners/unibanco.webp", width: 160 },
+  { name: "B3", logo: "images/partners/b3.png", width: 160 },
+  { name: "Datagro", logo: "images/partners/datagro.png", width: 160 },
+  { name: "MUFG", logo: "images/partners/mufg.png", width: 160 },
+  { name: "Honda", logo: "images/partners/honda.png", width: 160 },
+  { name: "Toyota", logo: "images/partners/toyota.png", width: 160 },
+  { name: "Kumon", logo: "images/partners/kumon.png", width: 160 },
+  { name: "Asics", logo: "images/partners/asics.png", width: 160 },
+  { name: "vezzilapolla", logo: "images/partners/vezzilapolla.png", width: 250   },
 ]
 
 export default function Partners() {
@@ -56,7 +57,7 @@ export default function Partners() {
               <Image
                 src={partner.logo}
                 alt={partner.name}
-                width={160}
+                width={partner.width}
                 height={80}
                 className="object-contain"
               />
