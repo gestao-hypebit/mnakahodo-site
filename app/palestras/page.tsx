@@ -457,14 +457,13 @@ export default function PalestrasPage() {
 
             {/* Depoimento */}
             <p className="text-lg italic leading-relaxed mb-10">
-              “Uma palestra leve e transformadora. Nossa equipe saiu motivada a repensar
-              o consumo e planejar melhor o futuro.”
+              “Quero agradecer a palestra sobre educação financeira, ela foi muito proveitosa e elogiada.”
             </p>
 
             {/* Autor */}
-            <p className="text-lg"><span className="font-bold">João Silva,</span> <span className="">Diretor de RH</span></p>
+            <p className="text-lg"><span className="font-bold">Luciano Abreu Miguel,</span> <span className="">Diretor de RH</span></p>
             {/* <p className="text-base mt-1">Diretor de RH</p> */}
-            <p className="text-base font-semibold mt-2">Empresa X</p>
+            <p className="text-base font-semibold mt-2">Vezzilapola</p>
           </div>
         ))}
       </div>
