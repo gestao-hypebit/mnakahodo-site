@@ -23,17 +23,45 @@ const items = [
     src: "/images/aparicoes/aparicao12.jpeg",
     alt: "Entrevista",
   },
+
+    {
+      id: 4,
+      type: "video",
+      // Example of a local video placed in the `public/videos` folder
+      // Use `/videos/your-file.mp4` as the `src` value
+      src: "/videos/video-palestras1.mp4",
+      // poster: "/images/aparicoes/aparicao11.jpeg",
+    },
 ];
 
 function MediaItem({ item }: { item: any }) {
   if (item.type === "video") {
-    return (
-      <iframe
-        src={item.url}
-        className="absolute top-0 left-0 w-full h-full"
-        allowFullScreen
-      />
-    );
+    // External/embed video (YouTube, etc.)
+    if (item.url) {
+      return (
+        <iframe
+          src={item.url}
+          className="absolute top-0 left-0 w-full h-full"
+          allowFullScreen
+        />
+      );
+    }
+
+    // Local video in `public` folder
+    if (item.src) {
+      return (
+        <video
+          src={item.src}
+          className="absolute top-0 left-0 w-full h-full object-cover"
+          controls
+          playsInline
+          preload="metadata"
+          poster={item.poster}
+        />
+      );
+    }
+
+    return null;
   }
 
   return (

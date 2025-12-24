@@ -26,39 +26,7 @@ const formSchema = z.object({
   telefone: z.string().min(1, "Por favor, insira um número de telefone"),
 });
 
-const services = [
-  {
-    icon: TrendingUp,
-    title: "Workshops - 1x/semana durante 1 mês com abordagem 360º:",
-    features: [
-      "Economia comportamental",
-      "Organização das finanças pessoais.",
-      "Traçando metas/objetivos.",
-    ],
-  },
-  {
-    icon: Users,
-    title: "Consultoria personalizada para funcionários das empresas.",
-    features: ["Economia comportamental", "Organização das finanças pessoais."],
-  },
-  {
-    icon: BookOpen,
-    title:
-      "Palestras de 1 a 2 horas sobre saúde financeira para funcionários de empresas.",
-    features: [
-      "Traçando metas/objetivos.",
-      " Investimentos financeiros para concretizar os objetivos de vida.",
-    ],
-  },
-  {
-    icon: Handshake,
-    title: " Workshops - 1x/semana durante 1 mês com abordagem 360º:",
-    features: [
-      "Organização das finanças pessoais.",
-      "Traçando metas/objetivos.",
-    ],
-  },
-];
+
 
 export default function PalestrasPage() {
   const faqs = [
