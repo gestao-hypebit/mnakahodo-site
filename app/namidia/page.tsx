@@ -56,7 +56,7 @@ export default function NaMidia() {
           <div className="mt-6 mb-10">
             <iframe
               className="w-full h-[400px]"
-              src="https://www.youtube.com/watch?v=O7gqpDeFJ5I"
+              src="https://www.youtube.com/embed/O7gqpDeFJ5I?si=LIPTsbLEU4l-SQos"
               // src="https://www.youtube.com/embed/MC70uysyYr0?si=5tiHcr7xOGkh1G6u"
               title="YouTube video player"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
