@@ -49,12 +49,14 @@ export default function NaMidia() {
             Na <span className="text-primary">mídia</span>
           </h1>
           <p className="text-lg md:text-xl max-w-2xl mx-auto text-[#dad1c7]">
-           Confira minhas participações em veículos de comunicação e plataformas digitais em que falo sobre assuntos de economia e educação financeira.
+            Confira minhas participações em veículos de comunicação e
+            plataformas digitais em que falo sobre assuntos de economia e
+            educação financeira.
           </p>
           <div className="mt-6 mb-10">
             <iframe
               className="w-full h-[400px]"
-              src="https://www.youtube.com/embed/8JHOHuu3_eI?si=5hSd-mNxYOBnUEUs"
+              src="https://www.youtube.com/embed/O7gqpDeFJ5I?si=LIPTsbLEU4l-SQos"
               // src="https://www.youtube.com/embed/MC70uysyYr0?si=5tiHcr7xOGkh1G6u"
               title="YouTube video player"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -130,115 +132,114 @@ export default function NaMidia() {
             ))}
           </div>
         </div>
-  
       </section>
 
       {/* <VideoGallery/> */}
 
-  <section className="py-20 px-6 sm:px-8 bg-[#111143]">
-  <div className="max-w-7xl mx-auto text-center">
-    <h2
-      className="text-4xl md:text-5xl font-bold mb-12 text-[#dad1c8]"
-      style={{ fontFamily: "'Poppins', sans-serif" }}
-    >
-      Galeria de Aparições
-    </h2>
+      <section className="py-20 px-6 sm:px-8 bg-[#111143]">
+        <div className="max-w-7xl mx-auto text-center">
+          <h2
+            className="text-4xl md:text-5xl font-bold mb-12 text-[#dad1c8]"
+            style={{ fontFamily: "'Poppins', sans-serif" }}
+          >
+            Galeria de Aparições
+          </h2>
 
-    <div className="grid grid-cols-4 gap-4 auto-rows-[200px] md:auto-rows-[300px]">
-      <div className="row-span-2 bg-[#dad1c8] rounded-xl overflow-hidden">
-        <Image
-          src="/images/aparicoes/aparicao2.jpg"
-          width={300}
-          height={300}
-          alt=""
-          className="w-full h-full object-cover"
-        />
-      </div>
+          <div className="grid grid-cols-4 gap-4 auto-rows-[200px] md:auto-rows-[300px]">
+            <div className="row-span-2 bg-[#dad1c8] rounded-xl overflow-hidden">
+              <Image
+                src="/images/aparicoes/aparicao2.jpg"
+                width={300}
+                height={300}
+                alt=""
+                className="w-full h-full object-cover"
+              />
+            </div>
 
-      <div className="bg-[#dad1c8] rounded-xl overflow-hidden">
-        <Image
-          src="/images/aparicoes/aparicao5.jpg"
-          width={300}
-          height={300}
-          alt=""
-          className="w-full h-full object-cover"
-        />
-      </div>
-
-      <div className="bg-[#dad1c8] rounded-xl overflow-hidden col-span-2">
-        <Image
-          src="/images/aparicoes/aparicao1.jpg"
-          width={300}
-          height={300}
-          alt=""
-          className="w-full h-full object-cover"
-        />
-      </div>
-
-         <div className="bg-[#dad1c8] rounded-xl overflow-hidden">
-        <Image
-          src="/images/aparicoes/aparicao3.jpg"
-          width={300}
-          height={300}
-          alt=""
-          className="w-full h-full object-cover"
-        />
-      </div>
-         <div className="bg-[#dad1c8] rounded-xl overflow-hidden">
-        <Image
-          src="/images/aparicoes/aparicao4.jpg"
-          width={300}
-          height={300}
-          alt=""
-          className="w-full h-full object-cover"
-        />
-      </div>
             <div className="bg-[#dad1c8] rounded-xl overflow-hidden">
-        <Image
-          src="/images/aparicoes/aparicao6.jpg"
-          width={300}
-          height={300}
-          alt=""
-          className="w-full h-full object-cover bg-left object-left"
-        />
-      </div>
-                  <div className="bg-[#dad1c8] rounded-xl overflow-hidden col-span-2">
-        <Image
-          src="/images/aparicoes/aparicao7.png"
-          width={300}
-          height={300}
-          alt=""
-          className="w-full h-full object-cover"
-        />
-      </div>
-         <div className="bg-[#dad1c8] rounded-xl overflow-hidden col-span-2">
-        <Image
-          src="/images/aparicoes/aparicao8.jpg"
-          width={300}
-          height={300}
-          alt=""
-         className="w-full h-full object-cover"
-        />
-      </div>
-          <div className="row-span-2 bg-[#dad1c8] rounded-xl overflow-hidden col-span-2">
-        <Image
-          src="/images/aparicoes/aparicao10.jpg"
-          width={300}
-          height={300}
-          alt=""
-          className="w-full h-full object-cover object-top"
-        />
-      </div>
-          
+              <Image
+                src="/images/aparicoes/aparicao5.jpg"
+                width={300}
+                height={300}
+                alt=""
+                className="w-full h-full object-cover"
+              />
+            </div>
+
             <div className="bg-[#dad1c8] rounded-xl overflow-hidden col-span-2">
-        <Image
-          src="/images/aparicoes/aparicao9.png"
-          width={300}
-          height={300}
-          alt=""
-             className="w-full h-full object-cover"
-        />
-      </div>
+              <Image
+                src="/images/aparicoes/aparicao1.jpg"
+                width={300}
+                height={300}
+                alt=""
+                className="w-full h-full object-cover"
+              />
+            </div>
+
+            <div className="bg-[#dad1c8] rounded-xl overflow-hidden">
+              <Image
+                src="/images/aparicoes/aparicao3.jpg"
+                width={300}
+                height={300}
+                alt=""
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <div className="bg-[#dad1c8] rounded-xl overflow-hidden">
+              <Image
+                src="/images/aparicoes/aparicao4.jpg"
+                width={300}
+                height={300}
+                alt=""
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <div className="bg-[#dad1c8] rounded-xl overflow-hidden">
+              <Image
+                src="/images/aparicoes/aparicao6.jpg"
+                width={300}
+                height={300}
+                alt=""
+                className="w-full h-full object-cover bg-left object-left"
+              />
+            </div>
+            <div className="bg-[#dad1c8] rounded-xl overflow-hidden col-span-2">
+              <Image
+                src="/images/aparicoes/aparicao7.png"
+                width={300}
+                height={300}
+                alt=""
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <div className="bg-[#dad1c8] rounded-xl overflow-hidden col-span-2">
+              <Image
+                src="/images/aparicoes/aparicao8.jpg"
+                width={300}
+                height={300}
+                alt=""
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <div className="row-span-2 bg-[#dad1c8] rounded-xl overflow-hidden col-span-2">
+              <Image
+                src="/images/aparicoes/aparicao10.jpg"
+                width={300}
+                height={300}
+                alt=""
+                className="w-full h-full object-cover object-top"
+              />
+            </div>
+
+            <div className="bg-[#dad1c8] rounded-xl overflow-hidden col-span-2">
+              <Image
+                src="/images/aparicoes/aparicao9.png"
+                width={300}
+                height={300}
+                alt=""
+                className="w-full h-full object-cover"
+              />
+            </div>
             <div className="bg-[#dad1c8] rounded-xl overflow-hidden col-span-2">
         <Image
           src="/images/aparicoes/aparicao13.jpeg"
@@ -248,11 +249,9 @@ export default function NaMidia() {
              className="w-full h-full object-cover"
         />
       </div>
-     
-    </div>
-  </div>
-</section>
-
+          </div>
+        </div>
+      </section>
 
       {/* <section className="bg-[#dad1c8] py-24 px-6 min-h-[40vh] flex items-center">
         <div className="max-w-6xl mx-auto flex flex-wrap items-center justify-center gap-24">
