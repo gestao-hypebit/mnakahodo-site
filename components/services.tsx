@@ -121,7 +121,7 @@ export default function Services() {
      <div
               className="flex justify-center mt-6 lg:mt-20"
             >
-            <Link href={"https://wa.me/5511999024090"} target="_blank">
+            <Link href={"https://wa.me/5511978847329"} target="_blank">
               <button className="border  border-[#111143] text-[#111143] text-base lg:text-lg cursor-pointer px-8 py-3 rounded-full font-bold transition-all flex items-center justify-center gap-2 ">
                 Entre em contato 
                      <div className="rounded-full p-[0.1rem] border border-[#111143]">

@@ -1,10 +1,32 @@
 "use client";
 
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
 
 export default function SobrePage() {
+  const testimonials = [
+    {
+      text: "Trabalhei alguns anos com o Mauricio e posso dizer que ele é um profissional muito competente, que sabe aliar um excelente conteúdo com uma forma muito clara de comunicação.",
+      author: "Lucas Tai",
+    },
+    {
+      text: "Profissional extremamente competente, comprometido e com um vasto conhecimento teórico e prático na área da ciência ecônomica, e - somando-se a tudo isso - um profissional humano acima de tudo.",
+      author: "Eduardo Hiroshi",
+    },
+    {
+      text: "Durante nossa colaboração, pude observar como Maurício torna temas complexos acessíveis com explicações claras e didáticas. Ele possui profundo entendimento técnico da economia, destacado por suas projeções e análises perspicazes.",
+      author: "Vivian Padilha",
+    },
+    {
+      text: "Gravar este episódio com o Maurício foi uma experiência extremamente enriquecedora. Ao longo da conversa, exploramos como os vieses comportamentais influenciam nossas decisões não apenas nos investimentos, mas também no trabalho, nos negócios e na vida cotidiana. Com exemplos práticos e situações do dia a dia, discutimos como emoções, atalhos mentais e percepções distorcidas moldam escolhas que, muitas vezes, acreditamos ser totalmente racionais. Foi um diálogo didático, acessível e ao mesmo tempo profundo, capaz de provocar reflexões reais sobre como pensamos e decidimos. Mais do que um episódio sobre economia, foi uma conversa sobre comportamento humano. Um conteúdo que todos deveriam ouvir para tomar decisões mais conscientes e construir resultados mais consistentes no médio e longo prazo.",
+      author: "Gustavo Sung",
+    },
+  ];
+
+  const [testimonialIdx, setTestimonialIdx] = useState(0);
+
   return (
     <main>
       <section className="pt-32 px-4 sm:px-6 lg:px-8 bg-[#111143] min-h-screen flex flex-col lg:flex-row justify-center relative">
@@ -483,13 +505,13 @@ pessoas.
       O impacto que já geramos
     </h2>
 
-    {/* Container principal */}
-    <div className="relative flex flex-col md:flex-row justify-between items-stretch text-center md:text-left">
+    {/* Container principal - stats */}
+    <div className="relative flex flex-col md:flex-row justify-between items-start text-center md:text-left mb-16 lg:mb-20">
       {/* Linha vertical central (apenas no desktop) */}
       <div className="hidden md:block absolute top-0 bottom-0 left-1/2 w-[2px] bg-[#e86a0c] transform -translate-x-1/2" />
 
       {/* BLOCO 1 */}
-      <div className="w-full md:w-1/2 px-6 lg:px-16 flex flex-col items-center md:items-end mb-16 md:mb-0">
+      <div className="w-full md:w-1/2 px-6 lg:px-16 flex flex-col items-center md:items-end mb-12 md:mb-0">
         <div>
           <h3
             className="text-4xl lg:text-5xl font-bold text-[#dad1c8]"
@@ -502,24 +524,6 @@ pessoas.
             style={{ fontFamily: "var(--font-montserrat)" }}
           >
             Empresas atendidas em palestras sobre economia e saúde financeira
-            {/* <br />
-            financeiramente. */}
-          </p>
-        </div>
-
-        {/* Caixa de depoimento */}
-        <div className="bg-[#dad1c8] rounded-3xl px-6 py-8 lg:px-8 lg:py-12  mt-10 shadow-md">
-          <p
-            className="italic text-[#111143] text-base mb-4 leading-relaxed"
-            style={{ fontFamily: "var(--font-montserrat)" }}
-          >
-            “Trabalhei alguns anos com o Mauricio e posso dizer que ele é um profissional muito competente, que sabe aliar um excelente conteúdo com uma forma muito clara de comunicação.”
-          </p>
-          <p
-            className="text-[#111143] font-semibold text-sm"
-            style={{ fontFamily: "var(--font-montserrat)" }}
-          >
-            - Lucas Tai
           </p>
         </div>
       </div>
@@ -537,26 +541,67 @@ pessoas.
             className="text-[#e86a0c] text-lg lg:text-xl font-semibold leading-snug mt-2 text-center md:text-left"
             style={{ fontFamily: "var(--font-montserrat)" }}
           >
-            Profissionais e estudantes impactados positivamente com as palestras e
-cursos sobre economia e saúde financeira.
+            Profissionais e estudantes impactados positivamente com as palestras e cursos sobre economia e saúde financeira.
           </p>
         </div>
+      </div>
+    </div>
 
-        {/* Caixa de depoimento */}
-        <div className="bg-[#dad1c8] rounded-3xl px-6 py-8 lg:px-8 lg:py-12 max-w-sm mt-10 shadow-md">
-          <p
-            className="italic text-[#111143] text-base mb-4 leading-relaxed"
-            style={{ fontFamily: "var(--font-montserrat)" }}
-          >
-            “Profissional extremamente competente, comprometido e com um vasto conhecimento teórico e prático na área da ciência ecônomica, e - somando-se a tudo isso - um profissional humano acima de tudo.”
-          </p>
-          <p
-            className="text-[#111143] font-semibold text-sm"
-            style={{ fontFamily: "var(--font-montserrat)" }}
-          >
-            - Eduardo Hiroshi
-          </p>
-        </div>
+    {/* Carrossel de Depoimentos */}
+    <div className="relative max-w-2xl mx-auto px-14">
+      <div className="bg-[#dad1c8] rounded-3xl px-8 py-10 lg:px-12 lg:py-12 shadow-md min-h-[180px] flex flex-col justify-between">
+        <p
+          className="italic text-[#111143] text-base mb-6 leading-relaxed"
+          style={{ fontFamily: "var(--font-montserrat)" }}
+        >
+          &ldquo;{testimonials[testimonialIdx].text}&rdquo;
+        </p>
+        <p
+          className="text-[#111143] font-semibold text-sm"
+          style={{ fontFamily: "var(--font-montserrat)" }}
+        >
+          &mdash; {testimonials[testimonialIdx].author}
+        </p>
+      </div>
+
+      {/* Seta esquerda */}
+      <button
+        onClick={() =>
+          setTestimonialIdx(
+            (prev) => (prev - 1 + testimonials.length) % testimonials.length
+          )
+        }
+        className="absolute left-0 top-1/2 -translate-y-1/2 bg-[#e86a0c] rounded-full p-2 hover:opacity-80 transition-all shadow-md cursor-pointer"
+        aria-label="Depoimento anterior"
+      >
+        <ChevronLeft size={22} className="text-white" />
+      </button>
+
+      {/* Seta direita */}
+      <button
+        onClick={() =>
+          setTestimonialIdx((prev) => (prev + 1) % testimonials.length)
+        }
+        className="absolute right-0 top-1/2 -translate-y-1/2 bg-[#e86a0c] rounded-full p-2 hover:opacity-80 transition-all shadow-md cursor-pointer"
+        aria-label="Proximo depoimento"
+      >
+        <ChevronRight size={22} className="text-white" />
+      </button>
+
+      {/* Indicadores (dots) */}
+      <div className="flex justify-center gap-2 mt-5">
+        {testimonials.map((_, i) => (
+          <button
+            key={i}
+            onClick={() => setTestimonialIdx(i)}
+            className={`h-2 rounded-full transition-all cursor-pointer ${
+              i === testimonialIdx
+                ? "bg-[#e86a0c] w-6"
+                : "bg-[#dad1c8] w-2 opacity-50"
+            }`}
+            aria-label={`Ir para depoimento ${i + 1}`}
+          />
+        ))}
       </div>
     </div>
   </div>
@@ -658,7 +703,7 @@ Economy - Kiel, Alemanha - 2009.
             <h1 className="text-4xl lg:text-5xl font-bold text-[#dad1c8] max-w-4xl text-center">Pronto para <span className="text-primary">transformar</span> sua relação com o dinheiro?</h1>
           </div>
           <div className="flex justify-center my-8">
-         <Link href={"https://wa.me/5511999024090"} target="_blank">
+         <Link href={"https://wa.me/5511978847329"} target="_blank">
                  <button
                 className=" text-[#dad1c8] border border-primary text-base lg:text-lg cursor-pointer px-8 py-2 rounded-full font-bold hover:opacity-90 transition-all flex items-center justify-center gap-2 shadow-md"
               >

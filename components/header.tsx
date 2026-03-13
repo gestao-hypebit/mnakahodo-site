@@ -59,7 +59,7 @@ export default function Header() {
               </Link>
             );
           })}
-        <Link href={"https://wa.me/5511999024090"} target="_blank">
+        <Link href={"https://wa.me/5511978847329"} target="_blank">
           <button className="bg-[#dad1c8] text-[#111143] text-lg cursor-pointer px-8 py-3 rounded-full font-bold hover:opacity-90 transition-all flex items-center justify-center gap-2 shadow-md">
             Entre em contato
           </button>
@@ -97,7 +97,7 @@ export default function Header() {
                 </Link>
               );
             })}
-                 <Link href={"https://wa.me/5511999024090"} target="_blank">
+                 <Link href={"https://wa.me/5511978847329"} target="_blank">
             <button className="bg-[#E86A0C] text-white px-6 py-2 rounded-full text-sm font-medium hover:bg-[#E86A0C]/90 transition-colors w-full">
               Me chame para palestrar
             </button>

@@ -27,7 +27,7 @@ export default function CTA() {
           <div className="flex flex-col sm:flex-row gap-4">
             <Link
               className="lg:block flex justify-center lg:w-auto w-full"
-              href={"https://wa.me/5511999024090"}
+              href={"https://wa.me/5511978847329"}
               target="_blank"
             >
               <button className="bg-[#111143] lg:w-auto w-full text-base lg:text-lg font-bold text-[#dad1c7] cursor-pointer px-8 py-3 rounded-full  transition-all flex items-center justify-center gap-2 ">
@@ -40,7 +40,7 @@ export default function CTA() {
           </div>
           <Link
             className="lg:block flex justify-center lg:w-auto w-full"
-            href={"https://wa.me/5511999024090"}
+            href={"https://wa.me/5511978847329"}
             target="_blank"
           >
             <button className="lg:w-auto w-full border-2 border-[#111143] cursor-pointer text-[#111143] px-8 py-3 rounded-full font-medium  transition-colors">
