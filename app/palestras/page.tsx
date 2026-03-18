@@ -61,8 +61,8 @@ export default function PalestrasPage() {
     {
       text: "Gravar este episódio com o Maurício foi uma experiência extremamente enriquecedora. Ao longo da conversa, exploramos como os vieses comportamentais influenciam nossas decisões não apenas nos investimentos, mas também no trabalho, nos negócios e na vida cotidiana. Com exemplos práticos e situações do dia a dia, discutimos como emoções, atalhos mentais e percepções distorcidas moldam escolhas que, muitas vezes, acreditamos ser totalmente racionais. Foi um diálogo didático, acessível e ao mesmo tempo profundo, capaz de provocar reflexões reais sobre como pensamos e decidimos. Mais do que um episódio sobre economia, foi uma conversa sobre comportamento humano. Um conteúdo que todos deveriam ouvir para tomar decisões mais conscientes e construir resultados mais consistentes no médio e longo prazo.",
       author: "Gustavo Sung",
-      role: "",
-      company: "",
+      role: "Economista-Chefe",
+      company: "Suno Research",
     },
     {
       text: "A participação do economista e professor Mauricio Nakahodo no podcast Valor em Pauta, da Suno, foi uma verdadeira aula. De forma didática e muito clara, o professor trouxe conceitos essenciais de Economia Comportamental, mostrando como diversos vieses afetam nossas decisões de investimento e poupança. Além de explicar as armadilhas que o nosso cérebro impõe quando o assunto é dinheiro e finanças, Nakahodo compartilhou insights extremamente úteis para quem busca tomar decisões mais racionais e conscientes no dia a dia. Foi um episódio rico, provocativo e de grande valor para todos aqueles que querem entender melhor a relação entre comportamento, finanças e economia.",
