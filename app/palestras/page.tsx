@@ -3,6 +3,8 @@ import {
   ArrowRight,
   BookOpen,
   CheckCircle,
+  ChevronLeft,
+  ChevronRight,
   Handshake,
   Star,
   TrendingUp,
@@ -48,6 +50,28 @@ export default function PalestrasPage() {
   ];
 
   const [openIndex, setOpenIndex] = useState(null);
+
+  const palestrasTestimonials = [
+    {
+      text: "Quero agradecer a palestra sobre educação financeira, ela foi muito proveitosa e elogiada.",
+      author: "Luciano Abreu Miguel",
+      role: "Diretor de RH",
+      company: "Vezzilapola",
+    },
+    {
+      text: "Gravar este episódio com o Maurício foi uma experiência extremamente enriquecedora. Ao longo da conversa, exploramos como os vieses comportamentais influenciam nossas decisões não apenas nos investimentos, mas também no trabalho, nos negócios e na vida cotidiana. Com exemplos práticos e situações do dia a dia, discutimos como emoções, atalhos mentais e percepções distorcidas moldam escolhas que, muitas vezes, acreditamos ser totalmente racionais. Foi um diálogo didático, acessível e ao mesmo tempo profundo, capaz de provocar reflexões reais sobre como pensamos e decidimos. Mais do que um episódio sobre economia, foi uma conversa sobre comportamento humano. Um conteúdo que todos deveriam ouvir para tomar decisões mais conscientes e construir resultados mais consistentes no médio e longo prazo.",
+      author: "Gustavo Sung",
+      role: "",
+      company: "",
+    },
+    {
+      text: "A participação do economista e professor Mauricio Nakahodo no podcast Valor em Pauta, da Suno, foi uma verdadeira aula. De forma didática e muito clara, o professor trouxe conceitos essenciais de Economia Comportamental, mostrando como diversos vieses afetam nossas decisões de investimento e poupança. Além de explicar as armadilhas que o nosso cérebro impõe quando o assunto é dinheiro e finanças, Nakahodo compartilhou insights extremamente úteis para quem busca tomar decisões mais racionais e conscientes no dia a dia. Foi um episódio rico, provocativo e de grande valor para todos aqueles que querem entender melhor a relação entre comportamento, finanças e economia.",
+      author: "Rafael Perez",
+      role: "Economista",
+      company: "Suno Research",
+    },
+  ];
+  const [testimonialIdx, setTestimonialIdx] = useState(0);
 
   const toggleFAQ = (index: any) => {
     setOpenIndex(openIndex === index ? null : index);
@@ -409,31 +433,53 @@ export default function PalestrasPage() {
         </h2>
       </div>
 
-      {/* Cards */}
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10">
-        {[1, 2, 3].map((i) => (
-          <div
-            key={i}
-            className="bg-[#111143] text-[#dad1c8] rounded-[2.5rem] px-10 py-14 flex flex-col items-center text-center shadow-xl"
-          >
-            {/* Estrelas */}
-            <div className="flex gap-2 mb-6">
-              {[1, 2, 3, 4, 5].map((s) => (
-                <Star key={s} className="text-[#dad1c8] fill-[#dad1c8]" size={28} />
-              ))}
-            </div>
-
-            {/* Depoimento */}
-            <p className="text-lg italic leading-relaxed mb-10">
-              “Quero agradecer a palestra sobre educação financeira, ela foi muito proveitosa e elogiada.”
-            </p>
-
-            {/* Autor */}
-            <p className="text-lg"><span className="font-bold">Luciano Abreu Miguel,</span> <span className="">Diretor de RH</span></p>
-            {/* <p className="text-base mt-1">Diretor de RH</p> */}
-            <p className="text-base font-semibold mt-2">Vezzilapola</p>
+      {/* Carrossel */}
+      <div className="relative max-w-2xl mx-auto px-14">
+        <div className="bg-[#111143] text-[#dad1c8] rounded-[2.5rem] px-10 py-14 flex flex-col items-center text-center shadow-xl min-h-[260px] justify-between">
+          <div className="flex gap-2 mb-6">
+            {[1, 2, 3, 4, 5].map((s) => (
+              <Star key={s} className="text-[#dad1c8] fill-[#dad1c8]" size={28} />
+            ))}
           </div>
-        ))}
+          <p className="text-lg italic leading-relaxed mb-8">
+            &ldquo;{palestrasTestimonials[testimonialIdx].text}&rdquo;
+          </p>
+          <div>
+            <p className="text-lg">
+              <span className="font-bold">{palestrasTestimonials[testimonialIdx].author}</span>
+              {palestrasTestimonials[testimonialIdx].role ? <span>, {palestrasTestimonials[testimonialIdx].role}</span> : null}
+            </p>
+            {palestrasTestimonials[testimonialIdx].company && (
+              <p className="text-base font-semibold mt-2">{palestrasTestimonials[testimonialIdx].company}</p>
+            )}
+          </div>
+        </div>
+        <button
+          onClick={() => setTestimonialIdx((prev) => (prev - 1 + palestrasTestimonials.length) % palestrasTestimonials.length)}
+          className="absolute left-0 top-1/2 -translate-y-1/2 bg-[#e86a0c] rounded-full p-2 hover:opacity-80 transition-all shadow-md cursor-pointer"
+          aria-label="Depoimento anterior"
+        >
+          <ChevronLeft size={22} className="text-white" />
+        </button>
+        <button
+          onClick={() => setTestimonialIdx((prev) => (prev + 1) % palestrasTestimonials.length)}
+          className="absolute right-0 top-1/2 -translate-y-1/2 bg-[#e86a0c] rounded-full p-2 hover:opacity-80 transition-all shadow-md cursor-pointer"
+          aria-label="Próximo depoimento"
+        >
+          <ChevronRight size={22} className="text-white" />
+        </button>
+        <div className="flex justify-center gap-2 mt-5">
+          {palestrasTestimonials.map((_, i) => (
+            <button
+              key={i}
+              onClick={() => setTestimonialIdx(i)}
+              className={`h-2 rounded-full transition-all cursor-pointer ${
+                i === testimonialIdx ? "bg-[#e86a0c] w-6" : "bg-[#111143] w-2 opacity-40"
+              }`}
+              aria-label={`Ir para depoimento ${i + 1}`}
+            />
+          ))}
+        </div>
       </div>
     </section>
 

@@ -7,13 +7,14 @@ const items = [
   {
     id: 1,
     type: "video",
-    url: "https://www.youtube.com/embed/uHGxlZA9-x8?si=vGwVdxBux2xQp32i",
+    url: "https://www.youtube.com/embed/gizK0WQaNbs?si=sIMEIGGsDHpi_hCt",
   },
   {
     id: 2,
     type: "video",
-    url: "https://www.youtube.com/embed/gizK0WQaNbs?si=sIMEIGGsDHpi_hCt",
+    url: "https://www.youtube.com/embed/uHGxlZA9-x8?si=vGwVdxBux2xQp32i",
   },
+
   {
     id: 3,
     type: "image",
