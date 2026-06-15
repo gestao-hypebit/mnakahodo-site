@@ -12,11 +12,16 @@ const items = [
   {
     id: 2,
     type: "video",
+    url: "https://www.youtube.com/embed/H24bUmuMkkA?si=dh99lqrc4KwRZNYb",
+  },
+  {
+    id: 3,
+    type: "video",
     url: "https://www.youtube.com/embed/uHGxlZA9-x8?si=vGwVdxBux2xQp32i",
   },
 
   {
-    id: 3,
+    id: 4,
     type: "image",
     src: "/images/aparicoes/aparicao11.jpeg",
     caption:
@@ -24,14 +29,14 @@ const items = [
     alt: "Aparição em evento",
   },
   {
-    id: 4,
+    id: 5,
     type: "image",
     src: "/images/aparicoes/aparicao12.jpeg",
     alt: "Entrevista",
   },
 
     {
-      id: 5,
+      id: 6,
       type: "video",
       // Example of a local video placed in the `public/videos` folder
       // Use `/videos/your-file.mp4` as the `src` value
